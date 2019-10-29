@@ -1,24 +1,43 @@
 $primary-color: black;
 $darkgray-color: #404040;
 $background4-color: #f4f4f4;
-$button-etc-color: #ffba00;
+$accent-button-color: #ffba00;
 $lightgray: #a4a4a4;
 $verylightgray: #d8d8d8;
 $mediumgray: #717171;
 $smudgywhite: #ebebeb;
 
-html {
+* {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
+  color: $mediumgray;
   background: $primary-color;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
+  line-height: 1.6;
   height: 100%;
 }
-.img {
+
+h1 {
+  font-size: 8rem;
+}
+span {
+  color: $accent-button-color;
   display: block;
+  font-size: 5rem;
+  letter-spacing: 1px;
+}
+h2,
+h3 {
+  margin: 0;
+  padding: 1em 0;
+}
+
+.img {
   width: 100%;
   height: auto;
 }
@@ -37,20 +56,23 @@ body {
   color: #333;
 }
 
+/* Header Showcase */
 #showcase {
-  min-height: 400px;
+  min-height: 450px;
   color: #eee;
 }
 
-#showcase .bg-image {
+.bg-image {
   position: absolute;
-  background: url(vendors/css/img/women_blackwhite_lifting_hipcravo-unsplash.jpg);
+  background: black;
+  background-image: url("vendors/img/women_blackwhite_lifting_hipcravo-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   height: 450px;
-  z-index: -2;
+  z-index: -1;
 }
 
 #showcase h5 {
