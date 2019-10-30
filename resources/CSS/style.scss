@@ -24,41 +24,121 @@ body {
 
 h1 {
   color: white;
-  font-size: 3.125rem;
+  font-size: 3.25rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  line-height: 1;
+}
+@media (min-width: 50em) {
+  h1 {
+    font-size: 4.25rem;
+  }
 }
 
 h2 {
   font-size: 2rem;
+  letter-spacing: 0.15em;
+  color: #606060;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 1em;
 }
+@media (min-width: 50em) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
 h3 {
-  margin: 0;
+  font-size: 3rem;
   padding: 1em 0;
 }
 
-.img {
-  display: block;
-  width: 100%;
-  height: auto;
-  z-index: -2;
+h4 {
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-size: 1rem;
+}
+img {
+  max-width: 100%;
+}
+.btn-login {
+  position: absolute;
+  top: 3em;
+  left: 3em;
+  background: transparent;
+  border: 0;
+  transition: transform ease-in-out 250ms;
+  transition: transform ease-in-out 250ms, -webkit-transform ease-in-out 250ms;
+  cursor: pointer;
+  outline: none;
 }
 
 .intro {
-  padding: 5em 5em;
-}
-
-.intro-items {
+  background-image: url(../img/women_blackwhite_lifting_hipcravo-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   display: flex;
-  flex-wrap: wrap;
-}
-.intro-item {
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: relative;
-  overflow: hidden;
-  flex: 1 1 20rem;
 }
-
-.intro-image {
+.intro h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #223843;
+  line-height: 2;
+  text-align: center;
+}
+@media (min-width: 50em) {
+  .intro h1 {
+    font-size: 3vw;
+  }
+}
+.intro h1 span {
+  font-size: 5.5rem;
+  letter-spacing: 0.15em;
+  color: #03afc2;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 400;
   display: block;
-  width: 100%;
+}
+@media (min-width: 50em) {
+  .intro h1 span {
+    font-size: 10vw;
+  }
+}
+.intro h1::before,
+.welcome h1::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 1px;
+  background: #223843;
+}
+.intro h1::before {
+  margin: 0 auto 2em;
+}
+.intro h1::after {
+  margin: 2em auto 0;
+}
+@supports (display: grid) {
+  .intro {
+    display: grid;
+    grid-template-columns: minmax(4em, 1fr) minmax(auto, 30em) minmax(4em, 1fr);
+  }
 }
 
 figcaption {
@@ -68,22 +148,73 @@ figcaption {
   right: 0;
   left: 0;
   padding: 1em;
-  color: $white;
+  color: white;
   text-align: left;
   display: flex;
   flex-direction: column;
 }
 
-.btn {
-  display: inline-block;
-  background: #ddd;
-  color: $button-etc-color;
+/* ----- LINKS ----- 
+
+a:link,
+a:visited {
+  color: #e67e22;
   text-decoration: none;
-  padding: 1em 2em;
-  border: 1px solid #666;
-  margin: 0.5em 0;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #e67e22;
+  -webkit-transition: border-bottom 0.2s, color 0.2s;
+  transition: border-bottom 0.2s, color 0.2s;
 }
-.btn:hover {
-  background: #eaeaea;
-  color: #333;
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+}*/
+
+/* ----- BUTTONS ----- 
+.btn:link,
+.btn:visited,
+input[type="submit"] {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
+
+.btn-full:link,
+.btn-full:visited,
+input[type="submit"] {
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #e67e22;
+  color: #e67e22;
+}
+
+.btn:hover,
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #cf6d17;
+  color: #fff;
+}
+*/
