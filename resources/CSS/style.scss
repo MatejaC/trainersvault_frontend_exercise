@@ -22,17 +22,6 @@ body {
   overflow-x: hidden;
 }
 
-h2 {
-  font-size: 2rem;
-  letter-spacing: 0.15em;
-  color: #606060;
-  text-transform: uppercase;
-  line-height: 1;
-  font-weight: 400;
-  margin-top: 0;
-  margin-bottom: 1em;
-}
-
 h3 {
   font-size: 3rem;
   padding: 1em 0;
@@ -48,7 +37,7 @@ img {
 
 .intro {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.904)),
-    url(vendors/img/woman_lifting_weigth_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg);
+    url(../vendors/img/woman_lifting_weigth_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -58,9 +47,19 @@ img {
   margin-bottom: 1rem;
 }
 
-.intro h1 {
-  font-size: 1.5rem;
+.intro-middle h1 {
+  font-size: 1.9rem;
+  letter-spacing: 0.15em;
+  color: white;
+  text-transform: uppercase;
+  line-height: 2;
   font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 6rem;
+}
+.intro-middle h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
   color: white;
   line-height: 2;
   text-align: left;
@@ -69,10 +68,12 @@ img {
   margin-right: 0.4rem;
 }
 
-.intro h4 {
+.intro-top-left h4 {
   font-weight: 100;
   text-align: left;
   margin-top: 0;
+  font-size: 0.5rem;
+  text-transform: uppercase;
 }
 
 /* ----- LINKS ----- */
