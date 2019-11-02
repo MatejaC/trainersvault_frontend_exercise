@@ -1,159 +1,157 @@
 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  color: #717171;
-  background: black;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
-  overflow-x: hidden;
+	color: #717171;
+	background: black;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1rem;
+	line-height: 1.6;
+	overflow-x: hidden;
 }
 
 h2 {
-  font-size: 2rem;
-  letter-spacing: 0.15em;
-  color: #606060;
-  text-transform: uppercase;
-  line-height: 1;
-  font-weight: 400;
-  margin-top: 0;
-  margin-bottom: 1em;
+	font-size: 2rem;
+	letter-spacing: 0.15em;
+	line-height: 1;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 1em;
 }
 
 h3 {
-  font-size: 3rem;
-  padding: 1em 0;
+	font-size: 3rem;
+	padding: 1em 0;
 }
 
 h4 {
-  margin-top: 0;
-  font-size: 1rem;
+	margin-top: 0;
+	font-size: 1rem;
 }
 
 img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 .intro {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.904))),
-    url(vendors/img/woman_lifting_weigth_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.904)),
-    url(vendors/img/woman_lifting_weigth_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg);
-  background-size: cover;
-  background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  margin: 0.2rem;
-  margin-bottom: 1rem;
+	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.904))),
+		url(vendors/img/woman_lifting_weigth_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg);
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.904)),
+		url(vendors/img/woman_lifting_weigth_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg);
+	background-size: cover;
+	background-position: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	position: relative;
+	margin: 0.2rem;
+	margin-bottom: 1rem;
 }
 
 .intro h1 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: white;
-  line-height: 2;
-  text-align: left;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  margin-right: 0.4rem;
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: white;
+	line-height: 2;
+	text-align: left;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	margin-right: 0.4rem;
 }
 
 .intro h4 {
-  text-align: left;
-  margin-top: 0;
+	text-align: left;
+	margin-top: 0;
 }
 
 /* ----- LINKS ----- */
 a:link,
 a:visited {
-  color: white;
-  text-decoration: none;
-  text-align: right;
-  padding-top: 5px;
-  padding-bottom: 1px;
-  padding-right: 3px;
-  border-bottom: 1px solid white;
+	color: white;
+	text-decoration: none;
+	text-align: right;
+	padding-top: 5px;
+	padding-bottom: 1px;
+	padding-right: 3px;
+	border-bottom: 1px solid white;
 }
 
 a:hover,
 a:active {
-  color: #f5b70c;
-  border-bottom: 1px solid transparent;
+	color: #f5b70c;
+	border-bottom: 1px solid transparent;
 }
 
 /* ----- BUTTONS ----- */
 .btn-ghost1:link,
 .btn-ghost1:visited {
-  padding: 5px 15px;
-  border: 1px solid #ffbb00;
-  color: #ffbb00;
-  text-align: right;
+	padding: 5px 15px;
+	border: 1px solid #ffbb00;
+	color: #ffbb00;
+	text-align: right;
 }
 
 .btn:link,
 .btn:visited {
-  display: inline-block;
-  font-weight: 100;
-  padding: 5px 15px;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
-  transition: background-color 0.2s, border 0.2s, color 0.2s;
+	display: inline-block;
+	font-weight: 100;
+	padding: 5px 15px;
+	text-decoration: none;
+	-webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
 .btn-ghost2:link,
 .btn-ghost2:visited {
-  padding: 5px 15px;
-  border: 1px solid #ffbb00;
-  color: #ffbb00;
+	padding: 5px 15px;
+	border: 1px solid #ffbb00;
+	color: #ffbb00;
 }
 
 .btn:link,
 .btn:visited {
-  display: inline-block;
-  font-weight: 100;
-  padding: 5px 15px;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
-  transition: background-color 0.2s, border 0.2s, color 0.2s;
+	display: inline-block;
+	font-weight: 100;
+	padding: 5px 15px;
+	text-decoration: none;
+	-webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
 .btn-full:link,
 .btn-full:visited {
-  padding: 5px 15px;
-  background-color: #ffbb00;
-  color: black;
-  margin-right: 15px;
+	padding: 5px 15px;
+	background-color: #ffbb00;
+	color: black;
+	margin-right: 15px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-  border: 1px solid #ffbb00;
-  color: #ffbb00;
+	border: 1px solid #ffbb00;
+	color: #ffbb00;
 }
 
 .btn:hover,
 .btn:active {
-  background-color: #ffbb00;
+	background-color: #ffbb00;
 }
 
 .btn-full:hover,
 .btn-full:active {
-  border: 1px solid #ffbb00;
+	border: 1px solid #ffbb00;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-  border: 1px solid #ffbb00;
-  color: #fff;
+	border: 1px solid #ffbb00;
+	color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
