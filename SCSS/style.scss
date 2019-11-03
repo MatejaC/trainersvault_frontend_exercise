@@ -132,3 +132,24 @@ a:visited {
   padding-right: 3px;
   border-bottom: 1px solid white;
 }
+
+a:hover,
+a:active {
+  color: #f5b70c;
+  border-bottom: 1px solid transparent;
+}
+
+/* ----- BUTTONS ----- */
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 5px 8px;
+  font-weight: 200;
+  text-decoration: none;
+  transition: $backgroundcolor 0.2s, border 0.2s, color 0.2s;
+  -webkit-transition: $backgroundcolor 0.2s, border 0.2s, color 0.2s;
+  -moz-transition: $backgroundcolor 0.2s, border 0.2s, color 0.2s;
+  -ms-transition: $backgroundcolor 0.2s, border 0.2s, color 0.2s;
+  -o-transition: $backgroundcolor 0.2s, border 0.2s, color 0.2s;
+}
