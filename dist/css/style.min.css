@@ -44,9 +44,9 @@ img {
 }
 .intro {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.7))),
-    url(vendors/img/woman_lifting_weigth_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg);
+    url(vendors/img/woman_lifting_weigth_alora-griffiths-mobile.jpg);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
-    url(vendors/img/woman_lifting_weigth_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg);
+    url(vendors/img/woman_lifting_weigth_alora-griffiths-mobile.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
