@@ -74,7 +74,6 @@ a:visited {
   padding-bottom: 1px;
   padding-right: 3px;
   border-bottom: 1px solid white;
-  cursor: pointer;
 }
 
 a:hover,
@@ -90,7 +89,6 @@ a:active {
   font-size: 0.8rem;
   padding: 5px 8px;
   font-weight: 200;
-  cursor: pointer;
   text-decoration: none;
   transition: $backgroundcolor 0.2s, border 0.2s, color 0.2s;
   -webkit-transition: $backgroundcolor 0.2s, border 0.2s, color 0.2s;
@@ -106,7 +104,6 @@ a:active {
   border: 1px solid $accent-button-color;
   color: #fff;
   margin-right: 15px;
-  cursor: pointer;
 }
 
 .btn-ghost:link,
@@ -118,7 +115,6 @@ a:active {
   border: 2px solid $accent-button-color;
   color: $accent-button-color;
   text-align: right;
-  cursor: pointer;
 }
 
 .btn-full:hover,
