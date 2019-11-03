@@ -1,6 +1,6 @@
 $primary-color: black;
 $darkgray-color: #404040;
-$background4-color: #f4f4f4;
+$background4-color: black;
 $accent-button-color: #ffbb00;
 $lightgray: #a4a4a4;
 $verylightgray: #d8d8d8;
@@ -20,6 +20,7 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .clearfix {
@@ -55,14 +56,21 @@ img {
   max-width: 100%;
 }
 
-.section intro {
+.intro {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
-    url(../vendors/img/woman_lifting_weigth_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg);
+    url(vendors/img/woman_lifting_weigth_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg);
   background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #464646;
+  @media only screen and (max-width: 767px) {
+    body {
+      /* The file size of this background image is 93% smaller
+       to improve page load speed on mobile internet connections */
+      background-image: url(vendors/img/woman_lifting_weigth_alora-griffiths-mobile.jpg);
+    }
+  }
 }
 
 .intro-middle h1 {
@@ -75,6 +83,7 @@ img {
   margin-top: 0;
   margin-bottom: 6rem;
 }
+
 .intro-middle h2 {
   font-size: 1.4rem;
   font-weight: 400;
@@ -93,10 +102,12 @@ img {
   font-size: 0.5rem;
   text-transform: uppercase;
 }
+
 .intro-top-right {
   text-align: right;
   margin-top: 0;
 }
+
 /* ----- LINKS ----- */
 
 a:link,
@@ -118,8 +129,26 @@ a:active {
 }
 
 /* ----- BUTTONS ----- */
-.btn-ghost1:link,
-.btn-ghost1:visited {
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: $accent-button-color;
+  border: 1px solid $accent-button-color;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
   font-weight: 200;
   padding: 5px 15px;
   border: 1px solid $accent-button-color;
@@ -127,64 +156,18 @@ a:active {
   text-align: right;
 }
 
-.btn:link,
-.btn:visited {
-  font-weight: 200;
-  display: inline-block;
-  font-weight: 200;
-  padding: 5px 15px;
-  text-decoration: none;
-  transition: &primarycolor 0.2s, border 0.2s, color 0.2s;
-  -webkit-transition: &primarycolor 0.2s, border 0.2s, color 0.2s;
-  -moz-transition: &primarycolor 0.2s, border 0.2s, color 0.2s;
-  -ms-transition: &primarycolor 0.2s, border 0.2s, color 0.2s;
-  -o-transition: &primarycolor 0.2s, border 0.2s, color 0.2s;
-}
-.btn-ghost2:link,
-.btn-ghost2:visited {
-  font-weight: 200;
-  padding: 5px 15px;
-  border: 1px solid $accent-button-color;
-  color: $accent-button-color;
-}
-
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  font-weight: 200;
-  padding: 5px 15px;
-  text-decoration: none;
-  transition: background-color 0.2s, border 0.2s, color 0.2s;
-}
-
-.btn-full:link,
-.btn-full:visited {
-  padding: 5px 15px;
-  background-color: $accent-button-color;
-  color: black;
-  margin-right: 15px;
-}
-
-.btn-ghost:link,
-.btn-ghost:visited {
-  border: 1px solid $accent-button-color;
-  color: $accent-button-color;
-}
-
 .btn:hover,
 .btn:active {
-  font-weight: 200;
-  background-color: $accent-button-color;
+  background-color: $background4-color;
 }
 
 .btn-full:hover,
 .btn-full:active {
-  font-weight: 200;
   border: 1px solid $accent-button-color;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
   border: 1px solid $accent-button-color;
-  color: &primarycolor;
+  color: $primary-color;
 }

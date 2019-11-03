@@ -6,9 +6,9 @@
       "savePath": "/css"
     },
   {
-   "extensionName": ".min.css",
+   "extensionName": ".css",
    "format": "compressed",
-   "savePath": "/dist/css"
+   "savePath": "/css"
   }
  ],
  "liveSassCompile.settings.excludeList": [
