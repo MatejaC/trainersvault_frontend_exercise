@@ -1,27 +1,18 @@
-$primary-color: black;
-$darkgray-color: #404040;
-$background4-color: black;
-$accent-button-color: #ffbb00;
-$lightgray: #a4a4a4;
-$verylightgray: #d8d8d8;
-$mediumgray: #717171;
-$smudgywhite: #ebebeb;
-
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 body {
-  color: $mediumgray;
-  background: $primary-color;
+  color: #717171;
+  background: #000;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
-
 .clearfix {
   zoom: 1;
 }
@@ -32,11 +23,9 @@ body {
   height: 0;
   visibility: hidden;
 }
-
 section {
   padding: 80px 0;
 }
-
 h2 {
   font-size: 1.5rem;
   letter-spacing: 0.15em;
@@ -46,7 +35,6 @@ h2 {
 h3 {
   font-size: 1.8rem;
 }
-
 h4 {
   margin-top: 0;
   font-size: 1rem;
@@ -54,32 +42,22 @@ h4 {
 img {
   max-width: 100%;
 }
-
 .intro {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)),
-    url(../vendors/img/woman_lifting_weigth_alora-griffiths-mobile.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.7))),
+    url(vendors/img/woman_lifting_weigth_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url(vendors/img/woman_lifting_weigth_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: black;
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 700px;
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-  /* Set up positioning */
-  top: 0;
-  left: 0;
-  @media only screen and (max-width: 767px) {
-    .intro {
-      /* The file size of this background image is 93% smaller
-       to improve page load speed on mobile internet connections */
-      background-image: url(vendors/img/woman_lifting_weigth_alora-griffiths-mobile.jpg);
-    }
+  background-attachment: fixed;
+  background-color: #464646;
+}
+@media only screen and (max-width: 767px) {
+  .intro {
+    background-image: url(vendors/img/woman_lifting_weigth_alora-griffiths-mobile.jpg);
   }
 }
-
 .intro-middle h1 {
   font-size: 1.9rem;
   letter-spacing: 0.15em;
@@ -90,7 +68,6 @@ img {
   margin-top: 0;
   margin-bottom: 6rem;
 }
-
 .intro-middle h2 {
   font-size: 1.4rem;
   font-weight: 400;
@@ -101,7 +78,6 @@ img {
   margin-bottom: 4rem;
   margin-right: 0.4rem;
 }
-
 .intro-top-left h4 {
   font-weight: 100;
   text-align: left;
@@ -109,14 +85,10 @@ img {
   font-size: 0.5rem;
   text-transform: uppercase;
 }
-
 .intro-top-right {
   text-align: right;
   margin-top: 0;
 }
-
-/* ----- LINKS ----- */
-
 a:link,
 a:visited {
   font-weight: 200;
@@ -128,14 +100,11 @@ a:visited {
   padding-right: 3px;
   border-bottom: 1px solid white;
 }
-
 a:hover,
 a:active {
   color: #f5b70c;
   border-bottom: 1px solid transparent;
 }
-
-/* ----- BUTTONS ----- */
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -143,43 +112,40 @@ a:active {
   font-weight: 300;
   text-decoration: none;
   border-radius: 200px;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
-
 .btn-full:link,
 .btn-full:visited {
-  background-color: $accent-button-color;
-  border: 1px solid $accent-button-color;
+  background-color: #fb0;
+  border: 1px solid #fb0;
   color: #fff;
   margin-right: 15px;
 }
-
 .btn-ghost:link,
 .btn-ghost:visited {
   font-weight: 200;
   padding: 5px 15px;
-  border: 1px solid $accent-button-color;
-  color: $accent-button-color;
+  border: 1px solid #fb0;
+  color: #fb0;
   text-align: right;
 }
-
 .btn:hover,
 .btn:active {
-  background-color: $background4-color;
+  background-color: #000;
 }
-
 .btn-full:hover,
 .btn-full:active {
-  border: 1px solid $accent-button-color;
+  border: 1px solid #fb0;
 }
-
 .btn-ghost:hover,
 .btn-ghost:active {
-  border: 1px solid $accent-button-color;
-  color: $primary-color;
+  border: 1px solid #fb0;
+  color: #000;
 }
-
-/* .pick {
+.features {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.7))),
+    url(../vendors/img/GYM_humphrey-muleba-LOA2mTj1vhc-unsplash.jpg);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
     url(../vendors/img/GYM_humphrey-muleba-LOA2mTj1vhc-unsplash.jpg);
   background-size: cover;
@@ -187,21 +153,17 @@ a:active {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #464646;
-  /* Set rules to fill background 
   min-height: 100%;
-  min-width: 1024px;*/
-/* Set up proportionate scaling 
+  min-width: 1024px;
   width: 100%;
-  height: auto;*/
-/* Set up positioning 
+  height: auto;
   position: fixed;
   top: 0;
   left: 0;
-  @media only screen and (max-width: 767px) {
-    .pick {
-      /* The file size of this background image is 93% smaller
-       to improve page load speed on mobile internet connections 
-      background-image: url(../vendors/img/GYM_humphrey-muleba-LOA2mTj1vhc-unsplash.jpg);
-    }
+}
+@media only screen and (max-width: 767px) {
+  .features {
+    background-image: url(../vendors/img/GYM_humphrey-muleba-LOA2mTj1vhc-unsplash.jpg);
   }
-}*/
+}
+/*# sourceMappingURL=style.min.css.map */
