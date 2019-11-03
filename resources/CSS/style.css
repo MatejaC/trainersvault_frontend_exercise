@@ -1,5 +1,4 @@
 * {
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -7,25 +6,38 @@
 
 body {
 	color: #717171;
-	background: black;
+	background: #000;
 	font-family: "Montserrat", sans-serif;
 	font-size: 1rem;
 	line-height: 1.6;
 	overflow-x: hidden;
 }
 
+.clearfix {
+	zoom: 1;
+}
+
+.clearfix:after {
+	content: ".";
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.section {
+	padding: 80px 0;
+}
+
 h2 {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	letter-spacing: 0.15em;
 	line-height: 1;
 	font-weight: 400;
-	margin-top: 0;
-	margin-bottom: 1em;
 }
 
 h3 {
-	font-size: 3rem;
-	padding: 1em 0;
+	font-size: 1.8rem;
 }
 
 h4 {
@@ -37,27 +49,29 @@ img {
 	max-width: 100%;
 }
 
-.intro {
-	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.904))),
-		url(vendors/img/woman_lifting_weigth_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg);
-	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.904)),
-		url(vendors/img/woman_lifting_weigth_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg);
+.section intro {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+		url(../img/woman_lifting_weigth_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg);
 	background-size: cover;
 	background-position: center;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
 	position: relative;
-	margin: 0.2rem;
-	margin-bottom: 1rem;
 }
 
-.intro h1 {
-	font-size: 1.5rem;
+.intro-middle h1 {
+	font-size: 1.9rem;
+	letter-spacing: 0.15em;
+	color: white;
+	text-transform: uppercase;
+	line-height: 2;
 	font-weight: 500;
+	margin-top: 0;
+	margin-bottom: 6rem;
+}
+.intro-middle h2 {
+	font-size: 1.4rem;
+	font-weight: 400;
 	color: white;
 	line-height: 2;
 	text-align: left;
@@ -66,14 +80,22 @@ img {
 	margin-right: 0.4rem;
 }
 
-.intro h4 {
+.intro-top-left h4 {
+	font-weight: 100;
 	text-align: left;
+	margin-top: 0;
+	font-size: 0.5rem;
+	text-transform: uppercase;
+}
+
+.intro-top-right {
+	text-align: right;
 	margin-top: 0;
 }
 
-/* ----- LINKS ----- */
 a:link,
 a:visited {
+	font-weight: 200;
 	color: white;
 	text-decoration: none;
 	text-align: right;
@@ -89,69 +111,78 @@ a:active {
 	border-bottom: 1px solid transparent;
 }
 
-/* ----- BUTTONS ----- */
 .btn-ghost1:link,
 .btn-ghost1:visited {
+	font-weight: 200;
 	padding: 5px 15px;
-	border: 1px solid #ffbb00;
-	color: #ffbb00;
+	border: 1px solid #fb0;
+	color: #fb0;
 	text-align: right;
 }
 
 .btn:link,
 .btn:visited {
+	font-weight: 200;
 	display: inline-block;
-	font-weight: 100;
+	font-weight: 200;
 	padding: 5px 15px;
 	text-decoration: none;
-	-webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
-	transition: background-color 0.2s, border 0.2s, color 0.2s;
+	transition: primarycolor 0.2s, border 0.2s, color 0.2s;
+	-webkit-transition: primarycolor 0.2s, border 0.2s, color 0.2s;
+	-moz-transition: primarycolor 0.2s, border 0.2s, color 0.2s;
+	-ms-transition: primarycolor 0.2s, border 0.2s, color 0.2s;
+	-o-transition: primarycolor 0.2s, border 0.2s, color 0.2s;
 }
 
 .btn-ghost2:link,
 .btn-ghost2:visited {
+	font-weight: 200;
 	padding: 5px 15px;
-	border: 1px solid #ffbb00;
-	color: #ffbb00;
+	border: 1px solid #fb0;
+	color: #fb0;
 }
 
 .btn:link,
 .btn:visited {
 	display: inline-block;
-	font-weight: 100;
+	font-weight: 200;
 	padding: 5px 15px;
 	text-decoration: none;
-	-webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
 	transition: background-color 0.2s, border 0.2s, color 0.2s;
+	-webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+	-moz-transition: background-color 0.2s, border 0.2s, color 0.2s;
+	-ms-transition: background-color 0.2s, border 0.2s, color 0.2s;
+	-o-transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
 .btn-full:link,
 .btn-full:visited {
 	padding: 5px 15px;
-	background-color: #ffbb00;
+	background-color: #fb0;
 	color: black;
 	margin-right: 15px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-	border: 1px solid #ffbb00;
-	color: #ffbb00;
+	border: 1px solid #fb0;
+	color: #fb0;
 }
 
 .btn:hover,
 .btn:active {
-	background-color: #ffbb00;
+	font-weight: 200;
+	background-color: #fb0;
 }
 
 .btn-full:hover,
 .btn-full:active {
-	border: 1px solid #ffbb00;
+	font-weight: 200;
+	border: 1px solid #fb0;
 }
-
 .btn-ghost:hover,
 .btn-ghost:active {
-	border: 1px solid #ffbb00;
-	color: #fff;
+	border: 1px solid #fb0;
+	color: black;
 }
 /*# sourceMappingURL=style.css.map */
