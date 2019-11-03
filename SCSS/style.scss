@@ -115,6 +115,7 @@ img {
 .intro-top-right {
   text-align: right;
   margin-top: 0;
+  font-size: 0.8rem;
 }
 
 /* ----- LINKS ----- */
@@ -124,11 +125,13 @@ a:visited {
   font-weight: 200;
   color: white;
   text-decoration: none;
+  text-transform: uppercase;
   text-align: right;
   padding-top: 5px;
   padding-bottom: 1px;
   padding-right: 3px;
   border-bottom: 1px solid white;
+  cursor: pointer;
 }
 
 a:hover,
@@ -141,44 +144,49 @@ a:active {
 .btn:link,
 .btn:visited {
   display: inline-block;
-  padding: 10px 30px;
-  font-weight: 300;
+  font-size: 0.8rem;
+  padding: 5px 8px;
+  font-weight: 200;
+  cursor: pointer;
   text-decoration: none;
-  border-radius: 200px;
-  transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: $backgroundcolor 0.2s, border 0.2s, color 0.2s;
+  -webkit-transition: $backgroundcolor 0.2s, border 0.2s, color 0.2s;
+  -moz-transition: $backgroundcolor 0.2s, border 0.2s, color 0.2s;
+  -ms-transition: $backgroundcolor 0.2s, border 0.2s, color 0.2s;
+  -o-transition: $backgroundcolor 0.2s, border 0.2s, color 0.2s;
 }
 
 .btn-full:link,
 .btn-full:visited {
+  font-size: 0.8rem;
   background-color: $accent-button-color;
   border: 1px solid $accent-button-color;
   color: #fff;
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-  font-weight: 200;
-  padding: 5px 15px;
-  border: 1px solid $accent-button-color;
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 5px 8px;
+  margin: 1px 1px;
+  border: 2px solid $accent-button-color;
   color: $accent-button-color;
   text-align: right;
-}
-
-.btn:hover,
-.btn:active {
-  background-color: $background4-color;
+  cursor: pointer;
 }
 
 .btn-full:hover,
 .btn-full:active {
-  border: 1px solid $accent-button-color;
+  border: 1px solid #ebac00e7;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-  border: 1px solid $accent-button-color;
-  color: $primary-color;
+  border: 1px solid #ebac00e7;
+  color: white;
 }
 
 /* .pick {
