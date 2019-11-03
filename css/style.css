@@ -1,20 +1,23 @@
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
   color: #717171;
-  background: #000;
+  background: black;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   overflow-x: hidden;
 }
+
 .clearfix {
   zoom: 1;
 }
+
 .clearfix:after {
   content: ".";
   clear: both;
@@ -22,55 +25,55 @@ body {
   height: 0;
   visibility: hidden;
 }
+
 section {
   padding: 80px 0;
 }
+
 h2 {
   font-size: 1.5rem;
   letter-spacing: 0.15em;
   line-height: 1;
   font-weight: 400;
 }
+
 h3 {
   font-size: 1rem;
 }
+
 h4 {
   margin-top: 0.8;
   font-size: 1rem;
 }
+
 img {
   max-width: 100%;
 }
 .intro {
-  background-image: -webkit-gradient(linear, left top, right top, from(#000), to(rgba(0, 0, 0, 0.2))),
-    url(../vendors/img/woman_lifting_weigth_alora-griffiths-mobile.jpg);
-  background-image: linear-gradient(to right, #000, rgba(0, 0, 0, 0.2)),
-    url(../vendors/img/woman_lifting_weigth_alora-griffiths-mobile.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.7))),
+    url(vendors/img/woman_lifting_weigth_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url(vendors/img/woman_lifting_weigth_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: black;
-  min-height: 100%;
-  min-width: 700px;
-  width: 100%;
-  height: auto;
-  top: 0;
-  left: 0;
+  background-attachment: fixed;
+  background-color: #464646;
 }
 @media only screen and (max-width: 767px) {
-  .intro .intro {
+  .intro {
     background-image: url(vendors/img/woman_lifting_weigth_alora-griffiths-mobile.jpg);
   }
 }
 .intro-middle h1 {
-  font-size: 2rem;
+  font-size: 1.9rem;
   letter-spacing: 0.15em;
   color: white;
   text-transform: uppercase;
   line-height: 2;
   font-weight: 500;
   margin-top: 0;
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
 }
 .intro-middle h2 {
   font-size: 1.4rem;
@@ -82,26 +85,22 @@ img {
   margin-bottom: 4rem;
   margin-right: 0.4rem;
 }
-.intro-top-left h3 {
+.intro-top-left h4 {
   font-weight: 100;
   text-align: left;
   margin-top: 0;
-  font-size: 1rem;
-}
-.intro-top-left h3 span {
-  font-size: 0.8rem;
+  font-size: 0.5rem;
+  text-transform: uppercase;
 }
 .intro-top-right {
   text-align: right;
   margin-top: 0;
-  font-size: 0.8rem;
 }
 a:link,
 a:visited {
   font-weight: 200;
   color: white;
   text-decoration: none;
-  text-transform: uppercase;
   text-align: right;
   padding-top: 5px;
   padding-bottom: 1px;
@@ -116,8 +115,8 @@ a:active {
 .btn:link,
 .btn:visited {
   display: inline-block;
-  padding: 5px 8px;
-  font-weight: 200;
+  padding: 10px 30px;
+  font-weight: 300;
   text-decoration: none;
   border-radius: 200px;
   -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
@@ -151,50 +150,6 @@ a:active {
   border: 1px solid #fb0;
   color: #000;
 }
-/*---- BUTTONS ----- */
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  padding: 5px 8px;
-  font-weight: 200;
-  text-decoration: none;
-  border-radius: 200px;
-  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
-  transition: background-color 0.2s, border 0.2s, color 0.2s;
-}
-
-.btn-full:link,
-.btn-full:visited {
-  background-color: #ffbb00;
-  border: 1px solid #ffbb00;
-  color: #fff;
-  margin-right: 15px;
-}
-
-.btn-ghost:link,
-.btn-ghost:visited {
-  font-weight: 200;
-  padding: 5px 15px;
-  border: 1px solid #ffbb00;
-  color: #ffbb00;
-  text-align: right;
-}
-
-.btn:hover,
-.btn:active {
-  background-color: black;
-}
-
-.btn-full:hover,
-.btn-full:active {
-  border: 1px solid #ffbb00;
-}
-
-.btn-ghost:hover,
-.btn-ghost:active {
-  border: 1px solid #ffbb00;
-  color: black;
-}
 
 /* .pick {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
@@ -222,3 +177,4 @@ a:active {
     }
   }
 }*/
+/*# sourceMappingURL=style.css.map */
