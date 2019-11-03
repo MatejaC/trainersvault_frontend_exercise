@@ -57,7 +57,7 @@ img {
 
 .intro {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)),
-    url(vendors/img/woman_lifting_weigth_alora-griffiths-mobile.jpg);
+    url(../vendors/img/woman_lifting_weigth_alora-griffiths-mobile.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -75,7 +75,7 @@ img {
     .intro {
       /* The file size of this background image is 93% smaller
        to improve page load speed on mobile internet connections */
-      background-image: url(vendors/img/woman_lifting_weigth_alora-griffiths-mobile.jpg);
+      background-image: url(../vendors/img/woman_lifting_weigth_alora-griffiths-mobile.jpg);
     }
   }
 }
@@ -132,82 +132,3 @@ a:visited {
   padding-right: 3px;
   border-bottom: 1px solid white;
 }
-
-a:hover,
-a:active {
-  color: #f5b70c;
-  border-bottom: 1px solid transparent;
-}
-
-/* ----- BUTTONS ----- */
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  font-size: 0.8rem;
-  padding: 5px 8px;
-  font-weight: 200;
-  text-decoration: none;
-  transition: $backgroundcolor 0.2s, border 0.2s, color 0.2s;
-  -webkit-transition: $backgroundcolor 0.2s, border 0.2s, color 0.2s;
-  -moz-transition: $backgroundcolor 0.2s, border 0.2s, color 0.2s;
-  -ms-transition: $backgroundcolor 0.2s, border 0.2s, color 0.2s;
-  -o-transition: $backgroundcolor 0.2s, border 0.2s, color 0.2s;
-}
-
-.btn-full:link,
-.btn-full:visited {
-  font-size: 0.8rem;
-  background-color: $accent-button-color;
-  border: 1px solid $accent-button-color;
-  color: #fff;
-  margin-right: 15px;
-}
-
-.btn-ghost:link,
-.btn-ghost:visited {
-  font-size: 0.8rem;
-  font-weight: 400;
-  padding: 5px 8px;
-  margin: 1px 1px;
-  border: 2px solid $accent-button-color;
-  color: $accent-button-color;
-  text-align: right;
-}
-
-.btn-full:hover,
-.btn-full:active {
-  border: 1px solid #ebac00e7;
-}
-
-.btn-ghost:hover,
-.btn-ghost:active {
-  border: 1px solid #ebac00e7;
-  color: white;
-}
-
-/* .pick {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
-    url(../vendors/img/GYM_humphrey-muleba-LOA2mTj1vhc-unsplash.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-color: #464646;
-  /* Set rules to fill background 
-  min-height: 100%;
-  min-width: 1024px;*/
-/* Set up proportionate scaling 
-  width: 100%;
-  height: auto;*/
-/* Set up positioning 
-  position: fixed;
-  top: 0;
-  left: 0;
-  @media only screen and (max-width: 767px) {
-    .pick {
-      /* The file size of this background image is 93% smaller
-       to improve page load speed on mobile internet connections 
-      background-image: url(../vendors/img/GYM_humphrey-muleba-LOA2mTj1vhc-unsplash.jpg);
-    }
-  }
-}*/
