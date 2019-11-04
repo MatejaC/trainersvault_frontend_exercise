@@ -119,20 +119,31 @@ img {
   font-size: 1rem;
   a:link,
   a:visited {
-    font-weight: 200;
+    font-weight: 400;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
     text-align: right;
-    padding-top: 0.3rem;
+    margin-top: 0;
     padding-bottom: 0.3rem;
-    padding-right: 3px;
-    border-bottom: 1px solid white;
+    margin-right: 0.3rem;
+    border-bottom: 1.5px solid white;
   }
   a:hover,
   a:active {
     color: #f5b70c;
-    border-bottom: 1px solid transparent;
+    border-bottom: 1.5px solid transparent;
+  }
+  .btn-ghost:link,
+  .btn-ghost:visited {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px 10px;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    border: 2px solid $accent-button-color;
+    color: $accent-button-color;
+    text-align: center;
   }
 }
 
