@@ -81,7 +81,7 @@ img {
 }
 
 .intro-middle h1 {
-  line-height: 1.5;
+  line-height: 80%;
   font-size: 4rem;
   letter-spacing: 0.15rem;
   color: white;
@@ -96,8 +96,9 @@ img {
   font-weight: 400;
   margin-left: 2rem;
   color: white;
-  line-height: 2;
+  line-height: 1.6;
   text-align: left;
+  margin-top: 0.6rem;
   margin-right: 0.4rem;
   margin-bottom: 0.4rem;
 }
@@ -106,7 +107,7 @@ img {
   font-weight: 100;
   text-align: left;
   margin-top: 0.2rem;
-  margin-left: 0.2rem;
+  margin-right: 0.4rem;
   font-size: 1rem;
 }
 
@@ -154,16 +155,16 @@ img {
   .btn-ghost:link,
   .btn-ghost:visited {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
     padding: 5px 8px;
-    margin: 2rem 1.2rem;
+    margin: 1.8rem 1.4rem;
     border: 2px solid $accent-button-color;
     color: $accent-button-color;
     text-align: center;
   }
   .btn-ghost:hover,
   .btn-ghost:active {
-    font-weight: 400;
+    font-weight: 500;
     background-color: #ebac00e7;
     border: 2px solid $accent-button-color;
     color: white;
@@ -174,13 +175,16 @@ img {
     font-size: 1rem;
     font-weight: 500;
     padding: 5px 8px;
-    margin: 2rem 1rem;
+    margin: 1.8rem 1rem;
     background-color: $accent-button-color;
+    border: 2px solid $accent-button-color;
     color: black;
   }
   .btn-full:hover,
   .btn-full:active {
-    background-color: #fff;
+    border: 2px solid #ebac00e7;
+    background-color: #ebac00e7;
+    color: white;
     font-weight: 500;
   }
 }
