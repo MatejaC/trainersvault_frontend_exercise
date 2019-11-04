@@ -123,12 +123,12 @@ img {
     text-align: right;
     margin-top: 0;
     padding-bottom: 0.35rem;
-    margin-right: 0.3rem;
+    margin-right: 0.7rem;
     border-bottom: 1.5px solid white;
   }
   a:hover,
   a:active {
-    color: #f5b70c;
+    color: $accent-button-color;
     border-bottom: 1.5px solid transparent;
   }
   .btn-ghost:link,
@@ -142,15 +142,21 @@ img {
     color: $accent-button-color;
     text-align: center;
   }
+  .btn-ghost:hover,
+  .btn-ghost:active {
+    font-weight: 500;
+    border: 2px solid $accent-button-color;
+    color: white;
+  }
 }
 
 .intro-bottom {
   .btn-ghost:link,
   .btn-ghost:visited {
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 400;
     padding: 5px 8px;
-    margin: 2rem 2rem;
+    margin: 2rem 1.2rem;
     border: 2px solid $accent-button-color;
     color: $accent-button-color;
     text-align: center;
@@ -162,7 +168,23 @@ img {
     border: 2px solid $accent-button-color;
     color: white;
   }
+
+  .btn-full:link,
+  .btn-full:visited {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5px 8px;
+    margin: 2rem 1rem;
+    background-color: $accent-button-color;
+    color: black;
+  }
+  .btn-full:hover,
+  .btn-full:active {
+    background-color: #fff;
+    font-weight: 500;
+  }
 }
+
 /* ----- LINKS ----- */
 
 a:link,
