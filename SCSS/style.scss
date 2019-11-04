@@ -1,6 +1,6 @@
 $primary-color: black;
 $darkgray-color: #404040;
-$background4-color: black;
+$background-color: black;
 $accent-button-color: #ffbb00;
 $lightgray: #a4a4a4;
 $verylightgray: #d8d8d8;
@@ -147,9 +147,39 @@ a:active {
   padding: 5px 8px;
   font-weight: 200;
   text-decoration: none;
-  transition: $backgroundcolor 0.2s, border 0.2s, color 0.2s;
-  -webkit-transition: $backgroundcolor 0.2s, border 0.2s, color 0.2s;
-  -moz-transition: $backgroundcolor 0.2s, border 0.2s, color 0.2s;
-  -ms-transition: $backgroundcolor 0.2s, border 0.2s, color 0.2s;
-  -o-transition: $backgroundcolor 0.2s, border 0.2s, color 0.2s;
+  transition: $background-color 0.2s, border 0.2s, color 0.2s;
+  -webkit-transition: $background-color 0.2s, border 0.2s, color 0.2s;
+  -moz-transition: $background-color 0.2s, border 0.2s, color 0.2s;
+  -ms-transition: $background-color 0.2s, border 0.2s, color 0.2s;
+  -o-transition: $background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  font-size: 0.8rem;
+  background-color: $accent-button-color;
+  border: 1px solid $accent-button-color;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 5px 8px;
+  margin: 1px 1px;
+  border: 2px solid $accent-button-color;
+  color: $accent-button-color;
+  text-align: right;
+}
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #ebac00e7;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #ebac00e7;
+  color: white;
 }
