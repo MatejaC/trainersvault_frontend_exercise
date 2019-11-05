@@ -87,8 +87,8 @@ img {
   color: white;
   text-transform: uppercase;
   font-weight: 500;
-  margin-top: 0;
-  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
 }
 
 .intro-middle h2 {
@@ -98,20 +98,19 @@ img {
   color: white;
   line-height: 1.6;
   text-align: left;
-  margin-top: 0.4rem;
+  margin-top: 0.5rem;
   margin-bottom: 0.4rem;
 }
 
-.intro-top {
-  h3 {
-    font-size: 0.6rem;
-    font-weight: 100;
-    text-align: left;
-    margin-top: 0.2rem;
-    margin-left: 0.5rem;
-  }
-  .login {
-    text-align: right;
+.intro-top h3 {
+  font-size: 0.6rem;
+  color: $accent-button-color;
+  font-weight: 200;
+  text-align: left;
+  margin-top: 0.2rem;
+  margin-left: 2rem;
+
+  a.login {
     margin-top: 0;
     font-size: 0.7rem;
     a:link,
@@ -120,9 +119,9 @@ img {
       color: white;
       text-decoration: none;
       text-transform: uppercase;
-      text-align: right;
       margin-top: 0;
       padding-bottom: 0.35rem;
+      padding-left: 20px;
       border-bottom: 1.5px solid white;
     }
     a:hover,
@@ -197,9 +196,6 @@ a:visited {
   text-decoration: none;
   text-transform: uppercase;
   text-align: right;
-  padding-top: 0.3rem;
-  padding-bottom: 1px;
-  padding-right: 3px;
   border-bottom: 1px solid white;
 }
 
