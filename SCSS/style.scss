@@ -102,34 +102,32 @@ img {
   margin-bottom: 0.4rem;
 }
 
-.intro-top h3 {
-  font-size: 0.6rem;
-  color: $accent-button-color;
-  font-weight: 200;
-  text-align: left;
-  margin-top: 0.2rem;
+.intro-top {
   margin-left: 2rem;
-
-  a.login {
-    margin-top: 0;
-    font-size: 0.7rem;
-    a:link,
-    a:visited {
-      font-weight: 400;
-      color: white;
-      text-decoration: none;
-      text-transform: uppercase;
-      margin-top: 0;
-      padding-bottom: 0.35rem;
-      padding-left: 20px;
-      border-bottom: 1.5px solid white;
-    }
-    a:hover,
-    a:active {
-      color: $accent-button-color;
-      border-bottom: 1.5px solid transparent;
-    }
+  p {
+    color: $accent-button-color;
+    font-size: 0.6rem;
+    font-weight: 200;
+    margin-top: 0.2rem;
   }
+  a:link,
+  a:visited {
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-bottom: 0.35rem;
+    padding-left: 50px;
+    border-bottom: 1.5px solid white;
+  }
+  a:hover,
+  a:active {
+    color: $accent-button-color;
+    border-bottom: 1.5px solid transparent;
+  }
+}
+.trainer {
   .btn-ghost:link,
   .btn-ghost:visited {
     font-size: 1rem;
