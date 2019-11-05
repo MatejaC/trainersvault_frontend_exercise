@@ -8,232 +8,231 @@ $mediumgray: #717171;
 $smudgywhite: #ebebeb;
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  color: $mediumgray;
-  background: $primary-color;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
-  overflow-x: hidden;
+	color: $mediumgray;
+	background: $primary-color;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1rem;
+	line-height: 1.6;
+	overflow-x: hidden;
 }
 
 .clearfix {
-  zoom: 1;
+	zoom: 1;
 }
 .clearfix:after {
-  content: ".";
-  clear: both;
-  display: block;
-  height: 0;
-  visibility: hidden;
+	content: ".";
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
 }
 
 section {
-  padding: 80px 0;
+	padding: 80px 0;
 }
 
 h2 {
-  font-size: 1.5rem;
-  letter-spacing: 0.15em;
-  line-height: 1;
-  font-weight: 400;
+	font-size: 1.5rem;
+	letter-spacing: 0.15em;
+	line-height: 1;
+	font-weight: 400;
 }
 h3 {
-  font-size: 0.7rem;
+	font-size: 0.7rem;
 }
 
 h4 {
-  font-size: 0.5rem;
+	font-size: 0.5rem;
 }
 img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 .intro {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)),
-    url(../vendors/img/woman_lifting_weigth_alora-griffiths-mobile.jpg);
-  background-size: cover;
-  background-position: center center center center;
-  background-repeat: no-repeat;
-  background-color: black;
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 700px;
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-  /* Set up positioning */
-  top: 0;
-  left: 0;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)),
+		url(../vendors/img/woman_lifting_weigth_alora-griffiths-mobile.jpg);
+	background-size: cover;
+	background-position: center center center center;
+	background-repeat: no-repeat;
+	background-color: black;
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 700px;
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+	/* Set up positioning */
+	top: 0;
+	left: 0;
 
-  @media only screen and (max-width: 767px) {
-    .intro {
-      /* The file size of this background image is 93% smaller
+	@media only screen and (max-width: 767px) {
+		.intro {
+			/* The file size of this background image is 93% smaller
        to improve page load speed on mobile internet connections */
-      background-image: url(../vendors/img/woman_lifting_weigth_alora-griffiths-mobile.jpg);
-    }
-  }
+			background-image: url(../vendors/img/woman_lifting_weigth_alora-griffiths-mobile.jpg);
+		}
+	}
 }
 
 .intro-middle h1 {
-  line-height: 90%;
-  font-size: 4rem;
-  letter-spacing: 0.15rem;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin-top: 1.5rem;
-  margin-left: 2rem;
+	line-height: 90%;
+	font-size: 4rem;
+	letter-spacing: 0.15rem;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-top: 1.5rem;
+	margin-left: 2rem;
 }
 
 .intro-middle h2 {
-  font-size: 1rem;
-  font-weight: 400;
-  margin-left: 1.5rem;
-  color: white;
-  line-height: 1.6;
-  text-align: left;
-  margin-top: 0.5rem;
-  margin-bottom: 0.4rem;
+	font-size: 1rem;
+	font-weight: 400;
+	margin-left: 1.5rem;
+	color: white;
+	line-height: 1.6;
+	text-align: left;
+	margin-top: 0.5rem;
+	margin-bottom: 0.4rem;
 }
 .intro-top-left h3 {
-  font-weight: 100;
-  text-align: left;
-  margin-top: 0;
-  font-size: 1rem;
-  span {
-    font-size: 0.8rem;
-  }
+	font-weight: 100;
+	text-align: left;
+	margin-top: 0;
+	font-size: 1rem;
+	span {
+		font-size: 0.8rem;
+	}
 }
 .intro-top-right {
-  text-align: right;
-  margin-top: 0;
-  font-size: 0.8rem;
+	text-align: right;
+	margin-top: 0;
+	font-size: 0.8rem;
 }
 a:link,
 a:visited {
-  font-weight: 400;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-top: 0;
-  padding-bottom: 0.35rem;
-  padding-left: 50px;
-  border-bottom: 1.5px solid white;
+	font-weight: 400;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-top: 0;
+	padding-bottom: 0.35rem;
+	border-bottom: 1.5px solid white;
 }
 a:hover,
 a:active {
-  color: $accent-button-color;
-  border-bottom: 1.5px solid transparent;
+	color: $accent-button-color;
+	border-bottom: 1.5px solid transparent;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-  font-weight: 500;
-  border: 2px solid $accent-button-color;
-  color: white;
+	font-weight: 500;
+	border: 2px solid $accent-button-color;
+	color: white;
 }
 
 .intro-bottom {
-  .btn-ghost:link,
-  .btn-ghost:visited {
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 5px 8px;
-    margin: 1.8rem 0 1.8rem 2rem;
-    border: 2px solid $accent-button-color;
-    color: $accent-button-color;
-    text-align: center;
-  }
-  .btn-ghost:hover,
-  .btn-ghost:active {
-    font-weight: 500;
-    background-color: #ebac00e7;
-    border: 2px solid $accent-button-color;
-    color: white;
-  }
+	.btn-ghost:link,
+	.btn-ghost:visited {
+		font-size: 1rem;
+		font-weight: 500;
+		padding: 5px 8px;
+		margin: 1.8rem 0 1.8rem 2rem;
+		border: 2px solid $accent-button-color;
+		color: $accent-button-color;
+		text-align: center;
+	}
+	.btn-ghost:hover,
+	.btn-ghost:active {
+		font-weight: 500;
+		background-color: #ebac00e7;
+		border: 2px solid $accent-button-color;
+		color: white;
+	}
 
-  .btn-full:link,
-  .btn-full:visited {
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 5px 8px;
-    margin: 1.8rem 0 1.8rem 2rem;
-    background-color: $accent-button-color;
-    border: 2px solid $accent-button-color;
-    color: black;
-  }
-  .btn-full:hover,
-  .btn-full:active {
-    border: 2px solid #ebac00e7;
-    background-color: #ebac00e7;
-    color: white;
-    font-weight: 500;
-  }
+	.btn-full:link,
+	.btn-full:visited {
+		font-size: 1rem;
+		font-weight: 500;
+		padding: 5px 8px;
+		margin: 1.8rem 0 1.8rem 2rem;
+		background-color: $accent-button-color;
+		border: 2px solid $accent-button-color;
+		color: black;
+	}
+	.btn-full:hover,
+	.btn-full:active {
+		border: 2px solid #ebac00e7;
+		background-color: #ebac00e7;
+		color: white;
+		font-weight: 500;
+	}
 }
 
 /* ----- LINKS ----- */
 
 a:link,
 a:visited {
-  font-weight: 200;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: right;
-  border-bottom: 1px solid white;
+	font-weight: 200;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: right;
+	border-bottom: 1px solid white;
 }
 
 a:hover,
 a:active {
-  color: #f5b70c;
-  border-bottom: 1px solid transparent;
+	color: #f5b70c;
+	border-bottom: 1px solid transparent;
 }
 
 /* ----- BUTTONS ----- */
 .btn:link,
 .btn:visited {
-  display: inline-block;
-  font-size: 0.8rem;
-  padding-top: 1rem;
-  font-weight: 400;
-  text-decoration: none;
-  text-align: center;
+	display: inline-block;
+	font-size: 0.8rem;
+	padding-top: 1rem;
+	font-weight: 400;
+	text-decoration: none;
+	text-align: center;
 }
 
 .btn-full:link,
 .btn-full:visited {
-  font-size: 0.8rem;
-  background-color: $accent-button-color;
-  border: 1px solid $accent-button-color;
-  color: #fff;
-  margin-right: 15px;
+	font-size: 0.8rem;
+	background-color: $accent-button-color;
+	border: 1px solid $accent-button-color;
+	color: #fff;
+	margin-right: 15px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-  font-size: 0.8rem;
-  font-weight: 400;
-  padding: 5px 8px;
-  margin: 1px 1px;
-  border: 2px solid $accent-button-color;
-  color: $accent-button-color;
-  text-align: right;
+	font-size: 0.8rem;
+	font-weight: 400;
+	padding: 5px 8px;
+	margin: 1px 1px;
+	border: 2px solid $accent-button-color;
+	color: $accent-button-color;
+	text-align: right;
 }
 .btn-full:hover,
 .btn-full:active {
-  font-weight: 400;
-  border: 2px solid #ebac00e7;
+	font-weight: 400;
+	border: 2px solid #ebac00e7;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-  font-weight: 400;
-  border: 2px solid #ebac00e7;
-  color: white;
+	font-weight: 400;
+	border: 2px solid #ebac00e7;
+	color: white;
 }
