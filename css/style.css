@@ -100,7 +100,8 @@ img {
 .intro-top-left h3 {
   font-weight: 100;
   text-align: left;
-  margin-top: 0;
+  margin-top: 0.2rem;
+  margin-left: 2rem;
   font-size: 1rem;
 }
 
@@ -114,25 +115,36 @@ img {
   font-size: 0.8rem;
 }
 
-a:link,
-a:visited {
+.intro-top-right a:link,
+.intro-top-right a:visited {
   font-weight: 400;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  margin-top: 0;
+  margin-right: 0.4rem;
   padding-bottom: 0.35rem;
   border-bottom: 1.5px solid white;
 }
 
-a:hover,
-a:active {
+.intro-top-right a:hover,
+.intro-top-right a:active {
   color: #ffbb00;
   border-bottom: 1.5px solid transparent;
 }
 
-.btn-ghost:hover,
-.btn-ghost:active {
+.intro-top-right .btn-ghost:link,
+.intro-top-right .btn-ghost:visited {
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 5px 8px;
+  margin: 1rem 1rem;
+  border: 2px solid #ffbb00;
+  color: #ffbb00;
+  text-align: right;
+}
+
+.intro-top-right .btn-ghost:hover,
+.intro-top-right .btn-ghost:active {
   font-weight: 500;
   border: 2px solid #ffbb00;
   color: white;

@@ -25,6 +25,7 @@ body {
 .clearfix {
 	zoom: 1;
 }
+
 .clearfix:after {
 	content: ".";
 	clear: both;
@@ -43,6 +44,7 @@ h2 {
 	line-height: 1;
 	font-weight: 400;
 }
+
 h3 {
 	font-size: 0.7rem;
 }
@@ -50,6 +52,7 @@ h3 {
 h4 {
 	font-size: 0.5rem;
 }
+
 img {
 	max-width: 100%;
 }
@@ -101,41 +104,58 @@ img {
 	margin-top: 0.5rem;
 	margin-bottom: 0.4rem;
 }
+
 .intro-top-left h3 {
 	font-weight: 100;
 	text-align: left;
-	margin-top: 0;
+	margin-top: 0.2rem;
+	margin-left: 2rem;
 	font-size: 1rem;
+
 	span {
 		font-size: 0.8rem;
 	}
 }
+
 .intro-top-right {
 	text-align: right;
 	margin-top: 0;
 	font-size: 0.8rem;
-}
-a:link,
-a:visited {
-	font-weight: 400;
-	color: white;
-	text-decoration: none;
-	text-transform: uppercase;
-	margin-top: 0;
-	padding-bottom: 0.35rem;
-	border-bottom: 1.5px solid white;
-}
-a:hover,
-a:active {
-	color: $accent-button-color;
-	border-bottom: 1.5px solid transparent;
-}
 
-.btn-ghost:hover,
-.btn-ghost:active {
-	font-weight: 500;
-	border: 2px solid $accent-button-color;
-	color: white;
+	a:link,
+	a:visited {
+		font-weight: 400;
+		color: white;
+		text-decoration: none;
+		text-transform: uppercase;
+		margin-right: 0.4rem;
+		padding-bottom: 0.35rem;
+		border-bottom: 1.5px solid white;
+	}
+
+	a:hover,
+	a:active {
+		color: $accent-button-color;
+		border-bottom: 1.5px solid transparent;
+	}
+
+	.btn-ghost:link,
+	.btn-ghost:visited {
+		font-size: 0.8rem;
+		font-weight: 400;
+		padding: 5px 8px;
+		margin: 1rem 1rem;
+		border: 2px solid $accent-button-color;
+		color: $accent-button-color;
+		text-align: right;
+	}
+
+	.btn-ghost:hover,
+	.btn-ghost:active {
+		font-weight: 500;
+		border: 2px solid $accent-button-color;
+		color: white;
+	}
 }
 
 .intro-bottom {
@@ -149,6 +169,7 @@ a:active {
 		color: $accent-button-color;
 		text-align: center;
 	}
+
 	.btn-ghost:hover,
 	.btn-ghost:active {
 		font-weight: 500;
@@ -167,6 +188,7 @@ a:active {
 		border: 2px solid $accent-button-color;
 		color: black;
 	}
+
 	.btn-full:hover,
 	.btn-full:active {
 		border: 2px solid #ebac00e7;
@@ -224,6 +246,7 @@ a:active {
 	color: $accent-button-color;
 	text-align: right;
 }
+
 .btn-full:hover,
 .btn-full:active {
 	font-weight: 400;
