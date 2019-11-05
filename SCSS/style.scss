@@ -101,50 +101,42 @@ img {
   margin-top: 0.5rem;
   margin-bottom: 0.4rem;
 }
-
-.intro-top {
-  margin-left: 2rem;
-  p {
-    color: $accent-button-color;
-    font-size: 0.6rem;
-    font-weight: 200;
-    margin-top: 0.2rem;
-  }
-  a:link,
-  a:visited {
-    font-weight: 400;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin-top: 0;
-    padding-bottom: 0.35rem;
-    padding-left: 50px;
-    border-bottom: 1.5px solid white;
-  }
-  a:hover,
-  a:active {
-    color: $accent-button-color;
-    border-bottom: 1.5px solid transparent;
+.intro-top-left h3 {
+  font-weight: 100;
+  text-align: left;
+  margin-top: 0;
+  font-size: 1rem;
+  span {
+    font-size: 0.8rem;
   }
 }
-.trainer {
-  .btn-ghost:link,
-  .btn-ghost:visited {
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 8px 10px;
-    margin-top: 1.5rem;
-    margin-right: 2rem;
-    border: 2px solid $accent-button-color;
-    color: $accent-button-color;
-    text-align: center;
-  }
-  .btn-ghost:hover,
-  .btn-ghost:active {
-    font-weight: 500;
-    border: 2px solid $accent-button-color;
-    color: white;
-  }
+.intro-top-right {
+  text-align: right;
+  margin-top: 0;
+  font-size: 0.8rem;
+}
+a:link,
+a:visited {
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 0;
+  padding-bottom: 0.35rem;
+  padding-left: 50px;
+  border-bottom: 1.5px solid white;
+}
+a:hover,
+a:active {
+  color: $accent-button-color;
+  border-bottom: 1.5px solid transparent;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  font-weight: 500;
+  border: 2px solid $accent-button-color;
+  color: white;
 }
 
 .intro-bottom {
@@ -212,11 +204,6 @@ a:active {
   font-weight: 400;
   text-decoration: none;
   text-align: center;
-  transition: $background-color 0.2s, border 0.2s, color 0.2s;
-  -webkit-transition: $background-color 0.2s, border 0.2s, color 0.2s;
-  -moz-transition: $background-color 0.2s, border 0.2s, color 0.2s;
-  -ms-transition: $background-color 0.2s, border 0.2s, color 0.2s;
-  -o-transition: $background-color 0.2s, border 0.2s, color 0.2s;
 }
 
 .btn-full:link,
