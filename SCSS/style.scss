@@ -44,12 +44,11 @@ h2 {
   font-weight: 400;
 }
 h3 {
-  font-size: 1rem;
+  font-size: 0.7rem;
 }
 
 h4 {
-  margin-top: 0.8;
-  font-size: 1rem;
+  font-size: 0.5rem;
 }
 img {
   max-width: 100%;
@@ -59,7 +58,7 @@ img {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)),
     url(../vendors/img/woman_lifting_weigth_alora-griffiths-mobile.jpg);
   background-size: cover;
-  background-position: center center;
+  background-position: center center center center;
   background-repeat: no-repeat;
   background-color: black;
   /* Set rules to fill background */
@@ -71,6 +70,7 @@ img {
   /* Set up positioning */
   top: 0;
   left: 0;
+
   @media only screen and (max-width: 767px) {
     .intro {
       /* The file size of this background image is 93% smaller
@@ -82,19 +82,19 @@ img {
 
 .intro-middle h1 {
   line-height: 90%;
-  font-size: 5rem;
+  font-size: 4rem;
   letter-spacing: 0.15rem;
   color: white;
   text-transform: uppercase;
   font-weight: 500;
   margin-top: 0;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
 }
 
 .intro-middle h2 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   color: white;
   line-height: 1.6;
   text-align: left;
@@ -102,34 +102,34 @@ img {
   margin-bottom: 0.4rem;
 }
 
-.intro-top-left h3 {
-  font-weight: 100;
-  text-align: left;
-  margin-top: 0.2rem;
-  margin-left: 2rem;
-  font-size: 1rem;
-}
-
-.intro-top-right {
-  text-align: right;
-  margin-top: 0;
-  font-size: 1rem;
-  a:link,
-  a:visited {
-    font-weight: 400;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
+.intro-top {
+  h3 {
+    font-size: 0.6rem;
+    font-weight: 100;
+    text-align: left;
+    margin-top: 0.2rem;
+    margin-left: 0.5rem;
+  }
+  .login {
     text-align: right;
     margin-top: 0;
-    padding-bottom: 0.35rem;
-    margin-right: 1rem;
-    border-bottom: 1.5px solid white;
-  }
-  a:hover,
-  a:active {
-    color: $accent-button-color;
-    border-bottom: 1.5px solid transparent;
+    font-size: 0.7rem;
+    a:link,
+    a:visited {
+      font-weight: 400;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: right;
+      margin-top: 0;
+      padding-bottom: 0.35rem;
+      border-bottom: 1.5px solid white;
+    }
+    a:hover,
+    a:active {
+      color: $accent-button-color;
+      border-bottom: 1.5px solid transparent;
+    }
   }
   .btn-ghost:link,
   .btn-ghost:visited {
@@ -137,7 +137,7 @@ img {
     font-weight: 500;
     padding: 8px 10px;
     margin-top: 1.5rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
     border: 2px solid $accent-button-color;
     color: $accent-button-color;
     text-align: center;
