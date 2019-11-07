@@ -10,7 +10,7 @@
 	min-width: 1024px;
 	/* Set up proportionate scaling */
 	width: 100%;
-	height: 100vh;
+	height: calc(100vh-100px);
 	/* Set up positioning */
 	top: 0;
 	left: 0;
