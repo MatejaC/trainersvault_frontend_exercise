@@ -1,24 +1,17 @@
 .moto {
-	background-image: url(../vendors/img/plank_form-unsplash_resized.jpg);
+	background-image: url(../vendors/img/plank_form-QdoXA6PMy_I-unsplash.jpg);
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-color: black;
+
 	/* Set rules to fill background */
 	min-height: 100%;
-	min-width: 1024px;
+	min-width: 750px;
 	/* Set up proportionate scaling */
 	width: 100%;
-	height: 100vh;
+	height: calc(100vh-100px);
 	/* Set up positioning */
-	top: 10%;
+	top: 0;
 	left: 0;
-
-	@media only screen and (max-width: 767px) {
-		.intro {
-			/* The file size of this background image is 93% smaller
-       to improve page load speed on mobile internet connections */
-			background-image: url(../vendors/img/plank_form-unsplash_resized.jpg);
-		}
-	}
 }
