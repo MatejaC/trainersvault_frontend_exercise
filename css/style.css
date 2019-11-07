@@ -59,7 +59,7 @@ img {
   background-color: black;
   /* Set rules to fill background */
   min-height: 100%;
-  min-width: 1024px;
+  min-width: 700px;
   /* Set up proportionate scaling */
   width: 100%;
   height: 100vh;
@@ -251,12 +251,10 @@ a:active {
 }
 
 .pick {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.7))), url(../vendors/img/gym_risen-wang-20jX9b35r_M-unsplash.jpg);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url(../vendors/img/gym_risen-wang-20jX9b35r_M-unsplash.jpg);
+  background-image: url(../vendors/img/gym_risen-wang-20jX9b35r_M-unsplash.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-color: black;
   /* Set rules to fill background */
   min-height: 100%;
@@ -274,6 +272,31 @@ a:active {
     /* The file size of this background image is 93% smaller
        to improve page load speed on mobile internet connections */
     background-image: url(../vendors/img/gym_risen-wang-20jX9b35r_M-unsplash.jpg);
+  }
+}
+
+.moto {
+  background-image: url(../vendors/img/plank_form-unsplash_resized.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: black;
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: 100vh;
+  /* Set up positioning */
+  top: 0;
+  margin-left: -15%;
+}
+
+@media only screen and (max-width: 767px) {
+  .moto .intro {
+    /* The file size of this background image is 93% smaller
+       to improve page load speed on mobile internet connections */
+    background-image: url(../vendors/img/plank_form-unsplash_resized.jpg);
   }
 }
 /*# sourceMappingURL=style.css.map */
