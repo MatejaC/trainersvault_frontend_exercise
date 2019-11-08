@@ -7,6 +7,7 @@ creating a webpage based on an existed webpage image
 - Photo by Duy Pham on Unsplash
 - Photo by Form on Unsplash
 - Photo by bruce mars on Unsplash
+- Photo by Alora Griffiths on Unsplash
 
 
 ## icons 
