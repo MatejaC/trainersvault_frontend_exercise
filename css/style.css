@@ -61,7 +61,7 @@ img {
   background-color: black;
   /* Set rules to fill background */
   min-height: 100%;
-  min-width: 700px;
+  min-width: 756px;
   /* Set up proportionate scaling */
   width: 100%;
   height: calc(100vh-100px);
@@ -92,16 +92,14 @@ img {
   margin-bottom: 0.4rem;
 }
 
-.intro-top-left h3 {
-  font-weight: 100;
+.intro-top-left {
   text-align: left;
-  margin-top: 0.2rem;
-  margin-left: 2rem;
-  font-size: 1rem;
 }
 
-.intro-top-left h3 span {
+.intro-top-left h3 {
   font-size: 0.8rem;
+  color: #ffbb00;
+  font-weight: 200;
 }
 
 .intro-top-right {
