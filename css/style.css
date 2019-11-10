@@ -53,8 +53,8 @@ img {
 }
 
 .intro {
-  background-image: -webkit-gradient(linear, left top, right top, from(black), to(rgba(0, 0, 0, 0.2))), url(../vendors/img/woman_lifting_weigth__780_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg);
-  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.2)), url(../vendors/img/woman_lifting_weigth__780_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(black), to(rgba(0, 0, 0, 0.4))), url(../vendors/img/woman_lifting_weigth__780_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg);
+  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.4)), url(../vendors/img/woman_lifting_weigth__780_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -258,9 +258,11 @@ a:active {
   /* Set up positioning */
   top: 0;
   left: 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -271,9 +273,20 @@ a:active {
   font-weight: 500;
 }
 
-.pick h4,
+.pick h3,
 .pick p {
   color: white;
+}
+
+.trainer {
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .moto {
@@ -291,5 +304,13 @@ a:active {
   /* Set up positioning */
   top: 0;
   left: 0;
+}
+
+.sessions {
+  background-color: #a4a4a4;
+}
+
+.bootcamps {
+  background-color: #a4a4a4;
 }
 /*# sourceMappingURL=style.css.map */
