@@ -29,11 +29,11 @@ body {
 }
 
 section {
-  padding: 80px 0;
+  padding: 1.7rem 0;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   letter-spacing: 0.15em;
   line-height: 1;
   font-weight: 400;
@@ -71,22 +71,23 @@ img {
 }
 
 .intro-middle h1 {
-  line-height: 90%;
-  font-size: 4rem;
+  line-height: 85%;
+  font-size: 4.2rem;
   letter-spacing: 0.15rem;
   color: white;
   text-transform: uppercase;
-  font-weight: 700;
-  margin-left: 2.5rem;
-  margin-bottom: 0.4rem;
+  font-weight: 800;
+  margin-left: 2.8rem;
+  margin-bottom: 0.5rem;
+  margin-top: -3.5rem;
 }
 
 .intro-middle h2 {
   font-size: 1rem;
   font-weight: 400;
-  margin-left: 2.5rem;
+  margin-left: 2.8rem;
   color: white;
-  line-height: 1.5;
+  line-height: 1.4;
   text-align: left;
 }
 
@@ -104,20 +105,18 @@ img {
 
 .intro-top-right {
   text-align: center;
-  margin-top: 0.7rem;
+  margin-top: 0.4rem;
   font-size: 0.8rem;
-  margin-left: 1rem;
+  margin-left: 35rem;
 }
 
 .intro-top-right a:link,
 .intro-top-right a:visited {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 700;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  padding-bottom: 0.35rem;
-  border-bottom: 1.5px solid white;
 }
 
 .intro-top-right a:hover,
@@ -128,10 +127,10 @@ img {
 
 .intro-top-right .btn-ghost:link,
 .intro-top-right .btn-ghost:visited {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 400;
   padding: 8px 8px;
-  margin: 1.6rem 1rem 0 1rem;
+  margin: 1.6rem 1rem 0 1.6rem;
   border: 2px solid #ffbb00;
   color: #ffbb00;
   text-align: right;
@@ -148,8 +147,8 @@ img {
 .intro-bottom .btn-ghost:visited {
   font-size: 1rem;
   font-weight: 500;
-  padding: 5px 8px;
-  margin: 2rem 0 1.8rem 2rem;
+  padding: 6px 8px;
+  margin: 2.3rem 0 1.8rem 2.8rem;
   border: 2px solid #ffbb00;
   color: #ffbb00;
   text-align: center;
@@ -168,7 +167,7 @@ img {
   font-size: 1rem;
   font-weight: 500;
   padding: 5px 8px;
-  margin: 1.8rem 0 1.8rem 2rem;
+  margin: 1.8rem 0 1.8rem 0.6rem;
   background-color: #ffbb00;
   border: 2px solid #ffbb00;
   color: black;
@@ -190,7 +189,6 @@ a:visited {
   text-decoration: none;
   text-transform: uppercase;
   text-align: right;
-  border-bottom: 1px solid white;
 }
 
 a:hover,
@@ -271,11 +269,27 @@ a:active {
 .pick h2 {
   color: white;
   font-weight: 500;
+  margin-top: 0.5rem;
 }
 
 .pick h3,
 .pick p {
   color: white;
+}
+
+.pick a:link,
+.pick a:visited {
+  font-weight: 200;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.pick a:hover,
+.pick a:active {
+  color: #f5b70c;
+  border-bottom: 1px solid transparent;
 }
 
 .trainer {
