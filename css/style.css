@@ -64,7 +64,7 @@ img {
   min-width: 756px;
   /* Set up proportionate scaling */
   width: 100%;
-  height: calc(100vh-100px);
+  height: 100%;
   /* Set up positioning */
   top: 0;
   left: 0;
@@ -72,14 +72,14 @@ img {
 
 .intro-middle h1 {
   line-height: 85%;
-  font-size: 4.2rem;
+  font-size: 4.8rem;
   letter-spacing: 0.15rem;
   color: white;
   text-transform: uppercase;
   font-weight: 800;
   margin-left: 2.8rem;
-  margin-bottom: 0.5rem;
-  margin-top: -3.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: -1rem;
 }
 
 .intro-middle h2 {
@@ -117,12 +117,15 @@ img {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 5px;
+  margin-bottom: 2rem;
 }
 
 .intro-top-right a:hover,
 .intro-top-right a:active {
   color: #ffbb00;
   border-bottom: 1.5px solid transparent;
+  margin-bottom: 2rem;
 }
 
 .intro-top-right .btn-ghost:link,
@@ -130,10 +133,11 @@ img {
   font-size: 1rem;
   font-weight: 400;
   padding: 8px 8px;
-  margin: 1.6rem 1rem 0 1.6rem;
+  margin-top: 4rem;
   border: 2px solid #ffbb00;
   color: #ffbb00;
   text-align: right;
+  text-decoration: none;
 }
 
 .intro-top-right .btn-ghost:hover,
@@ -141,6 +145,10 @@ img {
   font-weight: 500;
   border: 2px solid #ffbb00;
   color: white;
+}
+
+.intro-bottom {
+  margin-bottom: 0.5rem;
 }
 
 .intro-bottom .btn-ghost:link,
@@ -152,62 +160,42 @@ img {
   border: 2px solid #ffbb00;
   color: #ffbb00;
   text-align: center;
+  text-decoration: none;
 }
 
 .intro-bottom .btn-ghost:hover,
 .intro-bottom .btn-ghost:active {
   font-weight: 500;
-  background-color: #ebac00e7;
+  background-color: #e99c0f;
   border: 2px solid #ffbb00;
   color: white;
+  text-decoration: none;
 }
 
 .intro-bottom .btn-full:link,
 .intro-bottom .btn-full:visited {
+  display: inline-block;
   font-size: 1rem;
   font-weight: 500;
   padding: 5px 8px;
-  margin: 1.8rem 0 1.8rem 0.6rem;
+  margin: 2rem 0 1.8rem 0.6rem;
   background-color: #ffbb00;
   border: 2px solid #ffbb00;
   color: black;
+  text-align: center;
+  text-decoration: none;
 }
 
 .intro-bottom .btn-full:hover,
 .intro-bottom .btn-full:active {
   border: 2px solid #ebac00e7;
-  background-color: #ebac00e7;
+  background-color: #e99c0f;
   color: white;
   font-weight: 500;
-}
-
-/* ----- LINKS ----- */
-a:link,
-a:visited {
-  font-weight: 200;
-  color: white;
   text-decoration: none;
-  text-transform: uppercase;
-  text-align: right;
-}
-
-a:hover,
-a:active {
-  color: #f5b70c;
-  border-bottom: 1px solid transparent;
 }
 
 /* ----- BUTTONS ----- */
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  font-size: 0.8rem;
-  padding-top: 1rem;
-  font-weight: 400;
-  text-decoration: none;
-  text-align: center;
-}
-
 .btn-full:link,
 .btn-full:visited {
   font-size: 0.8rem;
@@ -279,7 +267,7 @@ a:active {
 }
 
 .pick p {
-  color: white;
+  color: #ebebeb;
   font-size: 1.5rem;
   line-height: 1.3;
   margin-right: 3.3rem;
@@ -302,15 +290,8 @@ a:active {
   -o-border-radius: 50%;
 }
 
-.trainer {
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .moto {
-  background-image: url(../vendors/img/plank_form-QdoXA6PMy_I-unsplash.jpg);
+  background-image: url(../vendors/img/plank_resizedform-QdoXA6PMy_I-unsplash.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -320,10 +301,42 @@ a:active {
   min-width: 750px;
   /* Set up proportionate scaling */
   width: 100%;
-  height: calc(100vh-100px);
+  height: 100%;
   /* Set up positioning */
   top: 0;
   left: 0;
+}
+
+.moto h4 {
+  margin-top: 2rem;
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.moto .lesson {
+  border: 1px solid white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.3;
+  padding: 5px 0 5px 0;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-top: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.moto .lesson h5 {
+  font-size: 1.3rem;
+  color: white;
+  text-align: center;
+}
+
+.moto .lesson h3 {
+  font-size: 1.6rem;
+  color: white;
+  text-align: center;
 }
 
 .sessions {
