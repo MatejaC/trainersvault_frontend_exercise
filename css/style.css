@@ -32,10 +32,6 @@ section {
   padding: 1.7rem 0;
 }
 
-h3 {
-  font-size: 1.2rem;
-}
-
 img {
   max-width: 100%;
 }
@@ -319,18 +315,36 @@ img {
 }
 
 .sessions h2 {
-  padding: 0.8rem;
+  font-size: 2rem;
+  padding: 1rem;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 0.2em;
-  line-height: 0.5;
+  color: #404040;
+  font-weight: 600;
 }
 
-.sessions p {
-  font-size: 1.1rem;
+.sessions .aboutTD {
+  font-size: 1.2rem;
   text-align: center;
   line-height: 1.5;
   padding: 2px 15px;
+}
+
+.sessions .aboutTD:after {
+  display: block;
+  height: 2px;
+  background-color: #717171;
+  content: " ";
+  width: auto;
+  margin: 0 1.8rem;
+  margin-top: 30px;
+}
+
+.sessions h3 {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  margin-top: 1.2rem;
 }
 
 .sessions img {

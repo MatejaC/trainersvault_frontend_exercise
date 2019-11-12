@@ -40,10 +40,6 @@ section {
   padding: 1.7rem 0;
 }
 
-h3 {
-  font-size: 1.2rem;
-}
-
 img {
   max-width: 100%;
 }
@@ -322,20 +318,37 @@ img {
   }
 
   h2 {
-    padding: 0.8rem;
+    font-size: 2rem;
+    padding: 1rem;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: 0.2em;
-    line-height: 0.5;
+    color: $darkgray-color;
+    font-weight: 600;
   }
 
-  p {
-    font-size: 1.1rem;
+  .aboutTD {
+    font-size: 1.2rem;
     text-align: center;
     line-height: 1.5;
     padding: 2px 15px;
   }
 
+  .aboutTD:after {
+    display: block;
+    height: 2px;
+    background-color: $mediumgray;
+    content: " ";
+    width: auto;
+    margin: 0 1.8rem;
+    margin-top: 30px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    margin-top: 1.2rem;
+  }
   img {
     padding: 2rem;
   }
