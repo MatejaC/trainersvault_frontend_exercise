@@ -288,7 +288,7 @@ img {
   text-align: center;
 }
 
-.sessions {
+.sessions .girls {
   padding-top: 0.2rem;
   background-color: #e7e7e7;
   background-size: cover;
@@ -307,14 +307,14 @@ img {
   padding-right: 1.5rem;
 }
 
-.sessions h4 {
+.sessions .girls h4 {
   color: #717171;
   text-transform: uppercase;
   margin-top: 0.3rem;
   margin-right: 2rem;
 }
 
-.sessions h2 {
+.sessions .girls h2 {
   font-size: 2rem;
   padding: 1rem;
   text-transform: uppercase;
@@ -323,14 +323,13 @@ img {
   font-weight: 600;
 }
 
-.sessions .aboutTD {
-  font-size: 1.2rem;
+.sessions .girls .aboutTD {
+  font-size: 1.4rem;
   text-align: center;
-  line-height: 1.5;
-  padding: 2px 15px;
+  margin: 1rem 1.1rem;
 }
 
-.sessions .aboutTD:after {
+.sessions .girls .aboutTD:after {
   display: block;
   height: 2px;
   background-color: #717171;
@@ -340,15 +339,71 @@ img {
   margin-top: 30px;
 }
 
-.sessions h3 {
+.sessions .girls h3 {
   font-size: 1.5rem;
   padding: 0.5rem;
   text-transform: uppercase;
   margin-top: 1.2rem;
+  margin-left: 2rem;
+  color: #404040;
 }
 
-.sessions img {
+.sessions .girls h3 span {
+  border-style: groove;
+  padding: 3px;
+  margin-left: 8rem;
+}
+
+.sessions .girls p {
+  text-transform: initial;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-left: 2.5rem;
+}
+
+.sessions .girls img {
   padding: 2rem;
+}
+
+.sessions .guys {
+  padding-top: 0.2rem;
+  background-color: #e7e7e7;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 750px;
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: 100%;
+  /* Set up positioning */
+  top: 0;
+  left: 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.sessions .guys h3 {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  margin-top: 1.2rem;
+  margin-left: 2rem;
+  color: #404040;
+}
+
+.sessions .guys h3 span {
+  border-style: groove;
+  padding: 3px;
+  margin-left: 3rem;
+}
+
+.sessions .guys p {
+  text-transform: initial;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-left: 2.5rem;
 }
 
 .bootcamps {
