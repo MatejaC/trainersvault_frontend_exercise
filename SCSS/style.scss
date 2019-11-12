@@ -80,14 +80,13 @@ img {
 
 .intro-middle h1 {
   line-height: 85%;
-  font-size: 4.8rem;
+  font-size: 4.3rem;
   letter-spacing: 0.15rem;
   color: white;
   text-transform: uppercase;
   font-weight: 800;
   margin-left: 2.8rem;
-  margin-bottom: 1.5rem;
-  margin-top: -1rem;
+  margin-bottom: 0.8rem;
 }
 
 .intro-middle h2 {
@@ -101,7 +100,7 @@ img {
 
 .intro-top-left {
   text-align: left;
-  margin-left: 2rem;
+  margin-left: 2.8rem;
   margin-top: 0.5rem;
 
   h3 {
@@ -113,38 +112,35 @@ img {
 
 .intro-top-right {
   text-align: center;
-  margin-top: 0.4rem;
   font-size: 0.8rem;
   margin-left: 35rem;
+  margin-bottom: 2rem;
 
   a:link,
   a:visited {
     font-size: 1rem;
     font-weight: 700;
+    padding-bottom: 1.8rem;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 5px;
-    margin-bottom: 2rem;
   }
 
   a:hover,
   a:active {
     color: $accent-button-color;
-    border-bottom: 1.5px solid transparent;
-    margin-bottom: 2rem;
   }
 
   .btn-ghost:link,
   .btn-ghost:visited {
+    display: inline-block;
     font-size: 1rem;
     font-weight: 400;
-    padding: 8px 8px;
-    margin-top: 4rem;
+    padding: 5px 8px 5px 8px;
+    margin-top: 1.3rem;
     border: 2px solid $accent-button-color;
     color: $accent-button-color;
-    text-align: right;
-    text-decoration: none;
+    text-align: center;
   }
 
   .btn-ghost:hover,
@@ -156,14 +152,15 @@ img {
 }
 
 .intro-bottom {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
+  margin-top: 0;
 
   .btn-ghost:link,
   .btn-ghost:visited {
     font-size: 1rem;
     font-weight: 500;
     padding: 6px 8px;
-    margin: 2.3rem 0 1.8rem 2.8rem;
+    margin: 2rem 0 1.8rem 2.8rem;
     border: 2px solid $accent-button-color;
     color: $accent-button-color;
     text-align: center;
@@ -173,6 +170,8 @@ img {
   .btn-ghost:hover,
   .btn-ghost:active {
     font-weight: 500;
+    padding: 6px 8px;
+    margin: 2rem 0 1.8rem 2.8rem;
     background-color: rgb(233, 156, 15);
     border: 2px solid $accent-button-color;
     color: white;
@@ -184,8 +183,8 @@ img {
     display: inline-block;
     font-size: 1rem;
     font-weight: 500;
-    padding: 5px 8px;
-    margin: 2rem 0 1.8rem 0.6rem;
+    padding: 6px 8px;
+    margin: 2rem 0 2.3rem 1rem;
     background-color: $accent-button-color;
     border: 2px solid $accent-button-color;
     color: black;
@@ -201,41 +200,6 @@ img {
     font-weight: 500;
     text-decoration: none;
   }
-}
-
-/* ----- BUTTONS ----- */
-
-.btn-full:link,
-.btn-full:visited {
-  font-size: 0.8rem;
-  background-color: $accent-button-color;
-  border: 1px solid $accent-button-color;
-  color: #fff;
-  margin-right: 15px;
-}
-
-.btn-ghost:link,
-.btn-ghost:visited {
-  font-size: 0.8rem;
-  font-weight: 400;
-  padding: 5px 8px;
-  margin: 1px 1px;
-  border: 2px solid $accent-button-color;
-  color: $accent-button-color;
-  text-align: right;
-}
-
-.btn-full:hover,
-.btn-full:active {
-  font-weight: 400;
-  border: 2px solid #ebac00e7;
-}
-
-.btn-ghost:hover,
-.btn-ghost:active {
-  font-weight: 400;
-  border: 2px solid #ebac00e7;
-  color: white;
 }
 
 .pick {
