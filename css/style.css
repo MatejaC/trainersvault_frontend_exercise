@@ -9,6 +9,7 @@ body {
   color: #717171;
   background: black;
   font-family: "Montserrat", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   overflow-x: hidden;
@@ -26,10 +27,6 @@ body {
   display: block;
   height: 0;
   visibility: hidden;
-}
-
-section {
-  padding: 1.7rem 0;
 }
 
 img {
@@ -55,18 +52,19 @@ img {
 }
 
 .intro-middle h1 {
+  font-family: 'Montserrat', sans-serif;
   line-height: 85%;
-  font-size: 4.3rem;
+  font-size: 4.8rem;
   letter-spacing: 0.15rem;
   color: white;
   text-transform: uppercase;
   font-weight: 800;
   margin-left: 2.8rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
 }
 
 .intro-middle h2 {
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-weight: 400;
   margin-left: 2.8rem;
   color: white;
@@ -129,7 +127,6 @@ img {
 
 .intro-bottom {
   margin-bottom: 0.2rem;
-  margin-top: 0;
 }
 
 .intro-bottom .btn-ghost:link,
@@ -179,7 +176,7 @@ img {
 }
 
 .pick {
-  background-image: url(../vendors/img/sven-mieke_GYM_styled_-Lx_GDv7VA9M-unsplash.jpg);
+  background-image: url(../vendors/img/mark-bertulfo-Frx8qskriDI-unsplash.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -189,30 +186,28 @@ img {
   min-width: 760px;
   /* Set up proportionate scaling */
   width: 100%;
-  height: auto;
+  height: 100%;
   /* Set up positioning */
   top: 0;
   left: 0;
   text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .pick h2 {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
   color: white;
   font-weight: 500;
-  margin-top: 0.2rem;
+  padding-top: 0.9rem;
   font-weight: 500;
 }
 
 .pick h3 {
   color: white;
-  margin-top: 0;
+  margin-top: 0.3rem;
 }
 
 .pick p {
@@ -245,6 +240,7 @@ img {
   background-position: center center;
   background-repeat: no-repeat;
   background-color: black;
+  padding-top: 2rem;
   /* Set rules to fill background */
   min-height: 100%;
   min-width: 750px;
@@ -288,6 +284,11 @@ img {
   text-align: center;
 }
 
+.moto .lesson h3 h5,
+.moto .lesson h3 h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .sessions .girls {
   padding-top: 0.2rem;
   background-color: #e7e7e7;
@@ -309,9 +310,9 @@ img {
 
 .sessions .girls h4 {
   color: #717171;
-  text-transform: uppercase;
+  font-size: 1rem;
   margin-top: 0.3rem;
-  margin-right: 2rem;
+  margin-left: 2.8rem;
 }
 
 .sessions .girls h2 {
@@ -324,9 +325,10 @@ img {
 }
 
 .sessions .girls .aboutTD {
+  font-family: 'Roboto', sans-serif;
   font-size: 1.4rem;
   text-align: center;
-  margin: 1rem 1.1rem;
+  padding: 1.5rem 1rem;
 }
 
 .sessions .girls .aboutTD:after {
@@ -335,7 +337,7 @@ img {
   background-color: #717171;
   content: " ";
   width: auto;
-  margin: 0 1.8rem;
+  margin: 0 1.5rem;
   margin-top: 30px;
 }
 
@@ -351,18 +353,18 @@ img {
 .sessions .girls h3 span {
   border-style: groove;
   padding: 3px;
-  margin-left: 8rem;
+  margin-left: 9rem;
 }
 
 .sessions .girls p {
-  text-transform: initial;
   font-size: 1.4rem;
   font-weight: 300;
+  text-transform: initial;
   margin-left: 2.5rem;
 }
 
 .sessions .girls img {
-  padding: 2rem;
+  padding: 0.7rem 2rem;
 }
 
 .sessions .guys {
@@ -396,7 +398,7 @@ img {
 .sessions .guys h3 span {
   border-style: groove;
   padding: 3px;
-  margin-left: 3rem;
+  margin-left: 4rem;
 }
 
 .sessions .guys p {
@@ -404,6 +406,10 @@ img {
   font-size: 1.4rem;
   font-weight: 300;
   margin-left: 2.5rem;
+}
+
+.sessions .guys img {
+  padding: 0.7rem 2rem;
 }
 
 .bootcamps {
