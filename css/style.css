@@ -555,4 +555,109 @@ img {
   margin: 0 2rem;
   margin-top: 2rem;
 }
+
+.cities {
+  position: relative;
+  background-color: #e7e7e7;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 750px;
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  /* Set up positioning */
+  top: 0;
+  left: 0;
+}
+
+.cities .dog-girl {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.cities .box-1 {
+  position: relative;
+  margin-left: -1rem;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+}
+
+.cities .Toronto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.cities .box-2 {
+  position: relative;
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+}
+
+.cities .LA {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.cities .box-3 {
+  position: relative;
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.9rem;
+}
+
+.cities .NY {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.cities .box-4 {
+  position: relative;
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.9rem;
+}
+
+.cities .Miami {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.cities .box-5 {
+  position: relative;
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.9rem;
+}
+
+.cities .Atlanta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
 /*# sourceMappingURL=style.css.map */
