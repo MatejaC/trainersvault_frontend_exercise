@@ -425,8 +425,8 @@ img {
   width: 100%;
   height: auto;
   /* Set up positioning */
-  top: 0;
-  left: 0;
+  top: 0.1rem;
+  left: 0.2rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
@@ -573,55 +573,16 @@ img {
   left: 0;
 }
 
-.cities .dog-girl {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
 .cities .box-1 {
   position: relative;
-  margin-left: -1rem;
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
+  margin-left: 0.2rem;
+  margin-top: 0.4rem;
 }
 
-.cities .Toronto {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.cities .box-2 {
-  position: relative;
-  color: white;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
-}
-
-.cities .LA {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.cities .box-3 {
-  position: relative;
-  color: white;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.9rem;
-}
-
-.cities .NY {
+.cities .box-1 .Toronto {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -634,10 +595,10 @@ img {
   color: white;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.9rem;
+  font-size: 2rem;
 }
 
-.cities .Miami {
+.cities .box-4 .LA {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -650,14 +611,62 @@ img {
   color: white;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.9rem;
+  font-size: 2rem;
 }
 
-.cities .Atlanta {
+.cities .box-5 .NY {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.cities .box-7 {
+  position: relative;
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.9rem;
+}
+
+.cities .box-7 .Miami {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.cities .box-10 {
+  position: relative;
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.9rem;
+}
+
+.cities .box-10 .Atlanta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 1px;
+  background-color: #e7e7e7;
+  margin-left: 0.2rem;
+}
+
+.box {
+  color: #fff;
+  padding: 5px;
+  font-size: 150%;
 }
 /*# sourceMappingURL=style.css.map */
