@@ -13,16 +13,172 @@ $smudgywhite: #ebebeb;
 	padding: 0;
 }
 
+html {
+	line-height: 1.6;
+}
+
 body {
 	color: $mediumgray;
 	background: $primary-color;
 	font-family: 'Montserrat', sans-serif;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1rem;
-	line-height: 1.6;
 	overflow-x: hidden;
-	margin: 0;
+}
+
+.intro,
+.pick,
+section,
+.moto,
+.sessions,
+.bootcamps,
+.cities,
+.trainers,
+footer {
+	display: block;
+}
+
+b,
+strong {
+	font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+	font-weight: bolder;
+}
+
+ol ul,
+ul ol,
+ul ul,
+ol ol {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
 	padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/*
+	1.
+	Correct thetextwrappinginEdgeandIE.
+	*
+	2.Correctthecolorinheritancefrom`fieldset`elementsinIE.
+	*
+	3.
+	Remove	thepaddingsodevelopersarenotcaughtoutwhentheyzeroout
+	*	`fieldset`	elements	in	all	browsers.
+	*/
+legend {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	/* 1 */
+	color: inherit;
+	/* 2 */
+	display: table;
+	/* 1 */
+	max-width: 100%;
+	/* 1 */
+	padding: 0;
+	/* 3 */
+	white-space: normal;
+	/* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+	display: inline-block;
+	/* 1 */
+	vertical-align: baseline;
+	/* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+	*/
+
+textarea {
+	overflow: auto;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	/* 1 */
+	font: inherit;
+	/* 2 */
+}
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+	display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+	display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+	display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+	display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+	display: none;
 }
 
 .clearfix {
@@ -42,15 +198,15 @@ img {
 }
 
 .intro {
-	background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)),
-		url(../vendors/img/woman_lifting_weigth__780_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg);
+	background-image: url(../vendors/img/alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg),
+		linear-gradient(to right, rgba(0, 0, 0, 0.986), rgba(0, 0, 0, 0.1));
 	background-size: cover;
-	background-position: center center;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-color: black;
 	/* Set rules to fill background */
 	min-height: 100%;
-	min-width: 800px;
+	min-width: 460px;
 	/* Set up proportionate scaling */
 	width: 100%;
 	height: 100%;
@@ -62,19 +218,19 @@ img {
 .intro-middle h1 {
 	font-family: 'Montserrat', sans-serif;
 	line-height: 85%;
-	font-size: 4.8rem;
+	font-size: 3.8rem;
 	letter-spacing: 0.15rem;
 	color: white;
 	text-transform: uppercase;
-	font-weight: 800;
-	margin-left: 2.8rem;
+	font-weight: 700;
+	margin-left: 2rem;
 	margin-bottom: 0.5rem;
 }
 
 .intro-middle h2 {
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	font-weight: 400;
-	margin-left: 2.8rem;
+	margin-left: 2rem;
 	color: white;
 	line-height: 1.4;
 	text-align: left;
@@ -82,7 +238,7 @@ img {
 
 .intro-top-left {
 	text-align: left;
-	margin-left: 2.8rem;
+	margin-left: 2rem;
 	margin-top: 0.5rem;
 
 	h3 {
@@ -95,8 +251,7 @@ img {
 .intro-top-right {
 	text-align: center;
 	font-size: 0.8rem;
-	margin-left: 35rem;
-	margin-bottom: 2rem;
+	margin-left: 20rem;
 
 	a:link,
 	a:visited {
@@ -127,9 +282,14 @@ img {
 
 	.btn-ghost:hover,
 	.btn-ghost:active {
-		font-weight: 500;
+		font-size: 1rem;
+		font-weight: 400;
+		padding: 6px 8px;
+		margin: 2rem 0 1.8rem 2.8rem;
+		background-color: rgb(233, 156, 15);
 		border: 2px solid $accent-button-color;
 		color: white;
+		text-decoration: none;
 	}
 }
 
@@ -138,10 +298,11 @@ img {
 
 	.btn-ghost:link,
 	.btn-ghost:visited {
+		display: inline-block;
 		font-size: 1rem;
-		font-weight: 500;
+		font-weight: 400;
 		padding: 6px 8px;
-		margin: 2rem 0 1.8rem 2.8rem;
+		margin: 2rem 0rem 2rem 2.8rem;
 		border: 2px solid $accent-button-color;
 		color: $accent-button-color;
 		text-align: center;
@@ -150,9 +311,10 @@ img {
 
 	.btn-ghost:hover,
 	.btn-ghost:active {
-		font-weight: 500;
+		font-size: 1rem;
+		font-weight: 400;
 		padding: 6px 8px;
-		margin: 2rem 0 1.8rem 2.8rem;
+		margin: 2rem 0rem 2rem 2.8rem;
 		background-color: rgb(233, 156, 15);
 		border: 2px solid $accent-button-color;
 		color: white;
@@ -191,7 +353,7 @@ img {
 	background-color: black;
 	/* Set rules to fill background */
 	min-height: 100%;
-	min-width: 800px;
+	min-width: 500px;
 	/* Set up proportionate scaling */
 	width: 100%;
 	height: 100%;
@@ -217,7 +379,7 @@ img {
 
 	p {
 		color: $smudgywhite;
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 		line-height: 1.3;
 		margin-right: 3.3rem;
 		margin-left: 3.3rem;
@@ -243,45 +405,47 @@ img {
 .moto {
 	background-image: url(../vendors/img/plank_resizedform-QdoXA6PMy_I-unsplash.jpg);
 	background-size: cover;
-	background-position: center center;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-color: black;
-	padding-top: 2rem;
+
 	/* Set rules to fill background */
 	min-height: 100%;
-	min-width: 800px;
+	min-width: 460px;
 	/* Set up proportionate scaling */
 	width: 100%;
 	height: 100%;
 	/* Set up positioning */
-	top: 0;
-	left: 0;
+	top: 2;
 
 	h4 {
-		margin-top: 2rem;
 		color: white;
 		text-align: center;
-		font-size: 0.9rem;
+		font-size: 0.8rem;
 	}
 
 	.lesson {
 		border: 1px solid white;
 		align-items: center;
+
 		line-height: 1.2;
-		padding: 9px 1px 6px 9px;
+		padding: 10px 13px 6px 13px;
 		margin-left: 6rem;
 		margin-right: 6rem;
 		margin-top: 1rem;
 		margin-bottom: 1.8rem;
+		h4 {
+			font-size: 0.7;
+		}
 
 		h5 {
-			font-size: 1.6rem;
+			font-size: 1.2rem;
 			color: white;
 			text-align: center;
 		}
 
 		h3 {
-			font-size: 2rem;
+			font-size: 1.4rem;
 			color: white;
 			text-align: center;
 
@@ -779,38 +943,36 @@ img {
 }
 
 .footer {
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-color: black;
-	/* Set rules to fill background */
-	min-height: 100%;
-	min-width: 800px;
-	/* Set up proportionate scaling */
-	width: 100%;
-	height: 100%;
-	/* Set up positioning */
-	top: 0;
-	left: 0;
-
-	.main-nav ul {
-		padding: 0;
-		margin: 0;
-		overflow: hidden;
-		background-color: black;
+	nav.shift ul li a {
+		position: relative !important;
+		z-index: 1 !important;
 	}
 
-	li a {
-		display: block;
-		margin-right: 4rem;
-		list-style-type: disc;
-		text-align: center;
-		color: white;
-		text-align: center;
-		padding: 16px;
-		text-decoration: none;
+	nav.shift ul li a:hover {
+		color: #91640f !important;
 	}
-	a:hover {
-		color: $accent-button-color;
+
+	nav.shift ul li a:after {
+		display: block !important;
+		position: absolute !important;
+		top: 0 !important;
+		left: 0 !important;
+		bottom: 0 !important;
+		right: 0 !important;
+		margin: 1rem !important;
+		width: 70% !important;
+		height: 1px !important;
+		content: '.' !important;
+		color: transparent !important;
+		background: $accent-button-color !important;
+		visibility: none !important;
+		opacity: 0 !important;
+		z-index: -1 !important;
+	}
+
+	nav.shift ul li a:hover:after {
+		opacity: 1 !important;
+		visibility: visible !important;
+		height: 70% !important;
 	}
 }
