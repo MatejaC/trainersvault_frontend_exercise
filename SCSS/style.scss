@@ -198,8 +198,8 @@ img {
 }
 
 .intro {
-	background-image: url(../vendors/img/alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg),
-		linear-gradient(to right, rgba(0, 0, 0, 0.986), rgba(0, 0, 0, 0.1));
+	background-image: url(../vendors/img/alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg);
+	gradient: linear-gradient(to right, rgba(0, 0, 0, 0.986), rgba(235, 235, 235, 0.1));
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -217,20 +217,20 @@ img {
 
 .intro-middle h1 {
 	font-family: 'Montserrat', sans-serif;
-	line-height: 85%;
+	line-height: 87%;
 	font-size: 3.8rem;
 	letter-spacing: 0.15rem;
 	color: white;
 	text-transform: uppercase;
 	font-weight: 700;
-	margin-left: 2rem;
+	margin-left: 1.5rem;
 	margin-bottom: 0.5rem;
 }
 
 .intro-middle h2 {
 	font-size: 1.2rem;
 	font-weight: 400;
-	margin-left: 2rem;
+	margin-left: 1.5rem;
 	color: white;
 	line-height: 1.4;
 	text-align: left;
@@ -238,8 +238,8 @@ img {
 
 .intro-top-left {
 	text-align: left;
-	margin-left: 2rem;
-	margin-top: 0.5rem;
+	margin-left: 1.2rem;
+	margin-top: 0.6rem;
 
 	h3 {
 		font-size: 1rem;
@@ -251,7 +251,7 @@ img {
 .intro-top-right {
 	text-align: center;
 	font-size: 0.8rem;
-	margin-left: 20rem;
+	margin-left: 12rem;
 
 	a:link,
 	a:visited {
@@ -294,15 +294,13 @@ img {
 }
 
 .intro-bottom {
-	margin-bottom: 0.2rem;
-
 	.btn-ghost:link,
 	.btn-ghost:visited {
 		display: inline-block;
 		font-size: 1rem;
 		font-weight: 400;
 		padding: 6px 8px;
-		margin: 2rem 0rem 2rem 2.8rem;
+		margin: 2rem 0rem 1.8rem 2rem;
 		border: 2px solid $accent-button-color;
 		color: $accent-button-color;
 		text-align: center;
@@ -314,7 +312,7 @@ img {
 		font-size: 1rem;
 		font-weight: 400;
 		padding: 6px 8px;
-		margin: 2rem 0rem 2rem 2.8rem;
+		margin: 2rem 0rem 1.8rem 2.8rem;
 		background-color: rgb(233, 156, 15);
 		border: 2px solid $accent-button-color;
 		color: white;
@@ -327,7 +325,7 @@ img {
 		font-size: 1rem;
 		font-weight: 500;
 		padding: 6px 8px;
-		margin: 2rem 0 2.3rem 1rem;
+		margin: 2rem 0 1.8rem 1rem;
 		background-color: $accent-button-color;
 		border: 2px solid $accent-button-color;
 		color: black;
@@ -365,27 +363,41 @@ img {
 
 	h2 {
 		font-family: 'Montserrat', sans-serif;
-		line-height: 1.5;
+		font-size: 1.5rem;
+		line-height: 1.2;
 		color: white;
-		font-weight: 500;
+		font-weight: 700;
 		padding-top: 0.9rem;
-		font-weight: 500;
+		text-align: center;
+		margin-right: 2rem;
 	}
 
 	h3 {
+		font-size: 1.2rem;
 		color: white;
-		margin-top: 0.3rem;
+		margin-right: 2rem;
 	}
 
 	p {
 		color: $smudgywhite;
-		font-size: 1.4rem;
+		font-size: 1.1rem;
 		line-height: 1.3;
-		margin-right: 3.3rem;
-		margin-left: 3.3rem;
+		margin-right: 6.2rem;
+		margin-left: 2rem;
 		margin-top: 0.2rem;
 		margin-bottom: 1.4rem;
 		font-weight: 400;
+	}
+
+	.runner {
+		transform: scale(0.7, 0.7);
+		-webkit-transform: scale(0.7, 0.7);
+		-moz-transform: scale(0.7, 0.7);
+		-ms-transform: scale(0.7, 0.7);
+		-o-transform: scale(0.7, 0.7);
+		margin-bottom: -1rem;
+		margin-top: -1rem;
+		margin-right: 2rem;
 	}
 
 	.dumbbell {
@@ -399,6 +411,25 @@ img {
 		-moz-border-radius: 50%;
 		-ms-border-radius: 50%;
 		-o-border-radius: 50%;
+		transform: scale(0.7, 0.7);
+		-webkit-transform: scale(0.7, 0.7);
+		-moz-transform: scale(0.7, 0.7);
+		-ms-transform: scale(0.7, 0.7);
+		-o-transform: scale(0.7, 0.7);
+		margin-bottom: -1rem;
+		margin-top: -1rem;
+		margin-right: 2rem;
+	}
+
+	.calendar {
+		transform: scale(0.7, 0.7);
+		-webkit-transform: scale(0.7, 0.7);
+		-moz-transform: scale(0.7, 0.7);
+		-ms-transform: scale(0.7, 0.7);
+		-o-transform: scale(0.7, 0.7);
+		margin-bottom: -1rem;
+		margin-top: -1rem;
+		margin-right: 2rem;
 	}
 }
 
@@ -434,6 +465,7 @@ img {
 		margin-right: 6rem;
 		margin-top: 1rem;
 		margin-bottom: 1.8rem;
+
 		h4 {
 			font-size: 0.7;
 		}
