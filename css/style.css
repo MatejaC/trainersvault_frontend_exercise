@@ -195,85 +195,84 @@ img {
   background-color: black;
   /* Set rules to fill background */
   min-height: 100%;
-  min-width: 470px;
+  min-width: 430px;
   /* Set up proportionate scaling */
   width: 100%;
   height: 100%;
   /* Set up positioning */
   top: 0;
-  margin-left: -2rem;
 }
 
-.intro-middle h1 {
+.intro .intro-middle h1 {
   font-family: 'Montserrat', sans-serif;
-  line-height: 87%;
-  font-size: 3.8rem;
+  line-height: 80%;
+  font-size: 4.5rem;
   letter-spacing: 0.15rem;
   color: white;
   text-transform: uppercase;
   font-weight: 700;
   margin-left: 3.5rem;
-  margin-bottom: 0.5rem;
-  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+  padding-top: 4rem;
 }
 
-.intro-middle h2 {
+.intro .intro-middle h2 {
   font-size: 1.1rem;
   font-weight: 400;
   margin-left: 3.5rem;
   color: white;
-  line-height: 1.4;
+  line-height: 1.6;
   text-align: left;
+  margin-bottom: 0.3rem;
 }
 
-.intro-top-left {
+.intro .intro-top-left {
   text-align: left;
   margin-left: 3rem;
-  margin-top: 0.9rem;
+  margin-top: 0.8rem;
 }
 
-.intro-top-left h3 {
+.intro .intro-top-left h3 {
   font-size: 1rem;
   color: #ffbb00;
   font-weight: 200;
 }
 
-.intro-top-right {
+.intro .intro-top-right {
   text-align: center;
   font-size: 0.8rem;
   margin-left: 18rem;
-  padding-top: 2rem;
+  padding-top: 1.4rem;
 }
 
-.intro-top-right a:link,
-.intro-top-right a:visited {
+.intro .intro-top-right a:link,
+.intro .intro-top-right a:visited {
   font-size: 1rem;
   font-weight: 700;
-  padding-bottom: 2rem;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.intro-top-right a:hover,
-.intro-top-right a:active {
+.intro .intro-top-right a:hover,
+.intro .intro-top-right a:active {
   color: #ffbb00;
 }
 
-.intro-top-right .btn-ghost:link,
-.intro-top-right .btn-ghost:visited {
+.intro .intro-top-right .btn-ghost:link,
+.intro .intro-top-right .btn-ghost:visited {
   display: inline-block;
   font-size: 1rem;
   font-weight: 400;
-  padding: 7px 8px;
+  padding: 7px 6px;
   margin: 2rem 0 1.8rem 1rem;
   border: 2px solid #ffbb00;
   color: #ffbb00;
   text-align: center;
 }
 
-.intro-top-right .btn-ghost:hover,
-.intro-top-right .btn-ghost:active {
+.intro .intro-top-right .btn-ghost:hover,
+.intro .intro-top-right .btn-ghost:active {
   font-size: 1rem;
   font-weight: 400;
   padding: 7px 8px;
@@ -284,8 +283,8 @@ img {
   text-decoration: none;
 }
 
-.intro-bottom .btn-ghost:link,
-.intro-bottom .btn-ghost:visited {
+.intro .intro-bottom .btn-ghost:link,
+.intro .intro-bottom .btn-ghost:visited {
   display: inline-block;
   font-size: 1rem;
   font-weight: 400;
@@ -297,8 +296,8 @@ img {
   text-decoration: none;
 }
 
-.intro-bottom .btn-ghost:hover,
-.intro-bottom .btn-ghost:active {
+.intro .intro-bottom .btn-ghost:hover,
+.intro .intro-bottom .btn-ghost:active {
   font-size: 1rem;
   font-weight: 400;
   padding: 6px 8px;
@@ -309,8 +308,8 @@ img {
   text-decoration: none;
 }
 
-.intro-bottom .btn-full:link,
-.intro-bottom .btn-full:visited {
+.intro .intro-bottom .btn-full:link,
+.intro .intro-bottom .btn-full:visited {
   display: inline-block;
   font-size: 1rem;
   font-weight: 500;
@@ -323,8 +322,8 @@ img {
   text-decoration: none;
 }
 
-.intro-bottom .btn-full:hover,
-.intro-bottom .btn-full:active {
+.intro .intro-bottom .btn-full:hover,
+.intro .intro-bottom .btn-full:active {
   border: 2px solid #ebac00e7;
   background-color: #e99c0f;
   color: white;
@@ -340,7 +339,7 @@ img {
   background-color: black;
   /* Set rules to fill background */
   min-height: 100%;
-  min-width: 500px;
+  min-width: 430px;
   /* Set up proportionate scaling */
   width: 100%;
   height: 100%;
@@ -351,6 +350,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .pick h2 {
@@ -359,25 +359,24 @@ img {
   line-height: 1.2;
   color: white;
   font-weight: 700;
-  padding-top: 0.9rem;
+  padding-top: 1.2rem;
   text-align: center;
-  margin-right: 3.5rem;
 }
 
 .pick h3 {
   font-size: 1.2rem;
   color: white;
-  margin-right: 3.5rem;
+  margin-right: 2rem;
 }
 
 .pick p {
   color: #ebebeb;
   font-size: 1.1rem;
   line-height: 1.3;
-  margin-right: 6.5rem;
-  margin-left: 2rem;
+  margin-right: 2.5rem;
+  margin-left: 2.5rem;
   margin-top: 0.2rem;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.6rem;
   font-weight: 400;
 }
 
@@ -387,8 +386,7 @@ img {
   -moz-transform: scale(0.7, 0.7);
   -ms-transform: scale(0.7, 0.7);
   -o-transform: scale(0.7, 0.7);
-  margin-top: -1rem;
-  margin-right: 3.5rem;
+  margin-bottom: -1rem;
 }
 
 .pick .dumbbell {
@@ -409,7 +407,6 @@ img {
   -o-transform: scale(0.7, 0.7);
   margin-bottom: -1rem;
   margin-top: -1rem;
-  margin-right: 3.5rem;
 }
 
 .pick .calendar {
@@ -420,7 +417,6 @@ img {
   -o-transform: scale(0.7, 0.7);
   margin-bottom: -1rem;
   margin-top: -1rem;
-  margin-right: 3.5rem;
 }
 
 .moto {
@@ -431,13 +427,12 @@ img {
   background-color: black;
   /* Set rules to fill background */
   min-height: 100%;
-  min-width: 460px;
+  min-width: 430px;
   /* Set up proportionate scaling */
   width: 100%;
   height: 100%;
   /* Set up positioning */
   top: 0;
-  margin-left: -1.5rem;
 }
 
 .moto h4 {
@@ -457,10 +452,6 @@ img {
   margin-right: 6rem;
   margin-top: 1rem;
   margin-bottom: 1.8rem;
-}
-
-.moto .lesson h4 {
-  font-size: 0.7;
 }
 
 .moto .lesson h5 {
@@ -507,7 +498,7 @@ img {
 }
 
 .sessions .girls h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1;
   padding-top: 0.8rem;
   text-transform: uppercase;
@@ -518,9 +509,9 @@ img {
 
 .sessions .girls .aboutTD {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   text-align: center;
-  padding: 1.5rem 1.2rem;
+  padding: 1rem 1.2rem;
   margin-left: 0;
 }
 
@@ -530,12 +521,19 @@ img {
   background-color: #717171;
   content: " ";
   width: auto;
-  margin: 0 1.5rem;
+  margin: 0 1rem;
   margin-top: 30px;
 }
 
+.sessions .girls .description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 1rem 1.2rem;
+}
+
 .sessions .girls h3 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   padding: 0.5rem;
   text-transform: uppercase;
   margin-left: 1rem;
@@ -549,10 +547,10 @@ img {
 }
 
 .sessions .girls p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
   text-transform: initial;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0 0.5rem 2.8rem;
 }
 
 .sessions .girls img {
@@ -579,7 +577,7 @@ img {
 }
 
 .sessions .guys h3 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   margin-top: 3rem;
   margin-left: 1rem;
@@ -589,15 +587,14 @@ img {
 .sessions .guys h3 span {
   border-style: groove;
   padding: 3px;
-  margin-left: 12rem;
+  margin-left: 17rem;
 }
 
 .sessions .guys p {
   text-transform: initial;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
-  margin-left: 2.5rem;
-  padding: 0.5rem;
+  padding: 0.5rem 0 0.5rem 4rem;
 }
 
 .sessions .guys img {
@@ -605,58 +602,191 @@ img {
 }
 
 .bootcamps {
-  padding-top: 0.2rem;
+  padding-top: 2rem;
   background-color: #e7e7e7;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  padding-left: 2rem;
   /* Set rules to fill background */
   min-height: 100%;
-  min-width: 800px;
+  min-width: 430px;
   /* Set up proportionate scaling */
   width: 100%;
   height: auto;
   /* Set up positioning */
-  top: 0.1rem;
-  left: 0.2rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  top: 0;
+  left: 0;
 }
 
 .bootcamps h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 1rem;
   text-transform: uppercase;
   text-align: center;
   color: #404040;
   font-weight: 600;
+  line-height: 1;
 }
 
-.bootcamps a:link,
-.bootcamps a:visited {
+.bootcamps .Johny {
+  margin-left: 0em;
+}
+
+.bootcamps .Johny a:link,
+.bootcamps .Johny a:visited {
   text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #404040;
 }
 
-.bootcamps a:hover,
-.bootcamps a:active {
+.bootcamps .Johny a:link span,
+.bootcamps .Johny a:visited span {
+  border-style: groove;
+  padding: 1px 2px;
+  color: #717171;
+  font-size: 1rem;
+  margin-left: 3rem;
+}
+
+.bootcamps .Johny a:hover,
+.bootcamps .Johny a:active {
   text-decoration: underline;
   color: #a4a4a4;
 }
 
-.bootcamps .Johny h4,
-.bootcamps .Aka h4,
-.bootcamps .Darrell h4,
+.bootcamps .Johny a:hover span,
+.bootcamps .Johny a:active span {
+  border-style: groove;
+  padding: 1px 2px;
+  color: #717171;
+  margin-left: 3rem;
+  font-size: 1rem;
+}
+
+.bootcamps .Aka a:link,
+.bootcamps .Aka a:visited {
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #404040;
+}
+
+.bootcamps .Aka a:link span,
+.bootcamps .Aka a:visited span {
+  border-style: groove;
+  padding: 1px 2px;
+  color: #717171;
+  margin-left: 20rem;
+  font-size: 1rem;
+}
+
+.bootcamps .Aka a:link a:hover,
+.bootcamps .Aka a:link a:active,
+.bootcamps .Aka a:visited a:hover,
+.bootcamps .Aka a:visited a:active {
+  text-decoration: underline;
+  color: #a4a4a4;
+}
+
+.bootcamps .Aka a:link a:hover span,
+.bootcamps .Aka a:link a:active span,
+.bootcamps .Aka a:visited a:hover span,
+.bootcamps .Aka a:visited a:active span {
+  border-style: groove;
+  padding: 1px 2px;
+  color: #717171;
+  margin-left: 20rem;
+  font-size: 1rem;
+}
+
+.bootcamps .Darrell a:link,
+.bootcamps .Darrell a:visited {
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #404040;
+}
+
+.bootcamps .Darrell a:link span,
+.bootcamps .Darrell a:visited span {
+  border-style: groove;
+  padding: 1px 2px;
+  color: #717171;
+  margin-left: 14rem;
+  font-size: 1rem;
+}
+
+.bootcamps .Darrell a:hover,
+.bootcamps .Darrell a:active {
+  text-decoration: underline;
+  color: #a4a4a4;
+}
+
+.bootcamps .Darrell a:hover span,
+.bootcamps .Darrell a:active span {
+  border-style: groove;
+  padding: 1px 2px;
+  color: #717171;
+  margin-left: 14rem;
+  font-size: 1rem;
+}
+
+.bootcamps .Nakreshia a:link,
+.bootcamps .Nakreshia a:visited {
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #404040;
+}
+
+.bootcamps .Nakreshia a:link span,
+.bootcamps .Nakreshia a:visited span {
+  border-style: groove;
+  padding: 1px 2px;
+  color: #717171;
+  margin-left: 0.7rem;
+  font-size: 1.1rem;
+}
+
+.bootcamps .Nakreshia a:link a:hover,
+.bootcamps .Nakreshia a:link a:active,
+.bootcamps .Nakreshia a:visited a:hover,
+.bootcamps .Nakreshia a:visited a:active {
+  text-decoration: underline;
+  color: #a4a4a4;
+}
+
+.bootcamps .Nakreshia a:link a:hover span,
+.bootcamps .Nakreshia a:link a:active span,
+.bootcamps .Nakreshia a:visited a:hover span,
+.bootcamps .Nakreshia a:visited a:active span {
+  border-style: groove;
+  padding: 1px 2px;
+  color: #717171;
+  font-size: 1rem;
+  margin-left: 0.7rem;
+}
+
+.bootcamps .Johny,
+.bootcamps .Aka,
+.bootcamps .Darrell,
 .bootcamps .Nakreshia h4 {
   font-family: 'Roboto', sans-serif;
   color: #a4a4a4;
   font-size: 1.2rem;
-  margin-left: 2.5rem;
 }
 
-.bootcamps .Johny img,
-.bootcamps .Aka img,
-.bootcamps .Darrell img,
-.bootcamps .Nakreshia img {
+.bootcamps .Johny span,
+.bootcamps .Aka span,
+.bootcamps .Darrell span,
+.bootcamps .Nakreshia h4 span {
+  border-style: groove;
+  padding: 1px 6px;
+  color: #717171;
+  margin-left: 11rem;
+  font-size: 1.3rem;
+}
+
+.bootcamps img {
   transform: scale(1.3);
   -webkit-transform: scale(1.3);
   -moz-transform: scale(1.3);
@@ -664,71 +794,7 @@ img {
   -o-transform: scale(1.3);
 }
 
-.Johny p {
-  text-transform: uppercase;
-  color: #404040;
-  font-size: 1.4rem;
-  font-weight: 300;
-  margin-left: 2.5rem;
-}
-
-.Johny p span {
-  border-style: groove;
-  padding: 1px 6px;
-  color: #717171;
-  margin-left: 9.9rem;
-  font-size: 1.3rem;
-}
-
-.Aka p {
-  text-transform: uppercase;
-  color: #404040;
-  font-size: 1.4rem;
-  font-weight: 300;
-  margin-left: 2.5rem;
-}
-
-.Aka p span {
-  border-style: groove;
-  padding: 1px 6px;
-  color: #717171;
-  margin-left: 2rem;
-  font-size: 1.3rem;
-}
-
-.Darrell p {
-  text-transform: uppercase;
-  color: #404040;
-  font-size: 1.4rem;
-  font-weight: 300;
-  margin-left: 2.5rem;
-}
-
-.Darrell p span {
-  border-style: groove;
-  padding: 1px 6px;
-  color: #717171;
-  margin-left: 11.1rem;
-  font-size: 1.3rem;
-}
-
-.Nakreshia p {
-  text-transform: uppercase;
-  color: #404040;
-  font-size: 1.4rem;
-  font-weight: 300;
-  margin-left: 2.5rem;
-}
-
-.Nakreshia p span {
-  border-style: groove;
-  padding: 1px 6px;
-  color: #717171;
-  margin-left: 8rem;
-  font-size: 1.3rem;
-}
-
-.better h2 {
+.bootcamps .better h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   padding: 2rem;
@@ -738,7 +804,7 @@ img {
   font-weight: 700;
 }
 
-.better:before {
+.bootcamps .better h2 .better:before {
   display: block;
   height: 2px;
   background-color: #717171;
@@ -851,23 +917,6 @@ img {
           transform: translate(-50%, -50%);
 }
 
-.wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-gap: 1px;
-  background-color: #e7e7e7;
-  margin-left: 0.2rem;
-}
-
-.box {
-  color: #fff;
-  padding: 5px;
-  font-size: 150%;
-  text-transform: uppercase;
-}
-
 .trainers {
   background-image: url(../vendors/img/zachary-nelson-98Elr-LIvD8-unsplash.jpg);
   background-size: cover;
@@ -905,7 +954,7 @@ img {
   color: #e99c0f;
 }
 
-.best_trainers {
+.trainers .best_trainers {
   background-image: url(../vendors/img/stretch_alexander-mils-bpoSU5kmUfo-unsplash.jpg);
   background-size: cover;
   background-position: center center;
@@ -923,7 +972,7 @@ img {
   left: 0;
 }
 
-.best_trainers h1 {
+.trainers .best_trainers h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 4.5rem;
   padding: 0;
@@ -938,7 +987,7 @@ img {
   line-height: 99%;
 }
 
-.best_trainers h2 {
+.trainers .best_trainers h2 {
   font-size: 1.5rem;
   font-family: 'Roboto', sans-serif;
   text-align: right;
@@ -949,8 +998,8 @@ img {
   text-transform: uppercase;
 }
 
-.best_trainers h2 a:link,
-.best_trainers h2 a:visited {
+.trainers .best_trainers h2 a:link,
+.trainers .best_trainers h2 a:visited {
   font-size: 1.5rem;
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
@@ -960,10 +1009,10 @@ img {
   text-align: right;
 }
 
-.best_trainers h2 a:link a:hover,
-.best_trainers h2 a:link a:active,
-.best_trainers h2 a:visited a:hover,
-.best_trainers h2 a:visited a:active {
+.trainers .best_trainers h2 a:link a:hover,
+.trainers .best_trainers h2 a:link a:active,
+.trainers .best_trainers h2 a:visited a:hover,
+.trainers .best_trainers h2 a:visited a:active {
   text-decoration: underline;
   color: #e99c0f;
 }
