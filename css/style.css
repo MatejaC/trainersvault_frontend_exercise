@@ -914,8 +914,8 @@ img {
   background-position: center center;
   background-repeat: no-repeat;
   background-color: black;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   /* Set rules to fill background */
   min-height: 100%;
   min-width: 430px;
@@ -929,24 +929,26 @@ img {
 
 .trainers a:link,
 .trainers a:visited {
-  font-size: 1.4rem;
-  font-weight: 700;
-  padding-left: 10rem;
+  font-size: 1.1rem;
+  font-weight: 500;
   font-family: 'Roboto', sans-serif;
   color: #ffbb00;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+  padding-left: 2rem;
 }
 
-.trainers a:hover,
-.trainers a:active {
+.trainers a:link a:hover,
+.trainers a:link a:active,
+.trainers a:visited a:hover,
+.trainers a:visited a:active {
   text-decoration: underline;
   color: #e99c0f;
 }
 
-.trainers .best_trainers {
-  background-image: url(../vendors/img/stretch_alexander-mils-bpoSU5kmUfo-unsplash.jpg);
+.best_trainers {
+  background-image: url(../vendors/img/josiah-weiss-3dCljt2Pud8-unsplash.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -959,53 +961,49 @@ img {
   width: 100%;
   height: 100%;
   /* Set up positioning */
-  top: 0;
+  padding-top: 16rem;
   left: 0;
 }
 
-.trainers .best_trainers h1 {
+.best_trainers h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 4.5rem;
-  padding: 0;
-  text-align: right;
-  letter-spacing: 0.15rem;
-  color: black;
-  text-transform: uppercase;
-  font-weight: 800;
-  padding-top: 4rem;
-  padding-bottom: 1rem;
-  padding-right: 3rem;
-  line-height: 99%;
-}
-
-.trainers .best_trainers h2 {
-  font-size: 1.5rem;
-  font-family: 'Roboto', sans-serif;
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-top: -15rem;
+  margin-right: 1rem;
+  margin-bottom: 10rem;
   text-align: right;
   color: black;
-  padding-bottom: 3rem;
-  padding-right: 3rem;
-  font-weight: 700;
   text-transform: uppercase;
+  line-height: 91%;
 }
 
-.trainers .best_trainers h2 a:link,
-.trainers .best_trainers h2 a:visited {
-  font-size: 1.5rem;
+.best_trainers h2 {
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #e7e7e7;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+
+.best_trainers h2 a:link,
+.best_trainers h2 a:visited {
+  font-size: 1.2rem;
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
-  color: black;
+  color: #ffbb00;
   text-decoration: none;
   text-transform: uppercase;
-  text-align: right;
 }
 
-.trainers .best_trainers h2 a:link a:hover,
-.trainers .best_trainers h2 a:link a:active,
-.trainers .best_trainers h2 a:visited a:hover,
-.trainers .best_trainers h2 a:visited a:active {
+.best_trainers h2 a:link a:hover,
+.best_trainers h2 a:link a:active,
+.best_trainers h2 a:visited a:hover,
+.best_trainers h2 a:visited a:active {
   text-decoration: underline;
   color: #e99c0f;
+  background-color: #e99c0f;
 }
 
 .footer {
