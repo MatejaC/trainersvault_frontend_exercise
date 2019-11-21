@@ -747,6 +747,19 @@ img {
   left: 0;
 }
 
+.cities .box-1,
+.cities .box-2,
+.cities .box-3,
+.cities .box-4,
+.cities .box-5,
+.cities .box-6,
+.cities .box-7,
+.cities .box-8,
+.cities .box-9,
+.cities .box-10 {
+  padding-bottom: 10px;
+}
+
 .cities .box-1 {
   text-align: center;
 }
@@ -872,6 +885,7 @@ img {
   /* Set up positioning */
   top: 0;
   left: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .trainers a:link,
@@ -900,7 +914,6 @@ img {
   background-position: center center;
   background-repeat: no-repeat;
   background-color: black;
-  padding: 0;
   /* Set rules to fill background */
   min-height: 100%;
   min-width: 430px;
