@@ -5,10 +5,7 @@
   padding: 0;
 }
 
-html {
-  line-height: 1.6;
-}
-
+html,
 body {
   color: #717171;
   background: #404040;
@@ -17,135 +14,7 @@ body {
   font-size: 1rem;
   overflow-x: hidden;
   margin: 0;
-}
-
-.intro,
-.pick,
-section,
-.moto,
-.sessions,
-.bootcamps,
-.cities,
-.trainers,
-footer {
-  display: block;
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-b,
-strong {
-  font-weight: bolder;
-}
-
-ol ul,
-ul ol,
-ul ul,
-ol ol {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/*
-	1.Correct thetextwrappinginEdgeandIE.
-	*2.Correctthecolorinheritance from`fieldset`elementsinIE.
-	* 3.Removethepaddingsodevelopersarenotcaughtout whentheyzeroout
-	*	`fieldset`	elements	in	all	browsers.
-	*/
-legend {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
-}
-
-/**
- * 1. Add the correct display in IE 9-.
- * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-progress {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */
-}
-
-/**
- * Remove the default vertical scrollbar in IE.
-	*/
-textarea {
-  overflow: auto;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-}
-
-/*
- * Add the correct display in IE 9-.
- * 1. Add the correct display in Edge, IE, and Firefox.
- */
-details,
-menu {
-  display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
-summary {
-  display: list-item;
-}
-
-/* Hidden
-   ========================================================================== */
-/**
- * Add the correct display in IE 10-.
- */
-[hidden] {
-  display: none;
+  line-height: 1;
 }
 
 .wrapper {
@@ -156,25 +25,28 @@ summary {
   grid-gap: 0px;
 }
 
+/*finish!!!!! */
 @media (min-width: 320px) {
   .wrapper > * {
     grid-column: col-start / span 12;
   }
 }
 
-@media (min-width: 375px) {
+/*finish!!!!! */
+@media (minmax-width: 375px) {
   .wrapper > * {
     grid-column: col-start / span 12;
   }
 }
 
-@media (min-width: 425px) {
+@media (minmax-width: 425px) {
   .wrapper > * {
     grid-column: col-start / span 12;
   }
 }
 
-@media (min-width: 500px) {
+/* --- for tablets --- */
+@media (min-width: 768px) {
   .intro {
     grid-column: col-start / span 12;
     -ms-grid-row: 1;
@@ -198,27 +70,32 @@ summary {
   }
   .bootcamps {
     grid-column: col-start / span 12;
-    -ms-grid-row: 1;
-    grid-row: 1;
+    -ms-grid-row: 6;
+    grid-row: 6;
   }
   .cities {
+    grid-column: col-start / span 12;
+    grid-row: row-start 7 /span 2;
+  }
+  .trainers {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 9;
+    grid-row: 9;
+  }
+  .best_trainers {
     grid-column: col-start / span 12;
     -ms-grid-row: 10;
     grid-row: 10;
   }
-  .trainers {
-    grid-column: col-start / span 12;
-    -ms-grid-row: 1;
-    grid-row: 1;
-  }
-  .best_trainers {
-    grid-column: col-start / span 12;
-  }
   .navbar {
     grid-column: col-start / span 12;
+    -ms-grid-row: 11;
+    grid-row: 11;
   }
   .footer {
     grid-column: col-start / span 12;
+    -ms-grid-row: 12;
+    grid-row: 12;
   }
 }
 
@@ -418,7 +295,6 @@ img {
 .pick h3 {
   font-size: 1.1rem;
   color: white;
-  margin-right: 2rem;
 }
 
 .pick p {
@@ -437,7 +313,7 @@ img {
   -moz-transform: scale(0.5, 0.5);
   -ms-transform: scale(0.5, 0.5);
   -o-transform: scale(0.5, 0.5);
-  margin-bottom: -1rem;
+  margin-bottom: -2rem;
 }
 
 .pick .dumbbell {
@@ -456,8 +332,7 @@ img {
   -moz-transform: scale(0.5, 0.5);
   -ms-transform: scale(0.5, 0.5);
   -o-transform: scale(0.5, 0.5);
-  margin-bottom: -1rem;
-  margin-top: -0.5rem;
+  margin-bottom: -1.4rem;
 }
 
 .pick .calendar {
@@ -466,8 +341,7 @@ img {
   -moz-transform: scale(0.5, 0.5);
   -ms-transform: scale(0.5, 0.5);
   -o-transform: scale(0.5, 0.5);
-  margin-bottom: -1.4rem;
-  margin-top: -0.5rem;
+  margin-bottom: -1.7rem;
 }
 
 .moto {
@@ -518,6 +392,15 @@ img {
   text-align: center;
 }
 
+.sessions h2,
+.sessions h3,
+.sessions h4,
+.sessions p {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
 .sessions .girls {
   padding-top: 0.2rem;
   background-color: #e7e7e7;
@@ -533,8 +416,15 @@ img {
   /* Set up positioning */
   top: 0;
   left: 0;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+}
+
+.sessions .girls h2,
+.sessions .girls h3,
+.sessions .girls h4,
+.sessions .girls p {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 
 .sessions .girls h4 {
@@ -545,31 +435,31 @@ img {
 }
 
 .sessions .girls h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1;
   padding-top: 0.8rem;
   text-transform: uppercase;
   text-align: center;
   color: #404040;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .sessions .girls .aboutTD {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   text-align: center;
-  padding: 1rem 1.2rem;
+  padding: 1.5rem;
   margin-left: 0;
 }
 
 .sessions .girls .aboutTD:after {
   display: block;
-  height: 2px;
+  height: 1.3px;
   background-color: #717171;
   content: " ";
   width: auto;
   margin: 0 1rem;
-  margin-top: 30px;
+  margin-top: 1.6rem;
 }
 
 .sessions .girls .description {
@@ -580,21 +470,21 @@ img {
 }
 
 .sessions .girls h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding: 0.5rem;
   text-transform: uppercase;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
   color: #404040;
 }
 
 .sessions .girls h3 span {
   border-style: groove;
-  padding: 2px;
-  margin-left: 16rem;
+  padding: 2px 2px;
+  margin-left: 19rem;
 }
 
 .sessions .girls p {
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: 300;
   text-transform: initial;
   padding: 0.5rem 0 0.5rem 2.8rem;
@@ -605,6 +495,7 @@ img {
 }
 
 .sessions .guys {
+  font-family: 'Roboto', sans-serif;
   padding-top: 0.2rem;
   background-color: #e7e7e7;
   background-size: cover;
@@ -619,15 +510,13 @@ img {
   /* Set up positioning */
   top: 0;
   left: 0;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .sessions .guys h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
   text-transform: uppercase;
-  margin-top: 3rem;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
   color: #404040;
 }
 
@@ -638,10 +527,10 @@ img {
 }
 
 .sessions .guys p {
-  text-transform: initial;
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: 300;
-  padding: 0.5rem 0 0.5rem 4rem;
+  text-transform: initial;
+  padding: 0.5rem 0 0.5rem 2.8rem;
 }
 
 .sessions .guys img {
@@ -652,6 +541,7 @@ img {
   padding-top: 2rem;
   background-color: #e7e7e7;
   padding-left: 2rem;
+  font-family: 'Roboto', sans-serif;
   /* Set rules to fill background */
   min-height: 100%;
   min-width: 430px;
@@ -664,12 +554,13 @@ img {
 }
 
 .bootcamps h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 1rem;
+  padding-right: 2rem;
   text-transform: uppercase;
   text-align: center;
   color: #404040;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1;
 }
 
@@ -691,7 +582,7 @@ img {
   padding: 1px 2px;
   color: #717171;
   font-size: 1rem;
-  margin-left: 2.8rem;
+  margin-left: 2.6rem;
 }
 
 .bootcamps .Johny a:hover,
@@ -706,7 +597,7 @@ img {
   padding: 1px 2px;
   color: #a4a4a4;
   font-size: 1rem;
-  margin-left: 2.8rem;
+  margin-left: 2.6rem;
 }
 
 .bootcamps .Aka a:link,
@@ -722,7 +613,7 @@ img {
   border-style: groove;
   padding: 1px 2px;
   color: #717171;
-  margin-left: 13.35rem;
+  margin-left: 13.5rem;
   font-size: 1rem;
 }
 
@@ -741,7 +632,7 @@ img {
   border-style: groove;
   padding: 1px 2px;
   color: #a4a4a4;
-  margin-left: 20rem;
+  margin-left: 13.5rem;
   font-size: 1rem;
 }
 
@@ -758,7 +649,7 @@ img {
   border-style: groove;
   padding: 1px 2px;
   color: #717171;
-  margin-left: 14.2rem;
+  margin-left: 14.3rem;
   font-size: 1rem;
 }
 
@@ -773,7 +664,7 @@ img {
   border-style: groove;
   padding: 1px 2px;
   color: #a4a4a4;
-  margin-left: 14rem;
+  margin-left: 14.3rem;
   font-size: 1rem;
 }
 
@@ -809,7 +700,7 @@ img {
   border-style: groove;
   padding: 1px 2px;
   color: #717171;
-  margin-left: 0.7rem;
+  margin-left: 1rem;
 }
 
 .bootcamps .Johny,
@@ -944,10 +835,6 @@ img {
 }
 
 .cities .box-9 {
-  text-align: center;
-}
-
-.cities .box-10 {
   position: relative;
   color: white;
   text-align: center;
@@ -956,12 +843,16 @@ img {
   text-transform: uppercase;
 }
 
-.cities .box-10 .Atlanta {
+.cities .box-9 .Atlanta {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.cities .box-10 {
+  text-align: center;
 }
 
 .trainers {
@@ -970,8 +861,8 @@ img {
   background-position: center center;
   background-repeat: no-repeat;
   background-color: black;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   /* Set rules to fill background */
   min-height: 100%;
   min-width: 430px;
@@ -985,8 +876,8 @@ img {
 
 .trainers a:link,
 .trainers a:visited {
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-size: 1.3rem;
+  font-weight: 600;
   font-family: 'Roboto', sans-serif;
   color: #ffbb00;
   text-decoration: none;
@@ -1023,7 +914,7 @@ img {
 
 .best_trainers h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.7rem;
+  font-size: 3rem;
   font-weight: 700;
   margin-top: -15rem;
   margin-right: 1rem;
@@ -1031,12 +922,13 @@ img {
   text-align: right;
   color: black;
   text-transform: uppercase;
-  line-height: 91%;
+  line-height: 97%;
 }
 
 .best_trainers h2 {
   font-size: 1.2rem;
   font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   text-align: center;
   color: #e7e7e7;
   text-transform: uppercase;
@@ -1158,5 +1050,6 @@ img {
   color: #ffbb00;
   font-weight: 200;
   margin-bottom: 1.5rem;
+  padding-top: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
