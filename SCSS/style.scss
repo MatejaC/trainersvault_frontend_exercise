@@ -16,7 +16,7 @@ $smudgywhite: #ebebeb;
 html,
 body {
 	color: $mediumgray;
-	background: $darkgray-color;
+	background: black;
 	font-family: 'Montserrat', sans-serif;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1rem;
@@ -31,76 +31,65 @@ body {
 	grid-gap: 0px;
 }
 
-/*finish!!!!! */
-@media (min-width: 320px) {
-	.wrapper > * {
-		grid-column: col-start / span 12;
-	}
-}
-
-/*finish!!!!! */
+/*finish!!!!! 
 @media (minmax-width: 375px) {
 	.wrapper > * {
 		grid-column: col-start / span 12;
 	}
+} */
+.wrapper > * {
+	grid-column: col-start / span 12;
 }
 
-@media (minmax-width: 425px) {
-	.wrapper > * {
-		grid-column: col-start / span 12;
-	}
-}
-
-/* --- for tablets --- */
-@media (min-width: 768px) {
+@media (min-width: 425px) {
 	.intro {
 		grid-column: col-start / span 12;
 		grid-row: 1;
-	}
 
-	.pick {
-		grid-column: col-start / span 12;
-		grid-row: 2;
-	}
+		.pick {
+			grid-column: col-start / span 12;
+			grid-row: 2;
+		}
 
-	.moto {
-		grid-column: col-start / span 12;
-		grid-row: 3;
-	}
+		.moto {
+			grid-column: col-start / span 12;
+			grid-row: 3;
+		}
 
-	.sessions {
-		grid-column: col-start / span 12;
-		grid-row: 4, 5;
-	}
+		.sessions {
+			grid-column: col-start / span 12;
+			grid-row: row-start 4 /span 2;
+		}
 
-	.bootcamps {
-		grid-column: col-start / span 12;
-		grid-row: 6;
-	}
+		.bootcamps {
+			grid-column: col-start / span 12;
+			grid-row: 6;
+		}
 
-	.cities {
-		grid-column: col-start / span 12;
-		grid-row: row-start 7 /span 2;
-	}
+		.cities {
+			grid-column: col-start / span 12;
+			grid-row: row-start 7 /span 2;
+		}
 
-	.trainers {
-		grid-column: col-start / span 12;
-		grid-row: 9;
-	}
+		.trainers {
+			grid-column: col-start / span 12;
+			grid-row: 9;
+		}
 
-	.best_trainers {
-		grid-column: col-start / span 12;
-		grid-row: 10;
-	}
+		.best_trainers {
+			grid-column: col-start / span 12;
+			grid-row: 10;
+		}
 
-	.navbar {
-		grid-column: col-start / span 12;
-		grid-row: 11;
-	}
+		.navbar {
+			grid-column: col-start / span 12;
+			grid-row: 11;
+		}
 
-	.footer {
-		grid-column: col-start / span 12;
-		grid-row: 12;
+		.footer {
+			grid-column: col-start / span 12;
+			grid-row: 12;
+		}
 	}
 }
 
@@ -128,12 +117,13 @@ img {
 	background-color: black;
 	/* Set rules to fill background */
 	min-height: 100%;
-	min-width: 430px;
+	min-width: 470px;
 	/* Set up proportionate scaling */
 	width: 100%;
 	height: 100%;
 	/* Set up positioning */
 	top: 0;
+	margin-left: -2rem;
 
 	.intro-middle h1 {
 		font-family: 'Montserrat', sans-serif;
@@ -143,7 +133,7 @@ img {
 		color: white;
 		text-transform: uppercase;
 		font-weight: 700;
-		margin-left: 2rem;
+		margin-left: 1.5rem;
 		padding-bottom: 0.5rem;
 		padding-top: 4rem;
 	}
@@ -151,7 +141,7 @@ img {
 	.intro-middle h2 {
 		font-size: 1.1rem;
 		font-weight: 400;
-		margin-left: 2rem;
+		margin-left: 1.5rem;
 		color: white;
 		line-height: 1.6;
 		text-align: left;
@@ -160,8 +150,9 @@ img {
 
 	.intro-top-left {
 		text-align: left;
-		margin-left: 2rem;
+		margin-left: 1.2rem;
 		padding-top: 1rem;
+		margin-top: 0.8rem;
 
 		h3 {
 			font-size: 1rem;
@@ -195,7 +186,7 @@ img {
 			display: inline-block;
 			font-size: 1rem;
 			font-weight: 400;
-			padding: 7px 6px;
+			padding: 7px 7px;
 			margin: 2rem 0 1.8rem 1rem;
 			border: 2px solid $accent-button-color;
 			color: $accent-button-color;
@@ -293,12 +284,14 @@ img {
 		font-weight: 700;
 		padding-top: 1.5rem;
 		text-align: center;
-		margin-bottom: -2rem;
+		margin-bottom: 1rem;
 	}
 
 	h3 {
+		font-family: 'Roboto', sans-serif;
 		font-size: 1.1rem;
 		color: white;
+		font-weight: 500;
 	}
 
 	p {
@@ -455,6 +448,7 @@ img {
 			text-align: center;
 			padding: 1.5rem;
 			margin-left: 0;
+			line-height: 1.3;
 		}
 
 		.aboutTD:after {
@@ -480,10 +474,12 @@ img {
 			text-transform: uppercase;
 			margin-left: 1.5rem;
 			color: $darkgray-color;
+			line-height: 1.5;
 
 			span {
+				font-size: 1.3rem;
 				border-style: groove;
-				padding: 2px 2px;
+				padding: 1px 2px;
 				margin-left: 19rem;
 			}
 		}
@@ -526,8 +522,9 @@ img {
 			color: $darkgray-color;
 
 			span {
+				font-size: 1.3rem;
 				border-style: groove;
-				padding: 3px;
+				padding: 1px 2px;
 				margin-left: 17rem;
 			}
 		}
@@ -562,8 +559,9 @@ img {
 	left: 0;
 
 	h2 {
-		font-size: 2rem;
+		font-size: 1.9rem;
 		padding: 1rem;
+		padding: 0;
 		padding-right: 2rem;
 		text-transform: uppercase;
 		text-align: center;
@@ -745,6 +743,7 @@ img {
 	/* Set up positioning */
 	top: 0;
 	left: 0;
+
 	.box-1,
 	.box-2,
 	.box-3,
@@ -757,9 +756,11 @@ img {
 	.box-10 {
 		padding-bottom: 10px;
 	}
+
 	.box-1 {
 		text-align: center;
 	}
+
 	.box-2 {
 		position: relative;
 		color: white;
@@ -879,7 +880,7 @@ img {
 
 	a:link,
 	a:visited {
-		font-size: 1.3rem;
+		font-size: 1.1rem;
 		font-weight: 600;
 		font-family: 'Roboto', sans-serif;
 		color: $accent-button-color;
@@ -958,55 +959,55 @@ img {
 	background-color: $darkgray-color;
 	bottom: 0;
 	width: 100%;
-}
 
-.navbar a {
-	float: left;
-	display: block;
-	color: $verylightgray;
-	text-align: center;
-	padding: 8px 10px;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 15px;
-}
+	.navbar a {
+		float: left;
+		display: block;
+		color: $verylightgray;
+		text-align: center;
+		padding: 8px 10px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 15px;
+	}
 
-.navbar a:hover {
-	background-color: $lightgray;
-	color: black;
-}
+	.navbar a:hover {
+		background-color: $lightgray;
+		color: black;
+	}
 
-.navbar a.active {
-	background-color: $accent-button-color;
-	color: white;
-}
+	.navbar a.active {
+		background-color: $accent-button-color;
+		color: white;
+	}
 
-.navbar .icon {
-	display: none;
-}
-
-@media screen and (max-width: 600px) {
-	.navbar a:not(:first-child) {
+	.navbar .icon {
 		display: none;
 	}
 
-	.navbar a.icon {
-		float: right;
-		display: block;
-	}
-}
+	@media screen and (max-width: 600px) {
+		.navbar a:not(:first-child) {
+			display: none;
+		}
 
-@media screen and (max-width: 600px) {
-	.navbar.responsive .icon {
-		position: absolute;
-		right: 0;
-		bottom: 0;
+		.navbar a.icon {
+			float: right;
+			display: block;
+		}
 	}
 
-	.navbar.responsive a {
-		float: none;
-		display: block;
-		text-align: left;
+	@media screen and (max-width: 600px) {
+		.navbar.responsive .icon {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+
+		.navbar.responsive a {
+			float: none;
+			display: block;
+			text-align: left;
+		}
 	}
 }
 
@@ -1052,4 +1053,198 @@ img {
 		margin-bottom: 1.5rem;
 		padding-top: 1rem;
 	}
+}
+
+/* --- for tablets --- */
+@media (min-width: 768px) {
+	.intro {
+		grid-column: col-start / span 12;
+		grid-row: 1;
+	}
+
+	.pick {
+		grid-column: col-start / span 12;
+		grid-row: 2;
+	}
+
+	.moto {
+		grid-column: col-start / span 12;
+		grid-row: 3;
+	}
+
+	.sessions {
+		grid-column: col-start / span 12;
+		grid-row: row-start 4 /span 2;
+	}
+
+	.bootcamps {
+		grid-column: col-start / span 12;
+		grid-row: 6;
+	}
+
+	.cities {
+		grid-column: col-start / span 12;
+		grid-row: row-start 7 /span 2;
+	}
+
+	.trainers {
+		grid-column: col-start / span 12;
+		grid-row: 9;
+	}
+
+	.best_trainers {
+		grid-column: col-start / span 12;
+		grid-row: 10;
+	}
+
+	.navbar {
+		grid-column: col-start / span 12;
+		grid-row: 11;
+	}
+
+	.footer {
+		grid-column: col-start / span 12;
+		grid-row: 12;
+	}
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.clearfix:after {
+	content: ".";
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.intro {
+	min-height: 100%;
+	min-width: 770px;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	background-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 1),
+			rgba(0, 0, 0, 0.9),
+			rgba(0, 0, 0, 0.6),
+			rgba(0, 0, 0, 0.2)
+		),
+		url(../vendors/img/second_bg_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg);
+	background-position: center center;
+	margin-left: 5rem;
+
+	.intro-middle h1 {
+		font-family: 'Montserrat', sans-serif;
+		line-height: 80%;
+		font-size: 5.7rem;
+		letter-spacing: 0.15rem;
+		font-weight: 700;
+		margin-left: 0rem;
+		padding-top: 4rem;
+	}
+
+	.intro-middle h2 {
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-left: 0rem;
+		line-height: 1.5;
+		margin-bottom: 1.9rem;
+	}
+
+	.intro-top-left {
+		font-size: 0.9rem;
+		text-align: left;
+		margin-left: 0;
+		margin-top: 0.3rem;
+		margin-bottom: 0;
+
+		h3 {
+			font-size: 0.9rem;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+
+	.intro-top-right {
+		text-align: right;
+		font-size: 0.8rem;
+		margin-top: -2rem;
+		margin-right: 17rem;
+
+		a:link,
+		a:visited {
+			font-size: 1rem;
+			font-weight: 400;
+		}
+
+		a:hover,
+		a:active {
+			color: $accent-button-color;
+			text-decoration: underline;
+		}
+
+		.btn-ghost:link,
+		.btn-ghost:visited {
+			display: inline-block;
+			text-align: right;
+			margin: -11rem -7rem 0 1.2rem;
+			padding-top: -2rem;
+		}
+
+		.btn-ghost:hover,
+		.btn-ghost:active {
+			font-size: 1rem;
+			font-weight: 400;
+		}
+	}
+
+	.intro-bottom {
+		.btn-ghost:link,
+		.btn-ghost:visited {
+			display: inline-block;
+			font-size: 1.2rem;
+			padding: 6px 8px;
+			margin: 1.8rem 0rem 4rem 0;
+		}
+
+		.btn-ghost:hover,
+		.btn-ghost:active {
+			font-size: 1.2rem;
+			padding: 6px 8px;
+			margin: 0rem 0rem 4rem 1.6rem;
+
+			color: white;
+			text-decoration: none;
+		}
+
+		.btn-full:link,
+		.btn-full:visited {
+			display: inline-block;
+			font-size: 1.2rem;
+			padding: 6px 5px;
+			margin: 0rem 0 4rem 2rem;
+		}
+
+		.btn-full:hover,
+		.btn-full:active {
+			border: 2px solid #ebac00e7;
+			background-color: rgb(233, 156, 15);
+			color: white;
+			font-weight: 500;
+			text-decoration: none;
+		}
+	}
+}
+
+.pick {
+	grid-template-columns: (1fr, 1fr, 1fr);
 }
