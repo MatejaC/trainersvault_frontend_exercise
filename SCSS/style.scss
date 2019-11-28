@@ -59,7 +59,7 @@ body {
 
 	.sessions {
 		grid-column: col-start / span 12;
-		grid-row: row-start 4 /span 2;
+		grid-row: 4;
 	}
 
 	.bootcamps {
@@ -69,7 +69,7 @@ body {
 
 	.cities {
 		grid-column: col-start / span 12;
-		grid-row: row-start 7 /span 2;
+		grid-row: 7;
 	}
 
 	.trainers {
@@ -1240,56 +1240,84 @@ img {
 	}
 }
 
-.pick {
-	grid-column: col-start / span 12;
-	grid-row: 2;
-	display: grid;
-	grid-template-rows: 150px 300px;
-	grid-template-columns: 100px auto 100px;
-	grid-gap: 10px;
-
-	.title {
-		grid-row: 1;
-		grid-column: 3 / span 8;
+@media (min-width: 768px) {
+	.pick {
+		grid-column: col-start / span 12;
+		grid-row: 2;
+		display: grid;
+		grid-template-rows: 180px 310px;
+		grid-template-columns: 95px auto 95px;
+		grid-gap: 5px;
+		padding-right: 2rem;
+		padding-left: 2rem;
 	}
 
-	.trainer {
-		grid-column: 1 / 5;
-		grid-row: 2;
-	}
+	.pick {
+		h2 {
+			font-size: 1.8rem;
+		}
 
-	.workout {
-		grid-column: 5/9;
-		grid-row: 2;
-	}
+		h3 {
+			font-size: 1.2rem;
+		}
 
-	.start {
-		grid-column: 9/12;
-		grid-row: 2;
+		p {
+			font-size: 1.2rem;
+		}
+
+		.runner {
+			margin-bottom: -1rem;
+		}
+
+		.calendar {
+			margin-bottom: -1rem;
+		}
+
+		.dumbbell {
+			margin-bottom: -0.4rem;
+		}
+
+		.title {
+			grid-row: 1;
+			grid-column: 3 / span 8;
+		}
+
+		.trainer {
+			grid-column: 1 / 5;
+			grid-row: 2;
+		}
+
+		.workout {
+			grid-column: 5/9;
+			grid-row: 2;
+		}
+
+		.start {
+			grid-column: 9/12;
+			grid-row: 2;
+		}
 	}
 }
 
-.pick {
-	h2 {
-		font-size: 1.8rem;
+@media (min-width: 768px) {
+	.moto {
+		grid-column: col-start / span 12;
+		grid-row: 3;
+		min-height: 100%;
+		min-width: 770px;
+		padding-top: 3.2rem;
+		padding-bottom: 3.2rem;
+		margin-left: -0.1rem;
 	}
 
-	h3 {
-		font-size: 1.2rem;
-	}
+	.lesson {
+		margin: 0.8rem 6.8rem;
 
-	p {
-		font-size: 1.2rem;
-	}
-
-	.runner {
-		margin-bottom: -1rem;
-	}
-
-	.calendar {
-		margin-bottom: -1rem;
-	}
-	.dumbbell {
-		margin-bottom: -0.4rem;
+		h5 {
+			font-size: 1.4rem;
+		}
+		h3 {
+			font-size: 1.7rem;
+		}
 	}
 }
