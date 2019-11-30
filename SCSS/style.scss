@@ -464,13 +464,6 @@ img {
 			margin-top: 1.6rem;
 		}
 
-		.description {
-			font-family: 'Roboto', sans-serif;
-			font-size: 0.8rem;
-			text-align: center;
-			padding: 1rem 1.2rem;
-		}
-
 		h3 {
 			font-size: 1.5rem;
 			padding: 0.5rem;
@@ -1077,7 +1070,7 @@ img {
 
 	.sessions {
 		grid-column: col-start / span 12;
-		grid-row: row-start 4 /span 2;
+		grid-row: 4;
 	}
 
 	.bootcamps {
@@ -1316,8 +1309,171 @@ img {
 		h5 {
 			font-size: 1.4rem;
 		}
+
 		h3 {
 			font-size: 1.7rem;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.sessions {
+		padding-top: 0.2rem;
+		background-color: $verylightgray;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		/* Set rules to fill background */
+		min-height: 100%;
+		min-width: 768px;
+		/* Set up positioning */
+		top: 0;
+		left: 0;
+		grid-column: col-start / span 12;
+		grid-row: 4 / span 2;
+		display: grid;
+		grid-template-rows: 560px 560px;
+		grid-gap: 0;
+
+		@media (min-width: 768px) {
+			.girls {
+				grid-column: 1/6;
+				min-width: 330px;
+
+				h4 {
+					font-size: 1.1rem;
+					margin-top: 0.3rem;
+					margin-left: 1.2rem;
+				}
+
+				h2 {
+					font-size: 2.5rem;
+					padding-top: 1.8rem;
+					margin-left: 10rem;
+					margin-right: -16rem;
+					margin-bottom: 1.6rem;
+					line-height: 0;
+				}
+
+				.aboutTD {
+					font-size: 1.4rem;
+					text-align: left;
+					padding: 1.5rem 0;
+					margin-left: 6rem;
+					margin-right: -20rem;
+					line-height: 1.4;
+				}
+
+				.aboutTD:after {
+					height: 1.3px;
+					margin-top: 1.5rem;
+				}
+
+				h3 {
+					font-size: 1.6rem;
+					font-weight: 700;
+					padding: 0.4rem;
+					margin-left: 0.6rem;
+					margin-top: 0.5rem;
+
+					span {
+						font-size: 1.3rem;
+						padding: 1px 2px;
+						margin-left: 16.9rem;
+					}
+				}
+
+				p {
+					font-size: 1.2rem;
+					padding: 0.85rem 0 1.7rem 2rem;
+				}
+
+				img {
+					padding: 0.2rem 0.7rem;
+				}
+			}
+		}
+
+		@media (min-width: 768px) {
+			.guys {
+				grid-column: 7/12;
+				margin-top: 13rem;
+				padding-left: 1rem;
+				min-width: 330px;
+
+				img {
+					padding: 0.2rem 0.7rem;
+				}
+
+				h3 {
+					font-size: 1.6rem;
+					font-weight: 700;
+					padding: 0.5rem;
+					margin-left: 0.5rem;
+
+					span {
+						font-size: 1.3rem;
+						padding: 1px 2px;
+						margin-left: 15.5rem;
+					}
+				}
+
+				p {
+					font-size: 1.2rem;
+					padding: 0.5rem 0 1.5rem 2.8rem;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.bootcamps {
+		grid-column: 1 / 12;
+		grid-row: 6;
+		padding-top: 3rem;
+		min-width: 768px;
+		padding-left: 4rem;
+
+		h2 {
+			font-size: 2.5rem;
+			padding-bottom: 1.8rem;
+		}
+
+		.Johny {
+			a:link,
+			a:visited {
+				span {
+					margin-left: 8rem;
+				}
+			}
+		}
+
+		.Aka {
+			a:link,
+			a:visited {
+				span {
+					margin-left: 1.55rem;
+				}
+			}
+		}
+
+		.Darrell {
+			a:link,
+			a:visited {
+				span {
+					margin-left: 15.3rem;
+				}
+			}
+		}
+
+		.Nakreshia {
+			a:link,
+			a:visited {
+				span {
+					margin-left: 6.58rem;
+				}
+			}
 		}
 	}
 }

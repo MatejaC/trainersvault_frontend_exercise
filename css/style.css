@@ -445,13 +445,6 @@ img {
   margin-top: 1.6rem;
 }
 
-.sessions .girls .description {
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.8rem;
-  text-align: center;
-  padding: 1rem 1.2rem;
-}
-
 .sessions .girls h3 {
   font-size: 1.5rem;
   padding: 0.5rem;
@@ -1072,7 +1065,8 @@ img {
   }
   .sessions {
     grid-column: col-start / span 12;
-    grid-row: row-start 4 /span 2;
+    -ms-grid-row: 4;
+    grid-row: 4;
   }
   .bootcamps {
     grid-column: col-start / span 12;
@@ -1296,6 +1290,146 @@ img {
   }
   .lesson h3 {
     font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .sessions {
+    padding-top: 0.2rem;
+    background-color: #e7e7e7;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 768px;
+    /* Set up positioning */
+    top: 0;
+    left: 0;
+    grid-column: col-start / span 12;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 2;
+    grid-row: 4 / span 2;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 560px 560px;
+        grid-template-rows: 560px 560px;
+    grid-gap: 0;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 768px) {
+  .sessions .girls {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1/6;
+    min-width: 330px;
+  }
+  .sessions .girls h4 {
+    font-size: 1.1rem;
+    margin-top: 0.3rem;
+    margin-left: 1.2rem;
+  }
+  .sessions .girls h2 {
+    font-size: 2.5rem;
+    padding-top: 1.8rem;
+    margin-left: 10rem;
+    margin-right: -16rem;
+    margin-bottom: 1.6rem;
+    line-height: 0;
+  }
+  .sessions .girls .aboutTD {
+    font-size: 1.4rem;
+    text-align: left;
+    padding: 1.5rem 0;
+    margin-left: 6rem;
+    margin-right: -20rem;
+    line-height: 1.4;
+  }
+  .sessions .girls .aboutTD:after {
+    height: 1.3px;
+    margin-top: 1.5rem;
+  }
+  .sessions .girls h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 0.4rem;
+    margin-left: 0.6rem;
+    margin-top: 0.5rem;
+  }
+  .sessions .girls h3 span {
+    font-size: 1.3rem;
+    padding: 1px 2px;
+    margin-left: 16.9rem;
+  }
+  .sessions .girls p {
+    font-size: 1.2rem;
+    padding: 0.85rem 0 1.7rem 2rem;
+  }
+  .sessions .girls img {
+    padding: 0.2rem 0.7rem;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 768px) {
+  .sessions .guys {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 5;
+    grid-column: 7/12;
+    margin-top: 13rem;
+    padding-left: 1rem;
+    min-width: 330px;
+  }
+  .sessions .guys img {
+    padding: 0.2rem 0.7rem;
+  }
+  .sessions .guys h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  .sessions .guys h3 span {
+    font-size: 1.3rem;
+    padding: 1px 2px;
+    margin-left: 15.5rem;
+  }
+  .sessions .guys p {
+    font-size: 1.2rem;
+    padding: 0.5rem 0 1.5rem 2.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .bootcamps {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 11;
+    grid-column: 1 / 12;
+    -ms-grid-row: 6;
+    grid-row: 6;
+    padding-top: 3rem;
+    min-width: 768px;
+    padding-left: 4rem;
+  }
+  .bootcamps h2 {
+    font-size: 2.5rem;
+    padding-bottom: 1.8rem;
+  }
+  .bootcamps .Johny a:link span,
+  .bootcamps .Johny a:visited span {
+    margin-left: 8rem;
+  }
+  .bootcamps .Aka a:link span,
+  .bootcamps .Aka a:visited span {
+    margin-left: 1.55rem;
+  }
+  .bootcamps .Darrell a:link span,
+  .bootcamps .Darrell a:visited span {
+    margin-left: 15.3rem;
+  }
+  .bootcamps .Nakreshia a:link span,
+  .bootcamps .Nakreshia a:visited span {
+    margin-left: 6.58rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
