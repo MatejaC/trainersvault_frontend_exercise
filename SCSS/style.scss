@@ -1572,3 +1572,21 @@ img {
     }
   }
 }
+
+@media (max-width: 1199.98px) {
+  .pick {
+    min-width: 1200px;
+    grid-column: col-start / span 12;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 270px 370px;
+    grid-template-columns: 160px auto 160px;
+    grid-gap: 8px;
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}

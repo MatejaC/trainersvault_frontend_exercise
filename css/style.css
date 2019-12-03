@@ -1519,4 +1519,25 @@ img {
     margin-right: 31rem;
   }
 }
+
+@media (max-width: 1199.98px) {
+  .pick {
+    min-width: 1200px;
+    grid-column: col-start / span 12;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 270px 370px;
+        grid-template-rows: 270px 370px;
+    -ms-grid-columns: 160px auto 160px;
+        grid-template-columns: 160px auto 160px;
+    grid-gap: 8px;
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
