@@ -9,8 +9,8 @@ html,
 body {
   color: #717171;
   background: black;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   overflow-x: hidden;
   margin: 0;
@@ -122,7 +122,7 @@ img {
     margin-left: 0.1rem;
   }
   .intro .intro-middle h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     line-height: 80%;
     font-size: 4.6rem;
     letter-spacing: 0.15rem;
@@ -262,7 +262,7 @@ img {
 }
 
 .pick h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   line-height: 1.2;
   color: white;
@@ -273,7 +273,7 @@ img {
 }
 
 .pick h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   color: white;
   font-weight: 500;
@@ -343,14 +343,14 @@ img {
 }
 
 .moto h4 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: white;
   text-align: center;
   font-size: 0.9rem;
 }
 
 .lesson {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   border: 1px solid white;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -361,14 +361,14 @@ img {
 }
 
 .lesson h5 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.3rem;
   color: white;
   text-align: center;
 }
 
 .lesson h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
   color: white;
   text-align: center;
@@ -379,7 +379,7 @@ img {
 .sessions h4,
 .sessions p {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 
@@ -405,7 +405,7 @@ img {
 .sessions .girls h4,
 .sessions .girls p {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 
@@ -427,7 +427,7 @@ img {
 }
 
 .sessions .girls .aboutTD {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   text-align: center;
   padding: 1.5rem;
@@ -473,7 +473,7 @@ img {
 }
 
 .sessions .guys {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding-top: 0.2rem;
   background-color: #e7e7e7;
   background-size: cover;
@@ -520,7 +520,7 @@ img {
   padding-top: 2rem;
   background-color: #e7e7e7;
   padding-left: 2rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   /* Set rules to fill background */
   min-height: 100%;
   min-width: 430px;
@@ -687,13 +687,13 @@ img {
 .bootcamps .Aka,
 .bootcamps .Darrell,
 .bootcamps .Nakreshia h4 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #a4a4a4;
   font-size: 1.2rem;
 }
 
 .bootcamps .better {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 2rem;
   font-weight: 500;
   text-align: center;
@@ -747,7 +747,7 @@ img {
 .cities .box-2 {
   position: relative;
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
   text-align: center;
   -webkit-box-align: center;
@@ -772,7 +772,7 @@ img {
   position: relative;
   color: white;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
   text-transform: uppercase;
 }
@@ -793,7 +793,7 @@ img {
   position: relative;
   color: white;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
   text-transform: uppercase;
 }
@@ -814,7 +814,7 @@ img {
   position: relative;
   color: white;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
   text-transform: uppercase;
 }
@@ -831,7 +831,7 @@ img {
   position: relative;
   color: white;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
   text-transform: uppercase;
 }
@@ -865,14 +865,14 @@ img {
   /* Set up positioning */
   top: 0;
   left: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .trainers a:link,
 .trainers a:visited {
   font-size: 1.1rem;
   font-weight: 600;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #ffbb00;
   text-decoration: none;
   text-transform: uppercase;
@@ -906,7 +906,7 @@ img {
 }
 
 .best_trainers h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 3rem;
   font-weight: 700;
   margin-top: -15rem;
@@ -920,7 +920,7 @@ img {
 
 .best_trainers h2 {
   font-size: 1.2rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   text-align: center;
   color: #e7e7e7;
@@ -932,7 +932,7 @@ img {
 .best_trainers h2 a:visited {
   font-size: 1.2rem;
   font-weight: 700;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #ffbb00;
   text-decoration: none;
   text-transform: uppercase;
@@ -1018,7 +1018,7 @@ img {
 }
 
 .footer p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 0.6rem;
   text-transform: uppercase;
   color: #717171;
@@ -1130,7 +1130,7 @@ img {
     margin-left: 5rem;
   }
   .intro .intro-middle h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     line-height: 80%;
     font-size: 5.7rem;
     letter-spacing: 0.15rem;
@@ -1506,6 +1506,17 @@ img {
   .footer h4 {
     margin-bottom: 3rem;
     padding-top: 5rem;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .intro {
+    min-width: 1200px;
+    margin-left: 13rem;
+    margin-top: 1.2rem;
+  }
+  .intro .intro-top-right {
+    margin-right: 31rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
