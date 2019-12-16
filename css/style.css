@@ -17,82 +17,6 @@ body {
   line-height: 1;
 }
 
-.wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: ([col-start] 1fr)[12];
-      grid-template-columns: repeat(12, [col-start] 1fr);
-  grid-gap: 0px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/*finish!!!!! 
-@media (minmax-width: 375px) {
-	.wrapper > * {
-		grid-column: col-start / span 12;
-	}
-} */
-.wrapper > * {
-  grid-column: col-start / span 12;
-}
-
-@media (min-width: 425px) {
-  .intro {
-    grid-column: col-start / span 12;
-    -ms-grid-row: 1;
-    grid-row: 1;
-  }
-  .pick {
-    grid-column: col-start / span 12;
-    -ms-grid-row: 2;
-    grid-row: 2;
-  }
-  .moto {
-    grid-column: col-start / span 12;
-    -ms-grid-row: 3;
-    grid-row: 3;
-  }
-  .sessions {
-    grid-column: col-start / span 12;
-    -ms-grid-row: 4;
-    grid-row: 4;
-  }
-  .bootcamps {
-    grid-column: col-start / span 12;
-    -ms-grid-row: 6;
-    grid-row: 6;
-  }
-  .cities {
-    grid-column: col-start / span 12;
-    -ms-grid-row: 7;
-    grid-row: 7;
-  }
-  .trainers {
-    grid-column: col-start / span 12;
-    -ms-grid-row: 9;
-    grid-row: 9;
-  }
-  .best_trainers {
-    grid-column: col-start / span 12;
-    -ms-grid-row: 10;
-    grid-row: 10;
-  }
-  .navbar {
-    grid-column: col-start / span 12;
-    -ms-grid-row: 11;
-    grid-row: 11;
-  }
-  .footer {
-    grid-column: col-start / span 12;
-    -ms-grid-row: 12;
-    grid-row: 12;
-  }
-}
-
 .clearfix {
   zoom: 1;
 }
@@ -105,18 +29,153 @@ img {
   visibility: hidden;
 }
 
-img {
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: ([col-start] 1fr)[12];
+      grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap: 0px;
+}
+
+.wrapper .wrapper > * {
+  grid-column: col-start / span 12;
+}
+
+.wrapper img {
   max-width: 100%;
   height: auto;
+}
+
+@media (min-width: 320px) {
+  .wrapper .intro {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .wrapper .pick {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .wrapper .moto {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .wrapper .sessions {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+  .wrapper .bootcamps {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 6;
+    grid-row: 6;
+  }
+  .wrapper .cities {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 7;
+    grid-row: 7;
+  }
+  .wrapper .trainers {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 9;
+    grid-row: 9;
+  }
+  .wrapper .best_trainers {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 10;
+    grid-row: 10;
+  }
+  .wrapper .navbar {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 11;
+    grid-row: 11;
+  }
+  .wrapper .footer {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 12;
+    grid-row: 12;
+  }
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: ([col-start] 1fr)[12];
+      grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap: 0px;
+}
+
+.wrapper .wrapper > * {
+  grid-column: col-start / span 12;
+}
+
+.wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 425px) {
+  .wrapper .intro {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .wrapper .pick {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .wrapper .moto {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .wrapper .sessions {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+  .wrapper .bootcamps {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 6;
+    grid-row: 6;
+  }
+  .wrapper .cities {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 7;
+    grid-row: 7;
+  }
+  .wrapper .trainers {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 9;
+    grid-row: 9;
+  }
+  .wrapper .best_trainers {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 10;
+    grid-row: 10;
+  }
+  .wrapper .navbar {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 11;
+    grid-row: 11;
+  }
+  .wrapper .footer {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 12;
+    grid-row: 12;
+  }
 }
 
 @media (min-width: 425px) {
   .intro {
     /* Set rules to fill background */
     min-height: 100%;
-    min-width: 430px;
+    min-width: 425px;
     /* Set up proportionate scaling */
-    width: 100%;
+    width: 100% !important;
     height: 100%;
     background-color: black;
     background-image: url("../vendors/img/scott-webb-KblIFRq1jkg-unsplash.jpg");
@@ -125,6 +184,7 @@ img {
     /* Set up positioning */
     top: 0;
     margin-left: 0.1rem;
+    margin-right: 0;
   }
   .intro .intro-middle h1 {
     font-family: "Montserrat", sans-serif;
@@ -245,753 +305,696 @@ img {
   }
 }
 
-.pick {
-  background-image: url("../vendors/img/mark-bertulfo-Frx8qskriDI-unsplash.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-color: black;
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 425px;
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: 100%;
-  /* Set up positioning */
-  top: 0;
-  left: 0;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.pick h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.4rem;
-  line-height: 1.2;
-  color: white;
-  font-weight: 700;
-  padding-top: 1.5rem;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.pick h3 {
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  color: white;
-  font-weight: 500;
-}
-
-.pick p {
-  color: #ebebeb;
-  font-size: 0.9rem;
-  line-height: 1.3;
-  text-align: center;
-  margin-right: 1rem;
-  margin-left: 1rem;
-  margin-top: 0.1rem;
-  font-weight: 400;
-}
-
-.pick .runner {
-  transform: scale(0.5, 0.5);
-  -webkit-transform: scale(0.5, 0.5);
-  -moz-transform: scale(0.5, 0.5);
-  -ms-transform: scale(0.5, 0.5);
-  -o-transform: scale(0.5, 0.5);
-  margin-bottom: -2rem;
-}
-
-.pick .dumbbell {
-  background-color: white;
-  border: none;
-  color: black;
-  text-align: center;
-  padding: 1.2rem;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  transform: scale(0.5, 0.5);
-  -webkit-transform: scale(0.5, 0.5);
-  -moz-transform: scale(0.5, 0.5);
-  -ms-transform: scale(0.5, 0.5);
-  -o-transform: scale(0.5, 0.5);
-  margin-bottom: -1.4rem;
-}
-
-.pick .calendar {
-  transform: scale(0.52, 0.52);
-  -webkit-transform: scale(0.52, 0.52);
-  -moz-transform: scale(0.52, 0.52);
-  -ms-transform: scale(0.52, 0.52);
-  -o-transform: scale(0.52, 0.52);
-  margin-bottom: -1.7rem;
-}
-
-.moto {
-  background-image: url("../vendors/img/plank_resizedform-QdoXA6PMy_I-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: black;
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 430px;
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: 100%;
-  /* Set up positioning */
-  top: 0;
-  margin-left: -0.3rem;
-}
-
-.moto h4 {
-  font-family: "Roboto", sans-serif;
-  color: white;
-  text-align: center;
-  font-size: 0.7rem;
-}
-
-.lesson {
-  font-family: "Montserrat", sans-serif;
-  border: 1px solid white;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  line-height: 1;
-  padding: 0.2rem;
-  margin: 1.2rem;
-}
-
-.lesson h5 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  color: white;
-  text-align: center;
-}
-
-.lesson h3 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.1rem;
-  color: white;
-  text-align: center;
-}
-
-.sessions {
-  margin-right: 0.3rem;
-}
-
-.sessions h2,
-.sessions h3,
-.sessions h4,
-.sessions p {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-}
-
-.sessions .girls {
-  padding-top: 0.2rem;
-  background-color: #e7e7e7;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 430px;
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: 100%;
-  /* Set up positioning */
-  top: 0;
-  left: 0;
-}
-
-.sessions .girls h2,
-.sessions .girls h3,
-.sessions .girls h4,
-.sessions .girls p {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-}
-
-.sessions .girls h4 {
-  color: #717171;
-  font-size: 1rem;
-  margin-top: 0.3rem;
-  margin-left: 1.2rem;
-}
-
-.sessions .girls h2 {
-  font-size: 2rem;
-  line-height: 1;
-  padding-top: 0.8rem;
-  text-transform: uppercase;
-  text-align: center;
-  color: #404040;
-  font-weight: 700;
-}
-
-.sessions .girls .aboutTD {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
-  text-align: center;
-  padding: 1.3rem;
-  margin-left: 0.3rem;
-  padding-right: 1.9rem;
-  line-height: 1.3;
-}
-
-.sessions .girls .aboutTD:after {
-  display: block;
-  height: 1.3px;
-  background-color: #717171;
-  content: " ";
-  width: auto;
-  margin: 0 1rem;
-  margin-top: 1.6rem;
-}
-
-.sessions .girls h3 {
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  text-transform: uppercase;
-  margin-left: 1.5rem;
-  color: #404040;
-  line-height: 1.5;
-}
-
-.sessions .girls h3 span {
-  font-size: 1.3rem;
-  border-style: groove;
-  padding: 1px 2px;
-  margin-left: 19rem;
-}
-
-.sessions .girls p {
-  font-size: 1.15rem;
-  font-weight: 300;
-  text-transform: initial;
-  padding: 0.5rem 0 0.5rem 2.8rem;
-}
-
-.sessions .girls img {
-  padding: 0.2rem 2rem;
-}
-
-.sessions .guys {
-  font-family: "Roboto", sans-serif;
-  padding-top: 0.2rem;
-  background-color: #e7e7e7;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 430px;
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-  /* Set up positioning */
-  top: 0;
-  left: 0;
-}
-
-.sessions .guys h3 {
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  text-transform: uppercase;
-  margin-left: 1.5rem;
-  color: #404040;
-}
-
-.sessions .guys h3 span {
-  font-size: 1.3rem;
-  border-style: groove;
-  padding: 1px 2px;
-  margin-left: 17rem;
-}
-
-.sessions .guys p {
-  font-size: 1.15rem;
-  font-weight: 300;
-  text-transform: initial;
-  padding: 0.5rem 0 0.5rem 2.8rem;
-}
-
-.sessions .guys img {
-  padding: 0.2rem 2rem;
-}
-
-.bootcamps {
-  padding-top: 2rem;
-  background-color: #e7e7e7;
-  padding-left: 2rem;
-  font-family: "Roboto", sans-serif;
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 430px;
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-  /* Set up positioning */
-  top: 0;
-  left: 0;
-}
-
-.bootcamps h2 {
-  font-size: 1.9rem;
-  padding: 1rem;
-  padding: 0;
-  padding-right: 2rem;
-  text-transform: uppercase;
-  text-align: center;
-  color: #404040;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.bootcamps .Johny {
-  margin-left: 0em;
-}
-
-.bootcamps .Johny a:link,
-.bootcamps .Johny a:visited {
-  text-decoration: none;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  color: #404040;
-}
-
-.bootcamps .Johny a:link span,
-.bootcamps .Johny a:visited span {
-  border-style: groove;
-  padding: 1px 2px;
-  color: #717171;
-  font-size: 1rem;
-  margin-left: 2.6rem;
-}
-
-.bootcamps .Johny a:hover,
-.bootcamps .Johny a:active {
-  text-decoration: underline;
-  color: #a4a4a4;
-}
-
-.bootcamps .Johny a:hover span,
-.bootcamps .Johny a:active span {
-  border-style: groove;
-  padding: 1px 2px;
-  color: #a4a4a4;
-  font-size: 1rem;
-  margin-left: 2.6rem;
-}
-
-.bootcamps .Aka a:link,
-.bootcamps .Aka a:visited {
-  text-decoration: none;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  color: #404040;
-}
-
-.bootcamps .Aka a:link span,
-.bootcamps .Aka a:visited span {
-  border-style: groove;
-  padding: 1px 2px;
-  color: #717171;
-  margin-left: 13.5rem;
-  font-size: 1rem;
-}
-
-.bootcamps .Aka a:link a:hover,
-.bootcamps .Aka a:link a:active,
-.bootcamps .Aka a:visited a:hover,
-.bootcamps .Aka a:visited a:active {
-  text-decoration: underline;
-  color: #a4a4a4;
-}
-
-.bootcamps .Aka a:link a:hover span,
-.bootcamps .Aka a:link a:active span,
-.bootcamps .Aka a:visited a:hover span,
-.bootcamps .Aka a:visited a:active span {
-  border-style: groove;
-  padding: 1px 2px;
-  color: #a4a4a4;
-  margin-left: 13.5rem;
-  font-size: 1rem;
-}
-
-.bootcamps .Darrell a:link,
-.bootcamps .Darrell a:visited {
-  text-decoration: none;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  color: #404040;
-}
-
-.bootcamps .Darrell a:link span,
-.bootcamps .Darrell a:visited span {
-  border-style: groove;
-  padding: 1px 2px;
-  color: #717171;
-  margin-left: 14.3rem;
-  font-size: 1rem;
-}
-
-.bootcamps .Darrell a:hover,
-.bootcamps .Darrell a:active {
-  text-decoration: underline;
-  color: #a4a4a4;
-}
-
-.bootcamps .Darrell a:hover span,
-.bootcamps .Darrell a:active span {
-  border-style: groove;
-  padding: 1px 2px;
-  color: #a4a4a4;
-  margin-left: 14.3rem;
-  font-size: 1rem;
-}
-
-.bootcamps .Nakreshia a:link,
-.bootcamps .Nakreshia a:visited {
-  text-decoration: none;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  color: #404040;
-}
-
-.bootcamps .Nakreshia a:link span,
-.bootcamps .Nakreshia a:visited span {
-  border-style: groove;
-  padding: 1px 2px;
-  color: #717171;
-  margin-left: 1rem;
-  font-size: 1rem;
-}
-
-.bootcamps .Nakreshia a:link a:hover,
-.bootcamps .Nakreshia a:link a:active,
-.bootcamps .Nakreshia a:visited a:hover,
-.bootcamps .Nakreshia a:visited a:active {
-  text-decoration: underline;
-  color: #a4a4a4;
-}
-
-.bootcamps .Nakreshia a:link a:hover span,
-.bootcamps .Nakreshia a:link a:active span,
-.bootcamps .Nakreshia a:visited a:hover span,
-.bootcamps .Nakreshia a:visited a:active span {
-  border-style: groove;
-  padding: 1px 2px;
-  color: #717171;
-  margin-left: 1rem;
-}
-
-.bootcamps .Johny,
-.bootcamps .Aka,
-.bootcamps .Darrell,
-.bootcamps .Nakreshia h4 {
-  font-family: "Roboto", sans-serif;
-  color: #a4a4a4;
-  font-size: 1.2rem;
-}
-
-.bootcamps .better {
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  font-weight: 500;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 3rem 1rem;
-  margin-right: 1.5rem;
-}
-
-.bootcamps .better:before {
-  display: block;
-  height: 2px;
-  background-color: #717171;
-  content: " ";
-  width: auto;
-  margin-bottom: 2rem;
-}
-
-.cities {
-  background-color: #e7e7e7;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 430px;
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-  /* Set up positioning */
-  top: 0;
-  left: 0;
-}
-
-.cities .box-1,
-.cities .box-2,
-.cities .box-3,
-.cities .box-4,
-.cities .box-5,
-.cities .box-6,
-.cities .box-7,
-.cities .box-8,
-.cities .box-9,
-.cities .box-10 {
-  padding-bottom: 10px;
-}
-
-.cities .box-1 {
-  text-align: center;
-}
-
-.cities .box-2 {
-  position: relative;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.8rem;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-transform: uppercase;
-}
-
-.cities .box-2 .Toronto {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.cities .box-3 {
-  text-align: center;
-}
-
-.cities .box-4 {
-  position: relative;
-  color: white;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-}
-
-.cities .box-4 .LA {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.cities .box-5 {
-  text-align: center;
-}
-
-.cities .box-6 {
-  position: relative;
-  color: white;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-}
-
-.cities .box-6 .Atlanta {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.cities .box-8 {
-  text-align: center;
-}
-
-.cities .box-9 {
-  position: relative;
-  color: white;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-}
-
-.cities .box-9 .NY {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.cities .box-7 {
-  position: relative;
-  color: white;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-}
-
-.cities .box-7 .Miami {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.cities .box-10 {
-  text-align: center;
-}
-
-.trainers {
-  background-image: url("../vendors/img/zachary-nelson-98Elr-LIvD8-unsplash.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-color: black;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 430px;
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: 100%;
-  /* Set up positioning */
-  top: 0;
-  left: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-.trainers a:link,
-.trainers a:visited {
-  font-size: 1.1rem;
-  font-weight: 600;
-  font-family: "Roboto", sans-serif;
-  color: #ffbb00;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  padding-left: 2.2rem;
-}
-
-.trainers a:link a:hover,
-.trainers a:link a:active,
-.trainers a:visited a:hover,
-.trainers a:visited a:active {
-  text-decoration: underline;
-  color: #e99c0f;
-}
-
-.best_trainers {
-  background-image: url("../vendors/img/josiah-weiss-3dCljt2Pud8-unsplash.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-color: black;
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 430px;
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: 100%;
-  /* Set up positioning */
-  padding-top: 16rem;
-  left: 0;
-}
-
-.best_trainers h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-top: -15rem;
-  margin-right: 2rem;
-  margin-bottom: 10rem;
-  text-align: right;
-  color: black;
-  text-transform: uppercase;
-  line-height: 97%;
-}
-
-.best_trainers h2 {
-  font-size: 1rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  text-align: center;
-  color: #e7e7e7;
-  text-transform: uppercase;
-  padding-bottom: 2rem;
-}
-
-.best_trainers h2 a:link,
-.best_trainers h2 a:visited {
-  font-size: 1rem;
-  font-weight: 700;
-  font-family: "Roboto", sans-serif;
-  color: #ffbb00;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.best_trainers h2 a:link a:hover,
-.best_trainers h2 a:link a:active,
-.best_trainers h2 a:visited a:hover,
-.best_trainers h2 a:visited a:active {
-  text-decoration: underline;
-  color: #e99c0f;
-  background-color: #e99c0f;
-}
-
-.navbar {
-  overflow: hidden;
-  background-color: #404040;
-  bottom: 0;
-  width: 100%;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: #e7e7e7;
-  text-align: center;
-  padding: 8px 10px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 15px;
-}
-
-.navbar a:hover {
-  background-color: #a4a4a4;
-  color: black;
-}
-
-.navbar a.active {
-  background-color: #ffbb00;
-  color: white;
-}
-
-.navbar .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
+@media (min-width: 425px) {
+  .pick {
+    background-image: url("../vendors/img/mark-bertulfo-Frx8qskriDI-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: black;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 425px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: 100%;
+    /* Set up positioning */
+    top: 0;
+    left: 0;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .pick h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    color: white;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .pick h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+  }
+  .pick p {
+    color: #ebebeb;
+    font-size: 0.9rem;
+    line-height: 1.3;
+    text-align: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 0.1rem;
+    font-weight: 400;
+  }
+  .pick .runner {
+    transform: scale(0.5, 0.5);
+    -webkit-transform: scale(0.5, 0.5);
+    -moz-transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    -o-transform: scale(0.5, 0.5);
+    margin-bottom: -2rem;
+  }
+  .pick .dumbbell {
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    padding: 1.2rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: scale(0.5, 0.5);
+    -webkit-transform: scale(0.5, 0.5);
+    -moz-transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    -o-transform: scale(0.5, 0.5);
+    margin-bottom: -1.4rem;
+  }
+  .pick .calendar {
+    transform: scale(0.52, 0.52);
+    -webkit-transform: scale(0.52, 0.52);
+    -moz-transform: scale(0.52, 0.52);
+    -ms-transform: scale(0.52, 0.52);
+    -o-transform: scale(0.52, 0.52);
+    margin-bottom: -1.7rem;
+  }
+}
+
+@media (min-width: 425px) {
+  .moto {
+    background-image: url("../vendors/img/plank_resizedform-QdoXA6PMy_I-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 430px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: 100%;
+    /* Set up positioning */
+    top: 0;
+    margin-left: -0.1rem;
+  }
+  .moto h4 {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+  .lesson {
+    font-family: "Montserrat", sans-serif;
+    border: 1px solid white;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 1;
+    padding: 0.2rem;
+    margin: 1.4rem;
+  }
+  .lesson h5 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+  }
+  .lesson h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    color: white;
+    text-align: center;
+  }
+}
+
+@media (min-width: 425px) {
+  .sessions {
+    margin-right: 0rem;
+  }
+  .sessions h2,
+  .sessions h3,
+  .sessions h4,
+  .sessions p {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  .sessions .girls {
+    padding-top: 0.2rem;
+    background-color: #e7e7e7;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 425px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: 100%;
+    /* Set up positioning */
+    top: 0;
+    left: 0;
+  }
+  .sessions .girls h2,
+  .sessions .girls h3,
+  .sessions .girls h4,
+  .sessions .girls p {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  .sessions .girls h4 {
+    color: #717171;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    margin-left: 1.2rem;
+  }
+  .sessions .girls h2 {
+    font-size: 2rem;
+    line-height: 1;
+    padding-top: 0.8rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #404040;
+    font-weight: 700;
+  }
+  .sessions .girls .aboutTD {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1.3rem;
+    margin-left: 0.3rem;
+    padding-right: 1.9rem;
+    line-height: 1.3;
+  }
+  .sessions .girls .aboutTD:after {
+    display: block;
+    height: 1.3px;
+    background-color: #717171;
+    content: " ";
+    width: auto;
+    margin: 0 1rem;
+    margin-top: 1.6rem;
+  }
+  .sessions .girls h3 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    margin-left: 1.5rem;
+    color: #404040;
+    line-height: 1.5;
+  }
+  .sessions .girls h3 span {
+    font-size: 1.3rem;
+    border-style: groove;
+    padding: 1px 2px;
+    margin-left: 19rem;
+  }
+  .sessions .girls p {
+    font-size: 1.15rem;
+    font-weight: 300;
+    text-transform: initial;
+    padding: 0.5rem 0 0.5rem 2.8rem;
+  }
+  .sessions .girls img {
+    padding: 0.2rem 2rem;
+  }
+  .sessions .guys {
+    font-family: "Roboto", sans-serif;
+    padding-top: 0.2rem;
+    background-color: #e7e7e7;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 430px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    /* Set up positioning */
+    top: 0;
+    left: 0;
+  }
+  .sessions .guys h3 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    margin-left: 1.5rem;
+    color: #404040;
+  }
+  .sessions .guys h3 span {
+    font-size: 1.3rem;
+    border-style: groove;
+    padding: 1px 2px;
+    margin-left: 17rem;
+  }
+  .sessions .guys p {
+    font-size: 1.15rem;
+    font-weight: 300;
+    text-transform: initial;
+    padding: 0.5rem 0 0.5rem 2.8rem;
+  }
+  .sessions .guys img {
+    padding: 0.2rem 2rem;
+  }
+}
+
+@media (min-width: 425px) {
+  .bootcamps {
+    padding-top: 2rem;
+    background-color: #e7e7e7;
+    padding-left: 2rem;
+    font-family: "Roboto", sans-serif;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 430px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    /* Set up positioning */
+    top: 0;
+    left: 0;
+  }
+  .bootcamps h2 {
+    font-size: 1.9rem;
+    padding: 1rem;
+    padding: 0;
+    padding-right: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #404040;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .bootcamps .Johny {
+    margin-left: 0em;
+  }
+  .bootcamps .Johny a:link,
+  .bootcamps .Johny a:visited {
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #404040;
+  }
+  .bootcamps .Johny a:link span,
+  .bootcamps .Johny a:visited span {
+    border-style: groove;
+    padding: 1px 2px;
+    color: #717171;
+    font-size: 1rem;
+    margin-left: 2.6rem;
+  }
+  .bootcamps .Johny a:hover,
+  .bootcamps .Johny a:active {
+    text-decoration: underline;
+    color: #a4a4a4;
+  }
+  .bootcamps .Johny a:hover span,
+  .bootcamps .Johny a:active span {
+    border-style: groove;
+    padding: 1px 2px;
+    color: #a4a4a4;
+    font-size: 1rem;
+    margin-left: 2.6rem;
+  }
+  .bootcamps .Aka a:link,
+  .bootcamps .Aka a:visited {
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #404040;
+  }
+  .bootcamps .Aka a:link span,
+  .bootcamps .Aka a:visited span {
+    border-style: groove;
+    padding: 1px 2px;
+    color: #717171;
+    margin-left: 13.5rem;
+    font-size: 1rem;
+  }
+  .bootcamps .Aka a:link a:hover,
+  .bootcamps .Aka a:link a:active,
+  .bootcamps .Aka a:visited a:hover,
+  .bootcamps .Aka a:visited a:active {
+    text-decoration: underline;
+    color: #a4a4a4;
+  }
+  .bootcamps .Aka a:link a:hover span,
+  .bootcamps .Aka a:link a:active span,
+  .bootcamps .Aka a:visited a:hover span,
+  .bootcamps .Aka a:visited a:active span {
+    border-style: groove;
+    padding: 1px 2px;
+    color: #a4a4a4;
+    margin-left: 13.5rem;
+    font-size: 1rem;
+  }
+  .bootcamps .Darrell a:link,
+  .bootcamps .Darrell a:visited {
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #404040;
+  }
+  .bootcamps .Darrell a:link span,
+  .bootcamps .Darrell a:visited span {
+    border-style: groove;
+    padding: 1px 2px;
+    color: #717171;
+    margin-left: 14.3rem;
+    font-size: 1rem;
+  }
+  .bootcamps .Darrell a:hover,
+  .bootcamps .Darrell a:active {
+    text-decoration: underline;
+    color: #a4a4a4;
+  }
+  .bootcamps .Darrell a:hover span,
+  .bootcamps .Darrell a:active span {
+    border-style: groove;
+    padding: 1px 2px;
+    color: #a4a4a4;
+    margin-left: 14.3rem;
+    font-size: 1rem;
+  }
+  .bootcamps .Nakreshia a:link,
+  .bootcamps .Nakreshia a:visited {
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #404040;
+  }
+  .bootcamps .Nakreshia a:link span,
+  .bootcamps .Nakreshia a:visited span {
+    border-style: groove;
+    padding: 1px 2px;
+    color: #717171;
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+  .bootcamps .Nakreshia a:link a:hover,
+  .bootcamps .Nakreshia a:link a:active,
+  .bootcamps .Nakreshia a:visited a:hover,
+  .bootcamps .Nakreshia a:visited a:active {
+    text-decoration: underline;
+    color: #a4a4a4;
+  }
+  .bootcamps .Nakreshia a:link a:hover span,
+  .bootcamps .Nakreshia a:link a:active span,
+  .bootcamps .Nakreshia a:visited a:hover span,
+  .bootcamps .Nakreshia a:visited a:active span {
+    border-style: groove;
+    padding: 1px 2px;
+    color: #717171;
+    margin-left: 1rem;
+  }
+  .bootcamps .Johny,
+  .bootcamps .Aka,
+  .bootcamps .Darrell,
+  .bootcamps .Nakreshia h4 {
+    font-family: "Roboto", sans-serif;
+    color: #a4a4a4;
+    font-size: 1.2rem;
+  }
+  .bootcamps .better {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 3rem 1rem;
+    margin-right: 1.5rem;
+  }
+  .bootcamps .better:before {
+    display: block;
+    height: 2px;
+    background-color: #717171;
+    content: " ";
+    width: auto;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 425px) {
+  .cities {
+    background-color: #e7e7e7;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 430px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    /* Set up positioning */
+    top: 0;
+    left: 0;
+  }
+  .cities .box-1,
+  .cities .box-2,
+  .cities .box-3,
+  .cities .box-4,
+  .cities .box-5,
+  .cities .box-6,
+  .cities .box-7,
+  .cities .box-8,
+  .cities .box-9,
+  .cities .box-10 {
+    padding-bottom: 10px;
+  }
+  .cities .box-1 {
+    text-align: center;
+  }
+  .cities .box-2 {
+    position: relative;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-transform: uppercase;
+  }
+  .cities .box-2 .Toronto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .cities .box-3 {
+    text-align: center;
+  }
+  .cities .box-4 {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+  .cities .box-4 .LA {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .cities .box-5 {
+    text-align: center;
+  }
+  .cities .box-6 {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+  .cities .box-6 .Atlanta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .cities .box-8 {
+    text-align: center;
+  }
+  .cities .box-9 {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+  .cities .box-9 .NY {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .cities .box-7 {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+  .cities .box-7 .Miami {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .cities .box-10 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 425px) {
+  .trainers {
+    background-image: url("../vendors/img/zachary-nelson-98Elr-LIvD8-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: black;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 430px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: 100%;
+    /* Set up positioning */
+    top: 0;
+    left: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  .trainers a:link,
+  .trainers a:visited {
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    color: #ffbb00;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding-left: 2.2rem;
+  }
+  .trainers a:link a:hover,
+  .trainers a:link a:active,
+  .trainers a:visited a:hover,
+  .trainers a:visited a:active {
+    text-decoration: underline;
+    color: #e99c0f;
+  }
+}
+
+@media (min-width: 425px) {
+  .best_trainers {
+    background-image: url("../vendors/img/josiah-weiss-3dCljt2Pud8-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: black;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 430px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: 100%;
+    /* Set up positioning */
+    padding-top: 16rem;
+    left: 0;
+  }
+  .best_trainers h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: -15rem;
+    margin-right: 2rem;
+    margin-bottom: 10rem;
+    text-align: right;
+    color: black;
+    text-transform: uppercase;
+    line-height: 97%;
+  }
+  .best_trainers h2 {
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+  }
+  .best_trainers h2 a:link,
+  .best_trainers h2 a:visited {
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: #ffbb00;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .best_trainers h2 a:link a:hover,
+  .best_trainers h2 a:link a:active,
+  .best_trainers h2 a:visited a:hover,
+  .best_trainers h2 a:visited a:active {
+    text-decoration: underline;
+    color: #e99c0f;
+    background-color: #e99c0f;
+  }
+}
+
+@media (min-width: 425px) {
+  .navbar {
+    overflow: hidden;
+    background-color: #404040;
+    bottom: 0;
+    width: 100%;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: #e7e7e7;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  .navbar a:hover {
+    background-color: #a4a4a4;
+    color: black;
+  }
+  .navbar a.active {
+    background-color: #ffbb00;
+    color: white;
+  }
+  .navbar .icon {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 600px) {
   .navbar a:not(:first-child) {
     display: none;
   }
@@ -1001,7 +1004,7 @@ img {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 425px) and (max-width: 600px) {
   .navbar.responsive .icon {
     position: absolute;
     right: 0;
@@ -1014,48 +1017,1008 @@ img {
   }
 }
 
-.footer {
-  background-color: black;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 430px;
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: 100%;
-  /* Set up positioning */
-  left: 0;
+@media (min-width: 425px) {
+  .footer {
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 430px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: 100%;
+    /* Set up positioning */
+    left: 0;
+  }
+  .footer p {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    color: #717171;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 2rem;
+  }
+  .footer p::after {
+    display: block;
+    height: 1px;
+    background-color: #404040;
+    content: " ";
+    text-align: center;
+    width: auto;
+    margin: 1rem 5rem;
+  }
+  .footer h4 {
+    font-size: 0.6rem;
+    text-align: center;
+    color: #ffbb00;
+    font-weight: 200;
+    margin-bottom: 1.5rem;
+    padding-top: 2rem;
+  }
 }
 
-.footer p {
-  font-family: "Roboto", sans-serif;
-  font-size: 0.6rem;
-  text-transform: uppercase;
-  color: #717171;
-  font-weight: 300;
-  text-align: center;
-  padding-top: 2rem;
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: ([col-start] 1fr)[12];
+      grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap: 0px;
 }
 
-.footer p::after {
-  display: block;
-  height: 1px;
-  background-color: #404040;
-  content: " ";
-  text-align: center;
-  width: auto;
-  margin: 1rem 5rem;
+.wrapper > * {
+  grid-column: col-start / span 12;
 }
 
-.footer h4 {
-  font-size: 0.6rem;
-  text-align: center;
-  color: #ffbb00;
-  font-weight: 200;
-  margin-bottom: 1.5rem;
-  padding-top: 2rem;
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 375px) {
+  .intro {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .pick {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .moto {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .sessions {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+  .bootcamps {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 6;
+    grid-row: 6;
+  }
+  .cities {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 7;
+    grid-row: 7;
+  }
+  .trainers {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 9;
+    grid-row: 9;
+  }
+  .best_trainers {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 10;
+    grid-row: 10;
+  }
+  .navbar {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 11;
+    grid-row: 11;
+  }
+  .footer {
+    grid-column: col-start / span 12;
+    -ms-grid-row: 12;
+    grid-row: 12;
+  }
+}
+
+@media (min-width: 375px) {
+  .intro {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 375px;
+    /* Set up proportionate scaling */
+    width: 95%;
+    height: 100%;
+    background-color: black;
+    background-image: url("../vendors/img/scott-webb-KblIFRq1jkg-unsplash.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Set up positioning */
+    top: 0;
+    margin-right: 0.4rem;
+  }
+  .intro .intro-middle h1 {
+    font-family: "Montserrat", sans-serif;
+    line-height: 80%;
+    font-size: 3.5rem;
+    letter-spacing: 0.2rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 1.7rem;
+    padding-bottom: 0.5rem;
+    padding-top: 5rem;
+  }
+  .intro .intro-middle h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 1.7rem;
+    color: white;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 0.6rem;
+  }
+  .intro .intro-top-left {
+    text-align: left;
+    margin-left: 1.4rem;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+  }
+  .intro .intro-top-left h3 {
+    font-size: 0.7rem;
+    color: #ffbb00;
+    font-weight: 200;
+  }
+  .intro .intro-top-right {
+    text-align: center;
+    font-size: 1rem;
+    margin-left: 15rem;
+    padding-top: 1.1rem;
+  }
+  .intro .intro-top-right a:link,
+  .intro .intro-top-right a:visited {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .intro .intro-top-right a:hover,
+  .intro .intro-top-right a:active {
+    color: #ffbb00;
+    text-decoration: underline;
+  }
+  .intro .intro-top-right .btn-ghost:link,
+  .intro .intro-top-right .btn-ghost:visited {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 7px 7px;
+    margin: 2rem 0 1.8rem 1rem;
+    border: 2px solid #ffbb00;
+    color: #ffbb00;
+    text-align: center;
+  }
+  .intro .intro-top-right .btn-ghost:hover,
+  .intro .intro-top-right .btn-ghost:active {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 7px 8px;
+    margin: 2rem 0 1.8rem 1rem;
+    background-color: #e99c0f;
+    border: 2px solid #ffbb00;
+    color: white;
+    text-decoration: none;
+  }
+  .intro .intro-bottom .btn-ghost:link,
+  .intro .intro-bottom .btn-ghost:visited {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 6px 8px;
+    margin: 1.8rem 0rem 2rem 1.7rem;
+    border: 2px solid #ffbb00;
+    color: #ffbb00;
+    text-align: center;
+    text-decoration: none;
+  }
+  .intro .intro-bottom .btn-ghost:hover,
+  .intro .intro-bottom .btn-ghost:active {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 6px 8px;
+    margin: 1.8rem 0rem 1.8rem 2.2rem;
+    background-color: #e99c0f;
+    border: 2px solid #ffbb00;
+    color: white;
+    text-decoration: none;
+  }
+  .intro .intro-bottom .btn-full:link,
+  .intro .intro-bottom .btn-full:visited {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 6px 8px;
+    margin: 2rem 0 1.8rem 1rem;
+    background-color: #ffbb00;
+    border: 2px solid #ffbb00;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+  }
+  .intro .intro-bottom .btn-full:hover,
+  .intro .intro-bottom .btn-full:active {
+    border: 2px solid #ebac00e7;
+    background-color: #e99c0f;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 375px) {
+  .pick {
+    background-image: url("../vendors/img/mark-bertulfo-Frx8qskriDI-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: black;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 375px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: 100%;
+    /* Set up positioning */
+    top: 0;
+    left: 0;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .pick h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    color: white;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .pick h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+  }
+  .pick p {
+    color: #ebebeb;
+    font-size: 0.9rem;
+    line-height: 1.3;
+    text-align: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 0.1rem;
+    font-weight: 400;
+  }
+  .pick .runner {
+    transform: scale(0.5, 0.5);
+    -webkit-transform: scale(0.5, 0.5);
+    -moz-transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    -o-transform: scale(0.5, 0.5);
+    margin-bottom: -2rem;
+  }
+  .pick .dumbbell {
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    padding: 1.2rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: scale(0.5, 0.5);
+    -webkit-transform: scale(0.5, 0.5);
+    -moz-transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    -o-transform: scale(0.5, 0.5);
+    margin-bottom: -1.4rem;
+  }
+  .pick .calendar {
+    transform: scale(0.52, 0.52);
+    -webkit-transform: scale(0.52, 0.52);
+    -moz-transform: scale(0.52, 0.52);
+    -ms-transform: scale(0.52, 0.52);
+    -o-transform: scale(0.52, 0.52);
+    margin-bottom: -1.7rem;
+  }
+}
+
+@media (min-width: 375px) {
+  .moto {
+    background-image: url("../vendors/img/plank_resizedform-QdoXA6PMy_I-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 375px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: 100%;
+    /* Set up positioning */
+    top: 0;
+    margin-left: 0rem;
+  }
+  .moto h4 {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+  .moto .lesson {
+    font-family: "Montserrat", sans-serif;
+    border: 1px solid white;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 1;
+    padding: 0.2rem;
+    margin: 1rem;
+  }
+  .moto .lesson h5 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7rem;
+    color: white;
+    text-align: center;
+  }
+  .moto .lesson h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+  }
+}
+
+@media (min-width: 375px) {
+  .sessions {
+    margin-right: 0rem;
+  }
+  .sessions h2,
+  .sessions h3,
+  .sessions h4,
+  .sessions p {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 375px) and (min-width: 375px) {
+  .sessions .girls {
+    padding-top: 0.2rem;
+    background-color: #e7e7e7;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 375px;
+    /* Set up positioning */
+    top: 0;
+    left: 0;
+  }
+  .sessions .girls h2,
+  .sessions .girls h3,
+  .sessions .girls h4,
+  .sessions .girls p {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  .sessions .girls h4 {
+    color: #717171;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    margin-left: 1.2rem;
+  }
+  .sessions .girls h2 {
+    font-size: 2rem;
+    line-height: 1;
+    padding-top: 0.8rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #404040;
+    font-weight: 700;
+  }
+  .sessions .girls .aboutTD {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1.3rem;
+    margin-left: 0.3rem;
+    padding-right: 1.9rem;
+    line-height: 1.3;
+  }
+  .sessions .girls .aboutTD:after {
+    display: block;
+    height: 1.3px;
+    background-color: #717171;
+    content: " ";
+    width: auto;
+    margin: 0 1rem;
+    margin-top: 1.6rem;
+  }
+  .sessions .girls h3 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    margin-left: 1.5rem;
+    color: #404040;
+    line-height: 1.5;
+  }
+  .sessions .girls h3 span {
+    font-size: 1.3rem;
+    border-style: groove;
+    padding: 1px 2px;
+    margin-left: 16.8rem;
+  }
+  .sessions .girls p {
+    font-size: 1.15rem;
+    font-weight: 300;
+    text-transform: initial;
+    padding: 0.5rem 0 0.5rem 2.8rem;
+  }
+  .sessions .girls img {
+    padding: 0.2rem 2rem;
+  }
+}
+
+@media (min-width: 375px) and (min-width: 375px) {
+  .sessions .guys {
+    font-family: "Roboto", sans-serif;
+    padding-top: 0.2rem;
+    background-color: #e7e7e7;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 375px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    /* Set up positioning */
+    top: 0;
+    left: 0;
+  }
+  .sessions .guys h3 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    margin-left: 1.5rem;
+    color: #404040;
+  }
+  .sessions .guys h3 span {
+    font-size: 1.3rem;
+    border-style: groove;
+    padding: 1px 2px;
+    margin-left: 17rem;
+  }
+  .sessions .guys p {
+    font-size: 1.15rem;
+    font-weight: 300;
+    text-transform: initial;
+    padding: 0.5rem 0 0.5rem 2.8rem;
+  }
+  .sessions .guys img {
+    padding: 0.2rem 2rem;
+  }
+}
+
+@media (min-width: 375px) {
+  .bootcamps {
+    padding-top: 2rem;
+    background-color: #e7e7e7;
+    font-family: "Roboto", sans-serif;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 375px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    /* Set up positioning */
+    top: 0;
+    padding-left: 1.8rem;
+  }
+  .bootcamps h2 {
+    font-size: 2rem;
+    padding-top: 1.7rem;
+    padding-right: 0rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #404040;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .bootcamps .Johny {
+    margin-left: 0em;
+  }
+  .bootcamps .Johny a:link,
+  .bootcamps .Johny a:visited {
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #404040;
+  }
+  .bootcamps .Johny a:link span,
+  .bootcamps .Johny a:visited span {
+    border-style: groove;
+    padding: 1px 1px;
+    color: #717171;
+    font-size: 1rem;
+    margin-left: 2rem;
+  }
+  .bootcamps .Johny a:hover,
+  .bootcamps .Johny a:active {
+    text-decoration: underline;
+    color: #a4a4a4;
+  }
+  .bootcamps .Johny a:hover span,
+  .bootcamps .Johny a:active span {
+    border-style: groove;
+    padding: 1px 1px;
+    color: #a4a4a4;
+    font-size: 1rem;
+    margin-left: 2rem;
+  }
+  .bootcamps .Aka a:link,
+  .bootcamps .Aka a:visited {
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #404040;
+  }
+  .bootcamps .Aka a:link span,
+  .bootcamps .Aka a:visited span {
+    border-style: groove;
+    padding: 1px 1px;
+    color: #717171;
+    margin-left: 11.6rem;
+    font-size: 1rem;
+  }
+  .bootcamps .Aka a:link a:hover,
+  .bootcamps .Aka a:link a:active,
+  .bootcamps .Aka a:visited a:hover,
+  .bootcamps .Aka a:visited a:active {
+    text-decoration: underline;
+    color: #a4a4a4;
+  }
+  .bootcamps .Aka a:link a:hover span,
+  .bootcamps .Aka a:link a:active span,
+  .bootcamps .Aka a:visited a:hover span,
+  .bootcamps .Aka a:visited a:active span {
+    border-style: groove;
+    padding: 1px 1px;
+    color: #a4a4a4;
+    margin-left: 11.6rem;
+    font-size: 1rem;
+  }
+  .bootcamps .Darrell a:link,
+  .bootcamps .Darrell a:visited {
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #404040;
+  }
+  .bootcamps .Darrell a:link span,
+  .bootcamps .Darrell a:visited span {
+    border-style: groove;
+    padding: 1px 1px;
+    color: #717171;
+    margin-left: 12.5rem;
+    font-size: 1rem;
+  }
+  .bootcamps .Darrell a:hover,
+  .bootcamps .Darrell a:active {
+    text-decoration: underline;
+    color: #a4a4a4;
+  }
+  .bootcamps .Darrell a:hover span,
+  .bootcamps .Darrell a:active span {
+    border-style: groove;
+    padding: 1px 1px;
+    color: #a4a4a4;
+    margin-left: 12.5rem;
+    font-size: 1rem;
+  }
+  .bootcamps .Nakreshia a:link,
+  .bootcamps .Nakreshia a:visited {
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #404040;
+  }
+  .bootcamps .Nakreshia a:link span,
+  .bootcamps .Nakreshia a:visited span {
+    border-style: groove;
+    padding: 1px 1px;
+    color: #717171;
+    margin-left: 0.7rem;
+    font-size: 1rem;
+  }
+  .bootcamps .Nakreshia a:link a:hover,
+  .bootcamps .Nakreshia a:link a:active,
+  .bootcamps .Nakreshia a:visited a:hover,
+  .bootcamps .Nakreshia a:visited a:active {
+    text-decoration: underline;
+    color: #a4a4a4;
+  }
+  .bootcamps .Nakreshia a:link a:hover span,
+  .bootcamps .Nakreshia a:link a:active span,
+  .bootcamps .Nakreshia a:visited a:hover span,
+  .bootcamps .Nakreshia a:visited a:active span {
+    border-style: groove;
+    padding: 1px 1px;
+    color: #717171;
+    margin-left: 0.7rem;
+  }
+  .bootcamps .Johny,
+  .bootcamps .Aka,
+  .bootcamps .Darrell,
+  .bootcamps .Nakreshia h4 {
+    font-family: "Roboto", sans-serif;
+    color: #a4a4a4;
+    font-size: 1.2rem;
+  }
+  .bootcamps .better {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 3rem 1rem;
+    margin-right: 1.5rem;
+  }
+  .bootcamps .better:before {
+    display: block;
+    height: 2px;
+    background-color: #717171;
+    content: " ";
+    width: auto;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 375px) {
+  .cities {
+    background-color: #e7e7e7;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 375px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    /* Set up positioning */
+    top: 0;
+    left: 0;
+  }
+  .cities .box-1,
+  .cities .box-2,
+  .cities .box-3,
+  .cities .box-4,
+  .cities .box-5,
+  .cities .box-6,
+  .cities .box-7,
+  .cities .box-8,
+  .cities .box-9,
+  .cities .box-10 {
+    padding-bottom: 10px;
+  }
+  .cities .box-1 {
+    text-align: center;
+  }
+  .cities .box-2 {
+    position: relative;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-transform: uppercase;
+  }
+  .cities .box-2 .Toronto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .cities .box-3 {
+    text-align: center;
+  }
+  .cities .box-4 {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+  .cities .box-4 .LA {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .cities .box-5 {
+    text-align: center;
+  }
+  .cities .box-6 {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+  .cities .box-6 .Atlanta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .cities .box-8 {
+    text-align: center;
+  }
+  .cities .box-9 {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+  .cities .box-9 .NY {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .cities .box-7 {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+  .cities .box-7 .Miami {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .cities .box-10 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 375px) {
+  .trainers {
+    background-image: url("../vendors/img/zachary-nelson-98Elr-LIvD8-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: black;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 375px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: 100%;
+    /* Set up positioning */
+    top: 0;
+    left: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  .trainers a:link,
+  .trainers a:visited {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    color: #ffbb00;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding-left: 2.2rem;
+  }
+  .trainers a:link a:hover,
+  .trainers a:link a:active,
+  .trainers a:visited a:hover,
+  .trainers a:visited a:active {
+    text-decoration: underline;
+    color: #e99c0f;
+  }
+}
+
+@media (min-width: 375px) {
+  .best_trainers {
+    background-image: url("../vendors/img/josiah-weiss-3dCljt2Pud8-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: black;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 375px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: 100%;
+    /* Set up positioning */
+    padding-top: 18rem;
+    left: 0;
+  }
+  .best_trainers h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: -15rem;
+    margin-right: 2rem;
+    margin-bottom: 10rem;
+    text-align: right;
+    color: black;
+    text-transform: uppercase;
+    line-height: 97%;
+  }
+  .best_trainers h2 {
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+  }
+  .best_trainers h2 a:link,
+  .best_trainers h2 a:visited {
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: #ffbb00;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .best_trainers h2 a:link a:hover,
+  .best_trainers h2 a:link a:active,
+  .best_trainers h2 a:visited a:hover,
+  .best_trainers h2 a:visited a:active {
+    text-decoration: underline;
+    color: #e99c0f;
+    background-color: #e99c0f;
+  }
+}
+
+@media (min-width: 375px) {
+  .navbar {
+    overflow: hidden;
+    background-color: #404040;
+    bottom: 0;
+    width: 100%;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: #e7e7e7;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  .navbar a:hover {
+    background-color: #a4a4a4;
+    color: black;
+  }
+  .navbar a.active {
+    background-color: #ffbb00;
+    color: white;
+  }
+  .navbar .icon {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 600px) {
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 600px) {
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width: 375px) {
+  .footer {
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 375px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: 100%;
+    /* Set up positioning */
+    left: 0;
+  }
+  .footer p {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.4rem;
+    text-transform: uppercase;
+    color: #717171;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 2.5rem;
+  }
+  .footer p::after {
+    display: block;
+    height: 1px;
+    background-color: #404040;
+    content: " ";
+    text-align: center;
+    width: auto;
+    margin: 1rem 5rem;
+  }
+  .footer h4 {
+    font-size: 0.5rem;
+    text-align: center;
+    color: #ffbb00;
+    font-weight: 200;
+    margin-bottom: 1.5rem;
+    padding-top: 2rem;
+  }
 }
 
 /* --- for tablets --- */
@@ -1110,18 +2073,6 @@ img {
     -ms-grid-row: 12;
     grid-row: 12;
   }
-}
-
-.clearfix {
-  zoom: 1;
-}
-
-.clearfix:after {
-  content: ".";
-  clear: both;
-  display: block;
-  height: 0;
-  visibility: hidden;
 }
 
 img {
