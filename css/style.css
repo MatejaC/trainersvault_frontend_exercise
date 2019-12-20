@@ -5,6 +5,18 @@
   padding: 0;
 }
 
+.message {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+@supports (display: grid) {
+  .message {
+    display: none;
+  }
+}
+
 html,
 body {
   color: #717171;
@@ -96,6 +108,880 @@ body {
     grid-column: col-start / span 12;
     -ms-grid-row: 12;
     grid-row: 12;
+  }
+}
+
+@media (min-width: 320px) {
+  .intro {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 320px;
+    /* Set up proportionate scaling */
+    width: 95%;
+    height: 100%;
+    background-color: black;
+    background-image: url("../vendors/img/scott-webb-KblIFRq1jkg-unsplash.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Set up positioning */
+    top: 0;
+    margin-right: 0;
+  }
+  .intro .intro-middle h1 {
+    font-family: "Montserrat", sans-serif;
+    line-height: 80%;
+    font-size: 3.5rem;
+    letter-spacing: 0.2rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 1.4rem;
+    padding-bottom: 0.2rem;
+    padding-top: 4rem;
+  }
+  .intro .intro-middle h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-left: 1.4rem;
+    color: white;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 0.2rem;
+  }
+  .intro .intro-top-left {
+    text-align: left;
+    margin-left: 1.2rem;
+    margin-top: 0.3rem;
+    padding-top: 0.3rem;
+  }
+  .intro .intro-top-left h3 {
+    font-size: 0.7rem;
+    color: #ffbb00;
+    font-weight: 200;
+  }
+  .intro .intro-top-right {
+    text-align: center;
+    font-size: 1rem;
+    margin-left: 10.5rem;
+    padding-top: 0.8rem;
+  }
+  .intro .intro-top-right a:link,
+  .intro .intro-top-right a:visited {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .intro .intro-top-right a:hover,
+  .intro .intro-top-right a:active {
+    color: #ffbb00;
+    text-decoration: underline;
+  }
+  .intro .intro-top-right .btn-ghost:link,
+  .intro .intro-top-right .btn-ghost:visited {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 5px 7px;
+    margin: 1.3rem -0.3rem 1.8rem 1.5rem;
+    border: 2px solid #ffbb00;
+    color: #ffbb00;
+    text-align: center;
+  }
+  .intro .intro-top-right .btn-ghost:hover,
+  .intro .intro-top-right .btn-ghost:active {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 5px 8px;
+    margin: 2rem -0.3rem 1.8rem 1.5rem;
+    background-color: #e99c0f;
+    border: 2px solid #ffbb00;
+    color: white;
+    text-decoration: none;
+  }
+  .intro .intro-bottom .btn-ghost:link,
+  .intro .intro-bottom .btn-ghost:visited {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 6px 8px;
+    margin: 1.8rem 2rem 0.5rem 1.4rem;
+    border: 2px solid #ffbb00;
+    color: #ffbb00;
+    text-align: center;
+    text-decoration: none;
+  }
+  .intro .intro-bottom .btn-ghost:hover,
+  .intro .intro-bottom .btn-ghost:active {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 6px 8px;
+    margin: 1.8rem 2rem 0.5rem 1.4rem;
+    background-color: #e99c0f;
+    border: 2px solid #ffbb00;
+    color: white;
+    text-decoration: none;
+  }
+  .intro .intro-bottom .btn-full:link,
+  .intro .intro-bottom .btn-full:visited {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 6px 8px;
+    margin: 1rem 0 1rem 1.4rem;
+    background-color: #ffbb00;
+    border: 2px solid #ffbb00;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+  }
+  .intro .intro-bottom .btn-full:hover,
+  .intro .intro-bottom .btn-full:active {
+    border: 2px solid #ebac00e7;
+    background-color: #e99c0f;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 320px) {
+  .pick {
+    background-image: url("../vendors/img/mark-bertulfo-Frx8qskriDI-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: black;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 320px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: 100%;
+    /* Set up positioning */
+    top: 0;
+    left: 0;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .pick h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    color: white;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .pick h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+  }
+  .pick p {
+    color: #ebebeb;
+    font-size: 0.9rem;
+    line-height: 1.3;
+    text-align: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 0.1rem;
+    font-weight: 400;
+  }
+  .pick .runner {
+    transform: scale(0.5, 0.5);
+    -webkit-transform: scale(0.5, 0.5);
+    -moz-transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    -o-transform: scale(0.5, 0.5);
+    margin-bottom: -2rem;
+  }
+  .pick .dumbbell {
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    padding: 1.2rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: scale(0.5, 0.5);
+    -webkit-transform: scale(0.5, 0.5);
+    -moz-transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    -o-transform: scale(0.5, 0.5);
+    margin-bottom: -1.4rem;
+  }
+  .pick .calendar {
+    transform: scale(0.52, 0.52);
+    -webkit-transform: scale(0.52, 0.52);
+    -moz-transform: scale(0.52, 0.52);
+    -ms-transform: scale(0.52, 0.52);
+    -o-transform: scale(0.52, 0.52);
+    margin-bottom: -1.7rem;
+  }
+}
+
+@media (min-width: 320px) {
+  .moto {
+    background-image: url("../vendors/img/plank_resizedform-QdoXA6PMy_I-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 320px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: 100%;
+    /* Set up positioning */
+    top: 0;
+    margin-right: -0.2rem;
+    margin-left: 0rem;
+  }
+  .moto h4 {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 0.65rem;
+  }
+  .moto .lesson {
+    font-family: "Montserrat", sans-serif;
+    border: 1px solid white;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 1;
+    padding: 0.2rem;
+    margin: 0.5rem;
+  }
+  .moto .lesson h5 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7rem;
+    color: white;
+    text-align: center;
+  }
+  .moto .lesson h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+  }
+}
+
+@media (min-width: 320px) {
+  .sessions {
+    margin-right: 0rem;
+  }
+  .sessions h2,
+  .sessions h3,
+  .sessions h4,
+  .sessions p {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 320px) and (min-width: 320px) {
+  .sessions .girls {
+    padding-top: 0.2rem;
+    background-color: #e7e7e7;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 320px;
+    /* Set up positioning */
+    top: 0;
+    left: 0;
+  }
+  .sessions .girls h2,
+  .sessions .girls h3,
+  .sessions .girls h4,
+  .sessions .girls p {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  .sessions .girls h4 {
+    color: #717171;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    margin-left: 1.2rem;
+  }
+  .sessions .girls h2 {
+    line-height: 1;
+    padding-top: 0.8rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #404040;
+  }
+  .sessions .girls .aboutTD {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    padding: 1.3rem;
+    margin-left: 0.3rem;
+    padding-right: 1.9rem;
+    line-height: 1.3;
+  }
+  .sessions .girls .aboutTD:after {
+    display: block;
+    height: 1.3px;
+    background-color: #717171;
+    content: " ";
+    width: auto;
+    margin: 0 1rem;
+    margin-top: 1.6rem;
+  }
+  .sessions .girls h3 {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    margin-left: 0.8rem;
+    color: #404040;
+    line-height: 1.5;
+  }
+  .sessions .girls h3 span {
+    font-size: 1rem;
+    border-style: groove;
+    padding: 1px 1px;
+    margin-left: 14rem;
+  }
+  .sessions .girls p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: initial;
+    padding: 0.3rem 0rem 0.9rem 2rem;
+  }
+  .sessions .girls img {
+    padding: 0.2rem 2rem;
+  }
+}
+
+@media (min-width: 320px) and (min-width: 320px) {
+  .sessions .guys {
+    font-family: "Roboto", sans-serif;
+    padding-top: 0.9rem;
+    background-color: #e7e7e7;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 320px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    /* Set up positioning */
+    top: 0;
+    left: 0;
+  }
+  .sessions .guys h3 {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    margin-left: 1.6rem;
+    color: #404040;
+  }
+  .sessions .guys h3 span {
+    font-size: 1rem;
+    border-style: groove;
+    padding: 1px 1px;
+    margin-left: 13rem;
+  }
+  .sessions .guys p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: initial;
+    padding: 0.5rem 0rem 0.8rem 2.3rem;
+  }
+  .sessions .guys img {
+    padding: 0.2rem 2.4rem;
+  }
+}
+
+@media (min-width: 320px) {
+  .bootcamps {
+    padding-top: 2rem;
+    background-color: #e7e7e7;
+    font-family: "Roboto", sans-serif;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 320px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    /* Set up positioning */
+    top: 0;
+    padding-left: 0.8rem;
+  }
+  .bootcamps h2 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-right: 0.8rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #404040;
+    line-height: 1;
+  }
+  .bootcamps .Johny {
+    margin-left: 0em;
+  }
+  .bootcamps .Johny a:link,
+  .bootcamps .Johny a:visited {
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #404040;
+  }
+  .bootcamps .Johny a:link span,
+  .bootcamps .Johny a:visited span {
+    border-style: groove;
+    padding: 1px 1px;
+    color: #717171;
+    font-size: 0.8rem;
+    margin-left: 12rem;
+  }
+  .bootcamps .Johny a:hover,
+  .bootcamps .Johny a:active {
+    text-decoration: underline;
+    color: #a4a4a4;
+  }
+  .bootcamps .Johny a:hover span,
+  .bootcamps .Johny a:active span {
+    border-style: groove;
+  }
+  .bootcamps .Aka a:link,
+  .bootcamps .Aka a:visited {
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #404040;
+  }
+  .bootcamps .Aka a:link span,
+  .bootcamps .Aka a:visited span {
+    border-style: groove;
+    padding: 1px 1px;
+    color: #717171;
+    margin-left: 10.52rem;
+    font-size: 0.8rem;
+  }
+  .bootcamps .Aka a:link a:hover,
+  .bootcamps .Aka a:link a:active,
+  .bootcamps .Aka a:visited a:hover,
+  .bootcamps .Aka a:visited a:active {
+    text-decoration: underline;
+    color: #a4a4a4;
+  }
+  .bootcamps .Aka a:link a:hover span,
+  .bootcamps .Aka a:link a:active span,
+  .bootcamps .Aka a:visited a:hover span,
+  .bootcamps .Aka a:visited a:active span {
+    border-style: groove;
+  }
+  .bootcamps .Darrell a:link,
+  .bootcamps .Darrell a:visited {
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #404040;
+  }
+  .bootcamps .Darrell a:link span,
+  .bootcamps .Darrell a:visited span {
+    border-style: groove;
+    padding: 1px 1px;
+    color: #717171;
+    margin-left: 11.3rem;
+    font-size: 0.8rem;
+  }
+  .bootcamps .Darrell a:hover,
+  .bootcamps .Darrell a:active {
+    text-decoration: underline;
+    color: #a4a4a4;
+  }
+  .bootcamps .Darrell a:hover span,
+  .bootcamps .Darrell a:active span {
+    border-style: groove;
+  }
+  .bootcamps .Nakreshia a:link,
+  .bootcamps .Nakreshia a:visited {
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #404040;
+  }
+  .bootcamps .Nakreshia a:link span,
+  .bootcamps .Nakreshia a:visited span {
+    border-style: groove;
+    padding: 1px 1px;
+    color: #717171;
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .bootcamps .Nakreshia a:link a:hover,
+  .bootcamps .Nakreshia a:link a:active,
+  .bootcamps .Nakreshia a:visited a:hover,
+  .bootcamps .Nakreshia a:visited a:active {
+    text-decoration: underline;
+    color: #a4a4a4;
+  }
+  .bootcamps .Nakreshia a:link a:hover span,
+  .bootcamps .Nakreshia a:link a:active span,
+  .bootcamps .Nakreshia a:visited a:hover span,
+  .bootcamps .Nakreshia a:visited a:active span {
+    border-style: groove;
+  }
+  .bootcamps .Johny,
+  .bootcamps .Aka,
+  .bootcamps .Darrell,
+  .bootcamps .Nakreshia,
+  .bootcamps h4 {
+    font-family: "Roboto", sans-serif;
+    color: #a4a4a4;
+    font-size: 1rem;
+  }
+  .bootcamps .better {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 3rem 1rem;
+    margin-right: 1.5rem;
+  }
+  .bootcamps .better:before {
+    display: block;
+    height: 2px;
+    background-color: #717171;
+    content: " ";
+    width: auto;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 320px) {
+  .cities {
+    background-color: #e7e7e7;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 320px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    /* Set up positioning */
+    top: 0;
+    left: 0;
+  }
+  .cities .box-1,
+  .cities .box-2,
+  .cities .box-3,
+  .cities .box-4,
+  .cities .box-5,
+  .cities .box-6,
+  .cities .box-7,
+  .cities .box-8,
+  .cities .box-9,
+  .cities .box-10 {
+    padding: 0.5rem;
+    padding-bottom: 10px;
+  }
+  .cities .box-1 {
+    text-align: center;
+  }
+  .cities .box-2 {
+    position: relative;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-transform: uppercase;
+  }
+  .cities .box-2 .Toronto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .cities .box-3 {
+    text-align: center;
+  }
+  .cities .box-4 {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+  .cities .box-4 .LA {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .cities .box-5 {
+    text-align: center;
+  }
+  .cities .box-6 {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+  .cities .box-6 .Atlanta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .cities .box-8 {
+    text-align: center;
+  }
+  .cities .box-9 {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+  .cities .box-9 .NY {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .cities .box-7 {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+  .cities .box-7 .Miami {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .cities .box-10 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 320px) {
+  .trainers {
+    background-image: url("../vendors/img/zachary-nelson-98Elr-LIvD8-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: black;
+    padding-top: 2rem;
+    padding-bottom: 1.2rem;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 320px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: 100%;
+    /* Set up positioning */
+    top: 0;
+    left: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  .trainers a:link,
+  .trainers a:visited {
+    font-size: 0.8rem;
+    font-family: "Roboto", sans-serif;
+    color: #ffbb00;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding-left: 2.2rem;
+  }
+  .trainers a:link a:hover,
+  .trainers a:link a:active,
+  .trainers a:visited a:hover,
+  .trainers a:visited a:active {
+    text-decoration: underline;
+    color: #e99c0f;
+  }
+}
+
+@media (min-width: 320px) {
+  .best_trainers {
+    background-image: url("../vendors/img/josiah-weiss-3dCljt2Pud8-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: black;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 320px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: 100%;
+    /* Set up positioning */
+    padding-top: 18rem;
+    left: 0;
+  }
+  .best_trainers h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: -17rem;
+    margin-right: 1.5rem;
+    margin-bottom: 10rem;
+    text-align: right;
+    color: black;
+    text-transform: uppercase;
+    line-height: 97%;
+  }
+  .best_trainers h2 {
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+  }
+  .best_trainers h2 a:link,
+  .best_trainers h2 a:visited {
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: #ffbb00;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .best_trainers h2 a:link a:hover,
+  .best_trainers h2 a:link a:active,
+  .best_trainers h2 a:visited a:hover,
+  .best_trainers h2 a:visited a:active {
+    text-decoration: underline;
+    color: #e99c0f;
+    background-color: #e99c0f;
+  }
+}
+
+@media (min-width: 320px) {
+  .navbar {
+    overflow: hidden;
+    background-color: #404040;
+    bottom: 0;
+    width: 100%;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: #e7e7e7;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  .navbar a:hover {
+    background-color: #a4a4a4;
+    color: black;
+  }
+  .navbar a.active {
+    background-color: #ffbb00;
+    color: white;
+  }
+  .navbar .icon {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width: 320px) {
+  .footer {
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 320px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: 100%;
+    /* Set up positioning */
+    left: 0;
+  }
+  .footer p {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.4rem;
+    text-transform: uppercase;
+    color: #717171;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 2.5rem;
+  }
+  .footer p::after {
+    display: block;
+    height: 1px;
+    background-color: #404040;
+    content: " ";
+    text-align: center;
+    width: auto;
+    margin: 1rem 5rem;
+  }
+  .footer h4 {
+    font-size: 0.5rem;
+    text-align: center;
+    color: #ffbb00;
+    font-weight: 200;
+    margin-bottom: 1.5rem;
+    padding-top: 2rem;
   }
 }
 
@@ -242,7 +1128,7 @@ img {
     font-size: 1rem;
     font-weight: 400;
     padding: 7px 7px;
-    margin: 2rem 0 1.8rem 1rem;
+    margin: 2.2rem 0.4rem 1.8rem 0rem;
     border: 2px solid #ffbb00;
     color: #ffbb00;
     text-align: center;
@@ -325,66 +1211,6 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .pick h2 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.4rem;
-    line-height: 1.2;
-    color: white;
-    font-weight: 700;
-    padding-top: 1.5rem;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  .pick h3 {
-    font-family: "Roboto", sans-serif;
-    font-size: 1rem;
-    color: white;
-    font-weight: 500;
-  }
-  .pick p {
-    color: #ebebeb;
-    font-size: 0.9rem;
-    line-height: 1.3;
-    text-align: center;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    margin-top: 0.1rem;
-    font-weight: 400;
-  }
-  .pick .runner {
-    transform: scale(0.5, 0.5);
-    -webkit-transform: scale(0.5, 0.5);
-    -moz-transform: scale(0.5, 0.5);
-    -ms-transform: scale(0.5, 0.5);
-    -o-transform: scale(0.5, 0.5);
-    margin-bottom: -2rem;
-  }
-  .pick .dumbbell {
-    background-color: white;
-    border: none;
-    color: black;
-    text-align: center;
-    padding: 1.2rem;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    transform: scale(0.5, 0.5);
-    -webkit-transform: scale(0.5, 0.5);
-    -moz-transform: scale(0.5, 0.5);
-    -ms-transform: scale(0.5, 0.5);
-    -o-transform: scale(0.5, 0.5);
-    margin-bottom: -1.4rem;
-  }
-  .pick .calendar {
-    transform: scale(0.52, 0.52);
-    -webkit-transform: scale(0.52, 0.52);
-    -moz-transform: scale(0.52, 0.52);
-    -ms-transform: scale(0.52, 0.52);
-    -o-transform: scale(0.52, 0.52);
-    margin-bottom: -1.7rem;
-  }
 }
 
 @media (min-width: 375px) {
@@ -409,28 +1235,6 @@ img {
     color: white;
     text-align: center;
     font-size: 0.7rem;
-  }
-  .moto .lesson {
-    font-family: "Montserrat", sans-serif;
-    border: 1px solid white;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    line-height: 1;
-    padding: 0.2rem;
-    margin: 1rem;
-  }
-  .moto .lesson h5 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.7rem;
-    color: white;
-    text-align: center;
-  }
-  .moto .lesson h3 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.9rem;
-    color: white;
-    text-align: center;
   }
 }
 
@@ -714,7 +1518,8 @@ img {
   .bootcamps .Johny,
   .bootcamps .Aka,
   .bootcamps .Darrell,
-  .bootcamps .Nakreshia h4 {
+  .bootcamps .Nakreshia,
+  .bootcamps h4 {
     font-family: "Roboto", sans-serif;
     color: #a4a4a4;
     font-size: 1.2rem;
@@ -1144,19 +1949,19 @@ img {
     background-repeat: no-repeat;
     /* Set up positioning */
     top: 0;
-    margin-left: 0.1rem;
+    margin-left: 0rem;
     margin-right: 0;
   }
   .intro .intro-middle h1 {
     font-family: "Montserrat", sans-serif;
     line-height: 80%;
-    font-size: 4.6rem;
+    font-size: 4.7rem;
     letter-spacing: 0.15rem;
     color: white;
     text-transform: uppercase;
     font-weight: 700;
     margin-left: 1.5rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.8rem;
     padding-top: 4rem;
   }
   .intro .intro-middle h2 {
@@ -1164,25 +1969,25 @@ img {
     font-weight: 400;
     margin-left: 1.5rem;
     color: white;
-    line-height: 1.6;
+    line-height: 1.5;
     text-align: left;
     margin-bottom: 0.3rem;
   }
   .intro .intro-top-left {
     text-align: left;
-    margin-left: 1.2rem;
+    margin-left: 1.4rem;
     margin-top: 0.5rem;
     padding-top: 0.5rem;
   }
   .intro .intro-top-left h3 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #ffbb00;
     font-weight: 200;
   }
   .intro .intro-top-right {
     text-align: center;
     font-size: 1rem;
-    margin-left: 16rem;
+    margin-left: 15rem;
     padding-top: 1.4rem;
   }
   .intro .intro-top-right a:link,
@@ -1204,7 +2009,7 @@ img {
     font-size: 1rem;
     font-weight: 400;
     padding: 7px 7px;
-    margin: 2rem 0 1.8rem 1rem;
+    margin: 2rem 0 2rem 1.4rem;
     border: 2px solid #ffbb00;
     color: #ffbb00;
     text-align: center;
@@ -1306,8 +2111,8 @@ img {
   }
   .pick p {
     color: #ebebeb;
-    font-size: 0.9rem;
-    line-height: 1.3;
+    font-size: 0.95rem;
+    line-height: 1.4;
     text-align: center;
     margin-right: 1rem;
     margin-left: 1rem;
@@ -1442,7 +2247,7 @@ img {
   .sessions .girls h2 {
     font-size: 2rem;
     line-height: 1;
-    padding-top: 0.8rem;
+    padding-top: 1.8rem;
     text-transform: uppercase;
     text-align: center;
     color: #404040;
@@ -1470,7 +2275,7 @@ img {
     font-size: 1.5rem;
     padding: 0.5rem;
     text-transform: uppercase;
-    margin-left: 1.5rem;
+    margin-left: 1.6rem;
     color: #404040;
     line-height: 1.5;
   }
@@ -1534,7 +2339,6 @@ img {
   .bootcamps {
     padding-top: 2rem;
     background-color: #e7e7e7;
-    padding-left: 2rem;
     font-family: "Roboto", sans-serif;
     /* Set rules to fill background */
     min-height: 100%;
@@ -1545,15 +2349,17 @@ img {
     /* Set up positioning */
     top: 0;
     left: 0;
+    padding-left: 1.8rem;
   }
   .bootcamps h2 {
-    font-size: 1.9rem;
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    padding-right: 4rem;
+    padding-left: 3rem;
     text-transform: uppercase;
     text-align: center;
     color: #404040;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1;
   }
   .bootcamps .Johny {
@@ -2097,12 +2903,12 @@ img {
 @media (min-width: 768px) {
   .intro {
     min-height: 100%;
-    min-width: 770px;
+    min-width: 768px;
     width: 100%;
     height: 100%;
     background-color: black;
-    background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(rgba(0, 0, 0, 0.9)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.1))), url("../vendors/img/second_bg_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg");
-    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("../vendors/img/second_bg_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(rgba(0, 0, 0, 0.7)), color-stop(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.01))), url("../vendors/img/second_bg_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg");
+    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.01)), url("../vendors/img/second_bg_alora-griffiths-LOnMc8Rp1Qs-unsplash.jpg");
     background-position: center center;
     margin-left: 5rem;
   }
@@ -2193,22 +2999,24 @@ img {
     grid-row: 2;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 180px 310px;
-        grid-template-rows: 180px 310px;
-    -ms-grid-columns: 95px auto 95px;
-        grid-template-columns: 95px auto 95px;
-    grid-gap: 5px;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    -ms-grid-rows: 182px 300px;
+        grid-template-rows: 182px 300px;
+    -ms-grid-columns: 92px auto 92px;
+        grid-template-columns: 92px auto 92px;
+    grid-gap: 6px;
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
   }
   .pick h2 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+    text-align: center;
   }
   .pick h3 {
     font-size: 1.2rem;
+    padding-bottom: 0.8rem;
   }
   .pick p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .pick .runner {
     margin-bottom: -1rem;
@@ -2260,13 +3068,13 @@ img {
     padding-bottom: 3.2rem;
     margin-left: -0.1rem;
   }
-  .lesson {
+  .moto .lesson {
     margin: 0.8rem 6.8rem;
   }
-  .lesson h5 {
+  .moto .lesson h5 {
     font-size: 1.4rem;
   }
-  .lesson h3 {
+  .moto .lesson h3 {
     font-size: 1.7rem;
   }
 }
