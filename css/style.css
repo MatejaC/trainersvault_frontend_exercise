@@ -3195,9 +3195,10 @@ img {
     grid-row: 6;
     padding-top: 3rem;
     min-width: 768px;
-    padding-left: 4rem;
+    padding-left: 9.5rem;
   }
   .bootcamps h2 {
+    margin-left: -9rem;
     font-size: 2.5rem;
     padding-bottom: 1.8rem;
   }
@@ -3216,6 +3217,24 @@ img {
   .bootcamps .Nakreshia a:link span,
   .bootcamps .Nakreshia a:visited span {
     margin-left: 6.58rem;
+  }
+  .better {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 4rem 2rem;
+    margin-right: 0rem;
+    margin-left: -8rem;
+  }
+  .better:before {
+    display: block;
+    height: 2px;
+    background-color: #717171;
+    content: " ";
+    width: auto;
+    margin-bottom: 2rem;
   }
 }
 
@@ -3330,12 +3349,94 @@ img {
 }
 
 @media (min-width: 768px) {
+  .best_trainers {
+    background-image: url("../vendors/img/josiah-weiss-3dCljt2Pud8-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: black;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 768px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: 100%;
+    /* Set up positioning */
+    padding-top: 16rem;
+    left: 0;
+  }
+  .best_trainers h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.9rem;
+    font-weight: 700;
+    margin-top: -15rem;
+    margin-right: 4rem;
+    margin-bottom: 13rem;
+    text-align: right;
+    color: black;
+    text-transform: uppercase;
+    line-height: 97%;
+  }
+  .best_trainers h2 {
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    padding-bottom: 7rem;
+  }
+  .best_trainers h2 a:link,
+  .best_trainers h2 a:visited {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: #ffbb00;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .best_trainers h2 a:link a:hover,
+  .best_trainers h2 a:link a:active,
+  .best_trainers h2 a:visited a:hover,
+  .best_trainers h2 a:visited a:active {
+    text-decoration: underline;
+    color: #e99c0f;
+    background-color: #e99c0f;
+  }
+}
+
+@media (min-width: 768px) {
   .footer {
     min-width: 768px;
   }
+  .footer p {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    color: #717171;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 3rem;
+  }
+  .footer p::after {
+    display: block;
+    height: 1px;
+    background-color: #404040;
+    content: " ";
+    text-align: center;
+    width: auto;
+    margin: 1.5rem 5rem;
+  }
   .footer h4 {
-    margin-bottom: 3rem;
-    padding-top: 5rem;
+    font-size: 0.6rem;
+    text-align: center;
+    color: #ffbb00;
+    font-weight: 200;
+    margin-bottom: 1.5rem;
+    padding-top: 2.5rem;
   }
 }
 
