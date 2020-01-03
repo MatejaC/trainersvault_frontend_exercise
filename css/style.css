@@ -575,17 +575,13 @@ body {
     margin-left: 10.52rem;
     font-size: 0.8rem;
   }
-  .bootcamps .Aka a:link a:hover,
-  .bootcamps .Aka a:link a:active,
-  .bootcamps .Aka a:visited a:hover,
-  .bootcamps .Aka a:visited a:active {
+  .bootcamps .Aka a:hover,
+  .bootcamps .Aka a:active {
     text-decoration: underline;
     color: #a4a4a4;
   }
-  .bootcamps .Aka a:link a:hover span,
-  .bootcamps .Aka a:link a:active span,
-  .bootcamps .Aka a:visited a:hover span,
-  .bootcamps .Aka a:visited a:active span {
+  .bootcamps .Aka a:hover span,
+  .bootcamps .Aka a:active span {
     border-style: groove;
   }
   .bootcamps .Darrell a:link,
@@ -627,17 +623,13 @@ body {
     margin-left: 0.5rem;
     font-size: 0.8rem;
   }
-  .bootcamps .Nakreshia a:link a:hover,
-  .bootcamps .Nakreshia a:link a:active,
-  .bootcamps .Nakreshia a:visited a:hover,
-  .bootcamps .Nakreshia a:visited a:active {
+  .bootcamps .Nakreshia a:hover,
+  .bootcamps .Nakreshia a:active {
     text-decoration: underline;
     color: #a4a4a4;
   }
-  .bootcamps .Nakreshia a:link a:hover span,
-  .bootcamps .Nakreshia a:link a:active span,
-  .bootcamps .Nakreshia a:visited a:hover span,
-  .bootcamps .Nakreshia a:visited a:active span {
+  .bootcamps .Nakreshia a:hover span,
+  .bootcamps .Nakreshia a:active span {
     border-style: groove;
   }
   .bootcamps .Johny,
