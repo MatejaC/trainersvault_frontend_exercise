@@ -1,5 +1,7 @@
 # trainersvault_frontend_exercise
 
+- available online at https://matejac.github.io/trainersvault_frontend_exercise/
+
 - practical learning exercise; creating a responsive webpage based on designer-made template:
 https://dribbble.com/shots/1826299-Trainersvault
 
